@@ -1,0 +1,852 @@
+{
+ "title": "Keith Richards: Psychic Detective",
+ "subtitle": "The Case of the Guilty Millionaire",
+ "issue": "No. 1",
+ "scenes": [
+  {
+   "num": null,
+   "title": "Cover"
+  },
+  {
+   "num": 1,
+   "title": "The Dollhouse"
+  },
+  {
+   "num": 2,
+   "title": "The Red Phone"
+  },
+  {
+   "num": null,
+   "title": "Interlude"
+  },
+  {
+   "num": 3,
+   "title": "En Route"
+  },
+  {
+   "num": 4,
+   "title": "London, 1967"
+  },
+  {
+   "num": 5,
+   "title": "Back In The Cadillac"
+  },
+  {
+   "num": 6,
+   "title": "Backhandov's Suite"
+  },
+  {
+   "num": 7,
+   "title": "Beneath The Stardust"
+  },
+  {
+   "num": 8,
+   "title": "The Elevator"
+  },
+  {
+   "num": 9,
+   "title": "The Reception"
+  },
+  {
+   "num": 10,
+   "title": "Case Closed"
+  },
+  {
+   "num": null,
+   "title": "The End"
+  }
+ ],
+ "pages": [
+  {
+   "id": "01",
+   "src": "pages/01.jpg",
+   "thumb": "thumbs/01.jpg",
+   "w": 1024,
+   "h": 1536,
+   "kind": "cover",
+   "scene": 0,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Cover",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "02",
+   "src": "pages/02.jpg",
+   "thumb": "thumbs/02.jpg",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 1,
+   "frames": [
+    {
+     "rect": [
+      8,
+      8,
+      980,
+      1004
+     ],
+     "title": "Lavender Curtains",
+     "n": 1
+    },
+    {
+     "rect": [
+      988,
+      8,
+      540,
+      1004
+     ],
+     "title": "Hotline Rings",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "id": "03",
+   "src": "pages/03.jpg",
+   "thumb": "thumbs/03.jpg",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 2,
+   "frames": [
+    {
+     "rect": [
+      7,
+      10,
+      455,
+      1002
+     ],
+     "title": "Before He Answers",
+     "n": 1
+    },
+    {
+     "rect": [
+      460,
+      10,
+      595,
+      1002
+     ],
+     "title": "Backstage, 1969",
+     "n": 2
+    },
+    {
+     "rect": [
+      1053,
+      10,
+      475,
+      1002
+     ],
+     "title": "Mick...?",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "04",
+   "src": "pages/04.jpg",
+   "thumb": "thumbs/04.jpg",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 2,
+   "frames": [
+    {
+     "rect": [
+      6,
+      5,
+      406,
+      1011
+     ],
+     "title": "Zis Is Kissinger",
+     "n": 4
+    },
+    {
+     "rect": [
+      411,
+      5,
+      600,
+      1011
+     ],
+     "title": "Henry's Pedicure",
+     "n": 5
+    },
+    {
+     "rect": [
+      1010,
+      5,
+      521,
+      1011
+     ],
+     "title": "A Body Discovered",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "05",
+   "src": "pages/05.jpg",
+   "thumb": "thumbs/05.jpg",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 2,
+   "frames": [
+    {
+     "rect": [
+      7,
+      10,
+      456,
+      1003
+     ],
+     "title": "Adjust Your Expectations",
+     "n": 7
+    },
+    {
+     "rect": [
+      460,
+      10,
+      457,
+      1003
+     ],
+     "title": "Hide The Apron",
+     "n": 8
+    },
+    {
+     "rect": [
+      916,
+      10,
+      612,
+      1003
+     ],
+     "title": "The Wild Years",
+     "n": 9
+    }
+   ]
+  },
+  {
+   "id": "06",
+   "src": "pages/06.jpg",
+   "thumb": "thumbs/06.jpg",
+   "w": 1536,
+   "h": 1024,
+   "kind": "splash",
+   "scene": 3,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1536,
+      1024
+     ],
+     "title": "Bill's Legal Department",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "07",
+   "src": "pages/07.jpg",
+   "thumb": "thumbs/07.jpg",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 4,
+   "frames": [
+    {
+     "rect": [
+      7,
+      10,
+      663,
+      1014
+     ],
+     "title": "The Vegas Strip",
+     "n": 1
+    },
+    {
+     "rect": [
+      669,
+      10,
+      410,
+      1014
+     ],
+     "title": "Mick In Memory",
+     "n": 2
+    },
+    {
+     "rect": [
+      1078,
+      10,
+      450,
+      1014
+     ],
+     "title": "Pure Science",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "08",
+   "src": "pages/08.jpg",
+   "thumb": "thumbs/08.jpg",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 5,
+   "frames": [
+    {
+     "rect": [
+      6,
+      7,
+      576,
+      1006
+     ],
+     "title": "Groovy Bob's Flat",
+     "n": 1
+    },
+    {
+     "rect": [
+      583,
+      7,
+      435,
+      1006
+     ],
+     "title": "Burroughs And Lampshade",
+     "n": 2
+    },
+    {
+     "rect": [
+      1019,
+      7,
+      511,
+      1006
+     ],
+     "title": "Anger's Theory",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "09",
+   "src": "pages/09.jpg",
+   "thumb": "thumbs/09.jpg",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 5,
+   "frames": [
+    {
+     "rect": [
+      5,
+      6,
+      527,
+      1008
+     ],
+     "title": "The Compound",
+     "n": 4
+    },
+    {
+     "rect": [
+      532,
+      6,
+      492,
+      1008
+     ],
+     "title": "Case Of Vials",
+     "n": 5
+    },
+    {
+     "rect": [
+      1023,
+      6,
+      508,
+      1008
+     ],
+     "title": "I'll Take Two",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "10",
+   "src": "pages/10.jpg",
+   "thumb": "thumbs/10.jpg",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 6,
+   "frames": [
+    {
+     "rect": [
+      5,
+      6,
+      506,
+      1008
+     ],
+     "title": "You Took Both?",
+     "n": 1
+    },
+    {
+     "rect": [
+      511,
+      6,
+      505,
+      1008
+     ],
+     "title": "Oh, Tattoo",
+     "n": 2
+    },
+    {
+     "rect": [
+      1017,
+      6,
+      513,
+      1008
+     ],
+     "title": "A Verbal Twitch",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "11",
+   "src": "pages/11.jpg",
+   "thumb": "thumbs/11.jpg",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 7,
+   "frames": [
+    {
+     "rect": [
+      5,
+      6,
+      543,
+      1009
+     ],
+     "title": "A Tragic Accident",
+     "n": 1
+    },
+    {
+     "rect": [
+      548,
+      6,
+      449,
+      1009
+     ],
+     "title": "Delicate Health",
+     "n": 2
+    },
+    {
+     "rect": [
+      997,
+      6,
+      534,
+      1009
+     ],
+     "title": "Keep Playing",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "12",
+   "src": "pages/12.jpg",
+   "thumb": "thumbs/12.jpg",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 8,
+   "frames": [
+    {
+     "rect": [
+      5,
+      7,
+      507,
+      1007
+     ],
+     "title": "Dis Is A Hotel",
+     "n": 1
+    },
+    {
+     "rect": [
+      512,
+      7,
+      503,
+      1007
+     ],
+     "title": "Lovely Acoustics",
+     "n": 2
+    },
+    {
+     "rect": [
+      1017,
+      7,
+      513,
+      1007
+     ],
+     "title": "Not Yours",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "13",
+   "src": "pages/13.jpg",
+   "thumb": "thumbs/13.jpg",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 8,
+   "frames": [
+    {
+     "rect": [
+      4,
+      6,
+      509,
+      1018
+     ],
+     "title": "What Floor?",
+     "n": 4
+    },
+    {
+     "rect": [
+      512,
+      6,
+      505,
+      1018
+     ],
+     "title": "Room 1208",
+     "n": 5
+    },
+    {
+     "rect": [
+      1018,
+      6,
+      513,
+      1018
+     ],
+     "title": "Twelfth Floor",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "14",
+   "src": "pages/14.jpg",
+   "thumb": "thumbs/14.jpg",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 9,
+   "frames": [
+    {
+     "rect": [
+      4,
+      6,
+      508,
+      1018
+     ],
+     "title": "I Press Button",
+     "n": 1
+    },
+    {
+     "rect": [
+      511,
+      6,
+      503,
+      1018
+     ],
+     "title": "Booked A Tour",
+     "n": 2
+    },
+    {
+     "rect": [
+      1018,
+      6,
+      514,
+      1018
+     ],
+     "title": "Seventh Floor Surprise",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "15",
+   "src": "pages/15.jpg",
+   "thumb": "thumbs/15.jpg",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 9,
+   "frames": [
+    {
+     "rect": [
+      3,
+      6,
+      512,
+      1018
+     ],
+     "title": "Zircon-Encrusted Tweezers",
+     "n": 4
+    },
+    {
+     "rect": [
+      515,
+      6,
+      501,
+      1018
+     ],
+     "title": "Trying The Buffet",
+     "n": 5
+    },
+    {
+     "rect": [
+      1018,
+      6,
+      513,
+      1018
+     ],
+     "title": "The Next One",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "16",
+   "src": "pages/16.jpg",
+   "thumb": "thumbs/16.jpg",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 10,
+   "frames": [
+    {
+     "rect": [
+      5,
+      6,
+      543,
+      1018
+     ],
+     "title": "Something Flattering",
+     "n": 1
+    },
+    {
+     "rect": [
+      548,
+      6,
+      449,
+      1018
+     ],
+     "title": "Discreetly Dead",
+     "n": 2
+    },
+    {
+     "rect": [
+      996,
+      6,
+      535,
+      1018
+     ],
+     "title": "Second Verse?",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "17",
+   "src": "pages/17.jpg",
+   "thumb": "thumbs/17.jpg",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 10,
+   "frames": [
+    {
+     "rect": [
+      5,
+      6,
+      544,
+      1009
+     ],
+     "title": "Poisoned The Wine",
+     "n": 4
+    },
+    {
+     "rect": [
+      549,
+      6,
+      448,
+      1009
+     ],
+     "title": "He Owns You",
+     "n": 5
+    },
+    {
+     "rect": [
+      997,
+      6,
+      533,
+      1009
+     ],
+     "title": "Past Tense, Paul",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "18",
+   "src": "pages/18.jpg",
+   "thumb": "thumbs/18.jpg",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 10,
+   "frames": [
+    {
+     "rect": [
+      4,
+      6,
+      545,
+      1018
+     ],
+     "title": "The Wire",
+     "n": 7
+    },
+    {
+     "rect": [
+      549,
+      6,
+      447,
+      1018
+     ],
+     "title": "Watered-Down Poison",
+     "n": 8
+    },
+    {
+     "rect": [
+      997,
+      6,
+      533,
+      1018
+     ],
+     "title": "Invoice Quickly",
+     "n": 9
+    }
+   ]
+  },
+  {
+   "id": "19",
+   "src": "pages/19.jpg",
+   "thumb": "thumbs/19.jpg",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 11,
+   "frames": [
+    {
+     "rect": [
+      4,
+      6,
+      545,
+      1018
+     ],
+     "title": "Elvis Tipped Me",
+     "n": 1
+    },
+    {
+     "rect": [
+      550,
+      6,
+      447,
+      1018
+     ],
+     "title": "Mega Vegas Elvis?",
+     "n": 2
+    },
+    {
+     "rect": [
+      997,
+      6,
+      534,
+      1018
+     ],
+     "title": "Major Or Minor?",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "20",
+   "src": "pages/20.jpg",
+   "thumb": "thumbs/20.jpg",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 11,
+   "frames": [
+    {
+     "rect": [
+      5,
+      6,
+      412,
+      1009
+     ],
+     "title": "A Pianist Solved It",
+     "n": 4
+    },
+    {
+     "rect": [
+      417,
+      6,
+      550,
+      1009
+     ],
+     "title": "Fondue And Peyote",
+     "n": 5
+    },
+    {
+     "rect": [
+      968,
+      6,
+      562,
+      1009
+     ],
+     "title": "Later: The Cheese",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "21",
+   "src": "pages/21.jpg",
+   "thumb": "thumbs/21.jpg",
+   "w": 1024,
+   "h": 1536,
+   "kind": "end",
+   "scene": 12,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Stay Tuned",
+     "n": 1
+    }
+   ]
+  }
+ ]
+}
