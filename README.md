@@ -1,51 +1,128 @@
-# MVE Comics
+<h1 align="center">MVE Comics</h1>
 
-Comics from the Mega Vegas Elvis Universe, with a small web reader.
+<p align="center">
+  Comics from the <b>Mega Vegas Elvis Universe</b>, where rock legends take on some very unlikely side jobs.<br>
+  They come with a small web reader that fits any screen, from a laptop to a phone.
+</p>
 
-Read them here: **https://arnegleason.github.io/keith-psychic-detective/**
+<p align="center">
+  <a href="https://arnegleason.github.io/keith-psychic-detective/"><b>Read the comics</b></a>
+</p>
 
-| Comic | Status |
+<p align="center">
+  <a href="https://arnegleason.github.io/keith-psychic-detective/"><img src="screenshots/hero.jpg" alt="The reader showing a Captain Beefheart strip on a laptop and a Keith Richards frame on a phone"></a>
+</p>
+
+## The comics
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+<a href="https://arnegleason.github.io/keith-psychic-detective/#keith-richards"><img src="comics/keith-richards/cover.jpg" alt="Cover of Keith Richards: Psychic Detective No. 1"></a>
+
+### Keith Richards: Psychic Detective
+**No. 1: The Case of the Guilty Millionaire**
+
+The red phone rings. It's Henry Kissinger, mid-pedicure, with a job. A body has turned up at
+Ambassador Boris Backhandov's private reception in Las Vegas, and the ambassador will pay
+generously for the truth, provided it leaves him out of it. Keith takes the case, with
+Hervé Villechaize and 400 lbs. of muscle.
+
+Complete · 18 strips · [Start reading](https://arnegleason.github.io/keith-psychic-detective/#keith-richards)
+
+</td>
+<td width="50%" valign="top">
+
+<a href="https://arnegleason.github.io/keith-psychic-detective/#captain-beefheart"><img src="comics/captain-beefheart/cover.jpg" alt="Cover of Captain Beefheart: Laurel Canyon Tour Guide No. 1"></a>
+
+### Captain Beefheart: Laurel Canyon Tour Guide
+**No. 1: The Homes! The Stars! The Restraining Orders!**
+
+Captain Beefheart runs celebrity tours of Laurel Canyon from a rusty VW bus. Sightings not
+necessarily visual. Today he recruits a waiter from El Coyote into his band, dresses him from
+Vincent Price's wardrobe, and heads for Goldie Hawn's party, mostly for the piano. Meanwhile, in
+Goldie's kitchen, the stuffed mushrooms are getting a pinch of Temporal Thyme.
+
+In progress · 31 strips so far · [Start reading](https://arnegleason.github.io/keith-psychic-detective/#captain-beefheart)
+
+</td>
+</tr>
+</table>
+
+## Reading on any screen
+
+<img src="screenshots/slide.gif" align="right" width="280" alt="Frame mode on a phone, sliding from frame to frame along a Captain Beefheart strip with motion blur">
+
+The reader fits each comic to the screen it's on.
+
+- **On a laptop** you see a whole strip at a time.
+- **On a phone** it goes frame by frame. Each move slides along the strip with a touch of
+  motion blur, so you always know where you are in the page.
+- **Getting around.** Tap the right or left side of the screen, swipe, or use the arrow keys.
+  Tap the middle to hide the controls.
+- **Strip or Frame.** The reader picks a mode to suit the screen, and the switch at the top
+  changes it.
+- **Index.** Every frame has a scene number and a short name, like *2.4 Zis Is Kissinger*.
+  The index lists them all and jumps straight to any one.
+- **Picks up where you left off.** The shelf remembers where you stopped in each comic.
+- **Share a moment.** Every frame has its own link, such as
+  [`#keith-richards/p4f1`](https://arnegleason.github.io/keith-psychic-detective/#keith-richards/p4f1).
+
+| Key | Action |
 |---|---|
-| Keith Richards: Psychic Detective No. 1 | Complete |
-| Captain Beefheart: Laurel Canyon Tour Guide No. 1 | In progress |
+| <kbd>→</kbd> <kbd>↓</kbd> <kbd>Space</kbd> | Next |
+| <kbd>←</kbd> <kbd>↑</kbd> | Previous |
+| <kbd>S</kbd> | Switch between strip and frame |
+| <kbd>I</kbd> | Index |
+| <kbd>F</kbd> | Full screen |
+| <kbd>Home</kbd> <kbd>End</kbd> | First or last |
 
-## The reader
+<br clear="right">
 
-A small dependency-free web reader (`index.html`, `viewer.css`, `viewer.js`).
+<p align="center">
+  <img src="screenshots/phones.jpg" alt="Three phone screens: the shelf of covers, the index of scenes and frames, and the To be continued page">
+</p>
+<p align="center"><sub>The shelf of covers, the index, and the last page of a comic that's still being drawn.</sub></p>
 
-- The home page is a shelf of covers. Pick one to start reading.
-- **Strip mode** shows a whole strip at a time. **Frame mode** shows one panel at a time.
-  The reader picks a mode to suit the screen, and the Strip / Frame switch overrides it.
-- Move with the arrow keys, space, the side arrows, a tap on the left or right third of
-  the screen, or a swipe. Tap the middle to show or hide the controls.
-- `I` opens the index, `S` switches mode, `F` goes full screen.
-- The shelf remembers where each reader stopped and offers to continue from there.
-- Links are shareable: `#captain-beefheart` opens a comic at its cover, and
-  `#captain-beefheart/p4f2` opens page 4 at its second frame.
+## How it works
 
-## How it fits together
+The reader is three static files, `index.html`, `viewer.css` and `viewer.js`, with no framework and
+nothing to install. GitHub Pages serves the repository as it is, so publishing is just a push.
+
+The comics are prepared ahead of time by `tools/build.py`:
+
+1. **It finds the panels.** It looks for the cream-colored gutters that run the full height of
+   each strip, so nobody has to draw frame boxes by hand.
+2. **It makes web images.** It writes optimized JPEGs, thumbnails and covers. The original PNGs
+   come to about 156 MB and the web versions to about 22 MB. The reader then loads only the
+   pages near where you are.
+3. **It writes the data.** It combines the panels with the scene and frame names from each
+   comic's story file into the `comic.json` the reader uses.
+4. **It makes the link preview.** `social.jpg` shows every cover when someone shares the link.
 
 | Path | What it is |
 |---|---|
 | `source-images*/` | The original artwork, one folder per comic |
 | `tools/library.json` | The shelf title and the order of the comics |
-| `tools/stories/<comic>.json` | One per comic: its source folder, scenes, and frame names |
-| `tools/build.py` | Finds the panels, writes the web images, and writes the data the reader uses |
+| `tools/stories/<comic>.json` | One per comic: its source folder, scenes and frame names |
+| `tools/build.py` | Finds the panels and writes everything in `comics/` |
 | `comics/` | Build output. Do not edit by hand |
+| `screenshots/` | Images for this README |
 
-The build finds the panel gutters in each strip and writes optimised JPEGs,
-thumbnails, and each comic's `comic.json`. It also writes `social.jpg`, the preview
-image that shows when someone shares the link.
+## Adding strips and comics
+
+The build needs Python with the Pillow and numpy packages.
 
 ```bash
 pip install pillow numpy
 python3 tools/build.py
 ```
 
-## Adding strips to a comic
+### Adding strips to a comic
 
 1. Drop the new images into the comic's source folder.
-2. Run the build. Images the story file does not name yet are added at the end under
+2. Run the build. Images the story file doesn't name yet are added at the end under
    "New Pages", with numbered frames, and the build lists them.
 3. To name them, add a line per image to the `pages` list in `tools/stories/<comic>.json`,
    with one name per panel, then build again. Add a new entry to `scenes` if the strip
@@ -62,7 +139,7 @@ When a comic is finished, add its end page with `"kind": "end"` and change `"sta
 from `"in-progress"` to `"complete"`. The last page then says "The End" instead of
 "To be continued".
 
-## Adding a new comic
+### Adding a new comic
 
 1. Put its images in a new folder, for example `source-images-new-comic/`.
 2. Copy one of the files in `tools/stories/` to `tools/stories/new-comic.json`. Set its
@@ -70,7 +147,7 @@ from `"in-progress"` to `"complete"`. The last page then says "The End" instead 
 3. Add `"new-comic"` to the `comics` list in `tools/library.json`. The shelf follows that order.
 4. Run the build.
 
-## When the build complains
+### When the build complains
 
 - **Found 2 panels but the story names 3.** The artwork probably covers a gutter, as the
   green glow does on Keith Richards page 13. Add the gutter positions by hand to that page's
