@@ -2,7 +2,7 @@
   "title": "Captain Beefheart: Laurel Canyon Tour Guide",
   "subtitle": "The Homes! The Stars! The Restraining Orders!",
   "issue": "No. 1",
-  "status": "in-progress",
+  "status": "complete",
   "source": "source-images-captain-beefheart",
   "scenes": [
     {"id": "cover", "title": "Cover"},
@@ -20,7 +20,15 @@
     {"id": "s12", "num": 12, "title": "The Party Begins"},
     {"id": "s13", "num": 13, "title": "The Back Way"},
     {"id": "s14", "num": 14, "title": "The Ohio Story"},
-    {"id": "s15", "num": 15, "title": "Mushrooms Kick In"}
+    {"id": "s15", "num": 15, "title": "Mushrooms Kick In"},
+    {"id": "s16", "num": 16, "title": "At The Piano"},
+    {"id": "s17", "num": 17, "title": "Catwoman"},
+    {"id": "s18", "num": 18, "title": "Back In The Kitchen"},
+    {"id": "s19", "num": 19, "title": "The Waterfall"},
+    {"id": "s20", "num": 20, "title": "The African Queen"},
+    {"id": "s21", "num": 21, "title": "Back In The Present"},
+    {"id": "s22", "num": 22, "title": "The Big Finish"},
+    {"id": "end", "title": "The End"}
   ],
   "pages": [
     {"file": "CBLCTG - 1.png",   "kind": "cover", "scene": "cover", "frames": ["Cover"]},
@@ -54,6 +62,19 @@
     {"file": "CBLCTG - 29.png",  "kind": "strip", "scene": "s13", "frames": ["Piano Won't Mind", "Julie Newmar?", "Lining Up"]},
     {"file": "CBLCTG - 30.png",  "kind": "strip", "scene": "s14", "frames": ["Where's Dennis?", "A Whole Person", "Lost In Ohio"]},
     {"file": "CBLCTG - 31.png",  "kind": "strip", "scene": "s14", "frames": ["Three A.M., Ohio", "Butter My Toast", "Left The Building"]},
-    {"file": "CBLCTG - 32.png",  "kind": "strip", "scene": "s15", "frames": ["Jim's Excuse", "Something Uplifting", "That Was Weird"]}
+    {"file": "CBLCTG - 32.png",  "kind": "strip", "scene": "s15", "frames": ["Jim's Excuse", "Something Uplifting", "That Was Weird"]},
+    {"file": "CBLCTG-batch2 - 1.png",  "kind": "strip", "scene": "s16", "frames": ["Smoked Oyster?", "I'll Pass", "Oyster Bait"]},
+    {"file": "CBLCTG-batch2 - 2.png",  "kind": "strip", "scene": "s16", "frames": ["Already In Tune", "Your Replacement's Calling", "Where's The Telephone?"]},
+    {"file": "CBLCTG-batch2 - 3.png",  "kind": "strip", "scene": "s16", "frames": ["Write This Down", "Your Head Talking", "The Piano Lid"]},
+    {"file": "CBLCTG-batch2 - 4.png",  "kind": "strip", "scene": "s17", "frames": ["Burt Ward's Line", "The Batroom", "A Nature Shot"]},
+    {"file": "CBLCTG-batch2 - 5.png",  "kind": "strip", "scene": "s18", "frames": ["Once Was Enough", "Chicken Livers", "Borrowing The Cart"]},
+    {"file": "CBLCTG-batch2 - 6.png",  "kind": "strip", "scene": "s19", "frames": ["The Same Note"]},
+    {"file": "CBLCTG-batch2 - 7.png",  "kind": "strip", "scene": "s19", "frames": ["Who Invited Dennis?", "What's He Doing?"]},
+    {"file": "CBLCTG-batch2 - 8.png",  "kind": "strip", "scene": "s20", "frames": ["Bogart's Own Stunts", "Lucky You", "Dennis—"]},
+    {"file": "CBLCTG-batch2 - 9.png",  "kind": "strip", "scene": "s20", "frames": ["We'll Fix That"]},
+    {"file": "CBLCTG-batch2 - 10.png", "kind": "strip", "scene": "s21", "frames": ["The Leech Scene"]},
+    {"file": "CBLCTG-batch2 - 11.png", "kind": "strip", "scene": "s22", "frames": ["Get That Down", "There. Finished.", "Musically."]},
+    {"file": "CBLCTG-batch2 - 12.png", "kind": "strip", "scene": "s22", "frames": ["Violin Rosin"]},
+    {"file": "CBLCTG-batch2 - 13.png", "kind": "end",   "scene": "end", "frames": ["Another Day's Work"]}
   ]
 }

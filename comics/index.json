@@ -19,12 +19,12 @@
    "title": "Captain Beefheart: Laurel Canyon Tour Guide",
    "subtitle": "The Homes! The Stars! The Restraining Orders!",
    "issue": "No. 1",
-   "status": "in-progress",
+   "status": "complete",
    "cover": "comics/captain-beefheart/cover.jpg?v=2ef73bce2e",
    "coverW": 720,
    "coverH": 1080,
-   "strips": 31,
-   "frames": 90
+   "strips": 43,
+   "frames": 117
   }
  ]
 }

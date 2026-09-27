@@ -345,7 +345,7 @@
       frame = sc.num ? `${sc.num}.${f.n}  ${f.title}` : f.title;
     } else if (sc.num) {
       const a = p.frames[0].n, b = p.frames[p.frames.length - 1].n;
-      frame = a === b ? `${sc.num}.${a}` : `${sc.num}.${a} – ${sc.num}.${b}`;
+      frame = a === b ? `${sc.num}.${a}  ${p.frames[0].title}` : `${sc.num}.${a} – ${sc.num}.${b}`;
     } else frame = p.frames[0].title;
     return { scene, frame: frame === scene ? '' : frame };
   }

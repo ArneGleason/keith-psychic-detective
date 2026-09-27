@@ -3,7 +3,7 @@
  "title": "Captain Beefheart: Laurel Canyon Tour Guide",
  "subtitle": "The Homes! The Stars! The Restraining Orders!",
  "issue": "No. 1",
- "status": "in-progress",
+ "status": "complete",
  "cover": "comics/captain-beefheart/cover.jpg?v=2ef73bce2e",
  "coverW": 720,
  "coverH": 1080,
@@ -71,6 +71,38 @@
   {
    "num": 15,
    "title": "Mushrooms Kick In"
+  },
+  {
+   "num": 16,
+   "title": "At The Piano"
+  },
+  {
+   "num": 17,
+   "title": "Catwoman"
+  },
+  {
+   "num": 18,
+   "title": "Back In The Kitchen"
+  },
+  {
+   "num": 19,
+   "title": "The Waterfall"
+  },
+  {
+   "num": 20,
+   "title": "The African Queen"
+  },
+  {
+   "num": 21,
+   "title": "Back In The Present"
+  },
+  {
+   "num": 22,
+   "title": "The Big Finish"
+  },
+  {
+   "num": null,
+   "title": "The End"
   }
  ],
  "pages": [
@@ -1333,6 +1365,429 @@
      ],
      "title": "That Was Weird",
      "n": 3
+    }
+   ]
+  },
+  {
+   "id": "33",
+   "src": "comics/captain-beefheart/pages/33.jpg?v=7cf327981f",
+   "thumb": "comics/captain-beefheart/thumbs/33.jpg?v=f7d03e1417",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 16,
+   "frames": [
+    {
+     "rect": [
+      11,
+      9,
+      499,
+      1004
+     ],
+     "title": "Smoked Oyster?",
+     "n": 1
+    },
+    {
+     "rect": [
+      512,
+      9,
+      511,
+      1004
+     ],
+     "title": "I'll Pass",
+     "n": 2
+    },
+    {
+     "rect": [
+      1026,
+      9,
+      498,
+      1004
+     ],
+     "title": "Oyster Bait",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "34",
+   "src": "comics/captain-beefheart/pages/34.jpg?v=124df71848",
+   "thumb": "comics/captain-beefheart/thumbs/34.jpg?v=9e33a0273b",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 16,
+   "frames": [
+    {
+     "rect": [
+      11,
+      8,
+      501,
+      1005
+     ],
+     "title": "Already In Tune",
+     "n": 4
+    },
+    {
+     "rect": [
+      513,
+      8,
+      510,
+      1005
+     ],
+     "title": "Your Replacement's Calling",
+     "n": 5
+    },
+    {
+     "rect": [
+      1025,
+      8,
+      500,
+      1005
+     ],
+     "title": "Where's The Telephone?",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "35",
+   "src": "comics/captain-beefheart/pages/35.jpg?v=54782ce915",
+   "thumb": "comics/captain-beefheart/thumbs/35.jpg?v=610d6baa33",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 16,
+   "frames": [
+    {
+     "rect": [
+      8,
+      8,
+      503,
+      1005
+     ],
+     "title": "Write This Down",
+     "n": 7
+    },
+    {
+     "rect": [
+      512,
+      8,
+      511,
+      1005
+     ],
+     "title": "Your Head Talking",
+     "n": 8
+    },
+    {
+     "rect": [
+      1023,
+      8,
+      503,
+      1005
+     ],
+     "title": "The Piano Lid",
+     "n": 9
+    }
+   ]
+  },
+  {
+   "id": "36",
+   "src": "comics/captain-beefheart/pages/36.jpg?v=0e6f097950",
+   "thumb": "comics/captain-beefheart/thumbs/36.jpg?v=e45336c5e7",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 17,
+   "frames": [
+    {
+     "rect": [
+      7,
+      8,
+      504,
+      1005
+     ],
+     "title": "Burt Ward's Line",
+     "n": 1
+    },
+    {
+     "rect": [
+      512,
+      8,
+      513,
+      1005
+     ],
+     "title": "The Batroom",
+     "n": 2
+    },
+    {
+     "rect": [
+      1026,
+      8,
+      503,
+      1005
+     ],
+     "title": "A Nature Shot",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "37",
+   "src": "comics/captain-beefheart/pages/37.jpg?v=d8ac6ecf80",
+   "thumb": "comics/captain-beefheart/thumbs/37.jpg?v=db05f002f6",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 18,
+   "frames": [
+    {
+     "rect": [
+      6,
+      6,
+      503,
+      1009
+     ],
+     "title": "Once Was Enough",
+     "n": 1
+    },
+    {
+     "rect": [
+      509,
+      6,
+      520,
+      1009
+     ],
+     "title": "Chicken Livers",
+     "n": 2
+    },
+    {
+     "rect": [
+      1030,
+      6,
+      500,
+      1009
+     ],
+     "title": "Borrowing The Cart",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "38",
+   "src": "comics/captain-beefheart/pages/38.jpg?v=d6469ad4dd",
+   "thumb": "comics/captain-beefheart/thumbs/38.jpg?v=172c536d9e",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 19,
+   "frames": [
+    {
+     "rect": [
+      3,
+      4,
+      1530,
+      1017
+     ],
+     "title": "The Same Note",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "39",
+   "src": "comics/captain-beefheart/pages/39.jpg?v=aa9923e048",
+   "thumb": "comics/captain-beefheart/thumbs/39.jpg?v=94ade72474",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 19,
+   "frames": [
+    {
+     "rect": [
+      4,
+      4,
+      1035,
+      1014
+     ],
+     "title": "Who Invited Dennis?",
+     "n": 2
+    },
+    {
+     "rect": [
+      1040,
+      4,
+      492,
+      1014
+     ],
+     "title": "What's He Doing?",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "40",
+   "src": "comics/captain-beefheart/pages/40.jpg?v=46bc47f3b6",
+   "thumb": "comics/captain-beefheart/thumbs/40.jpg?v=b140456b4e",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 20,
+   "frames": [
+    {
+     "rect": [
+      4,
+      4,
+      509,
+      1015
+     ],
+     "title": "Bogart's Own Stunts",
+     "n": 1
+    },
+    {
+     "rect": [
+      511,
+      4,
+      518,
+      1015
+     ],
+     "title": "Lucky You",
+     "n": 2
+    },
+    {
+     "rect": [
+      1028,
+      4,
+      505,
+      1015
+     ],
+     "title": "Dennis—",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "41",
+   "src": "comics/captain-beefheart/pages/41.jpg?v=07be2bcaa3",
+   "thumb": "comics/captain-beefheart/thumbs/41.jpg?v=7f0a4497d3",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 20,
+   "frames": [
+    {
+     "rect": [
+      3,
+      4,
+      1530,
+      1016
+     ],
+     "title": "We'll Fix That",
+     "n": 4
+    }
+   ]
+  },
+  {
+   "id": "42",
+   "src": "comics/captain-beefheart/pages/42.jpg?v=86d47b4aa6",
+   "thumb": "comics/captain-beefheart/thumbs/42.jpg?v=9098b77005",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 21,
+   "frames": [
+    {
+     "rect": [
+      2,
+      2,
+      1532,
+      1020
+     ],
+     "title": "The Leech Scene",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "43",
+   "src": "comics/captain-beefheart/pages/43.jpg?v=1b7c7648dd",
+   "thumb": "comics/captain-beefheart/thumbs/43.jpg?v=7b2045cb89",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 22,
+   "frames": [
+    {
+     "rect": [
+      8,
+      8,
+      502,
+      1006
+     ],
+     "title": "Get That Down",
+     "n": 1
+    },
+    {
+     "rect": [
+      513,
+      8,
+      510,
+      1006
+     ],
+     "title": "There. Finished.",
+     "n": 2
+    },
+    {
+     "rect": [
+      1024,
+      8,
+      502,
+      1006
+     ],
+     "title": "Musically.",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "44",
+   "src": "comics/captain-beefheart/pages/44.jpg?v=21f619934e",
+   "thumb": "comics/captain-beefheart/thumbs/44.jpg?v=828e2bebed",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 22,
+   "frames": [
+    {
+     "rect": [
+      4,
+      4,
+      1528,
+      1014
+     ],
+     "title": "Violin Rosin",
+     "n": 4
+    }
+   ]
+  },
+  {
+   "id": "45",
+   "src": "comics/captain-beefheart/pages/45.jpg?v=2c0d47d216",
+   "thumb": "comics/captain-beefheart/thumbs/45.jpg?v=a9e57eab3f",
+   "w": 1024,
+   "h": 1536,
+   "kind": "end",
+   "scene": 23,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Another Day's Work",
+     "n": 1
     }
    ]
   }

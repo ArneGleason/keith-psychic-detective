@@ -40,11 +40,12 @@ Complete · 18 strips · [Start reading](https://arnegleason.github.io/keith-psy
 **No. 1: The Homes! The Stars! The Restraining Orders!**
 
 Captain Beefheart runs celebrity tours of Laurel Canyon from a rusty VW bus. Sightings not
-necessarily visual. Today he recruits a waiter from El Coyote into his band, dresses him from
-Vincent Price's wardrobe, and heads for Goldie Hawn's party, mostly for the piano. Meanwhile, in
-Goldie's kitchen, the stuffed mushrooms are getting a pinch of Temporal Thyme.
+necessarily visual. Today he recruits Clint, a waiter from El Coyote, into his band, dresses him
+from Vincent Price's wardrobe, and heads for Goldie Hawn's party, mostly for the piano. Meanwhile,
+in Goldie's kitchen, the stuffed mushrooms are getting a pinch of Temporal Thyme. By the end of
+the night, Dennis has flooded the waterfall again, and Clint finds out what the plunger was for.
 
-In progress · 31 strips so far · [Start reading](https://arnegleason.github.io/keith-psychic-detective/#captain-beefheart)
+Complete · 43 strips · [Start reading](https://arnegleason.github.io/keith-psychic-detective/#captain-beefheart)
 
 </td>
 </tr>
@@ -81,9 +82,9 @@ The reader fits each comic to the screen it's on.
 <br clear="right">
 
 <p align="center">
-  <img src="screenshots/phones.jpg" alt="Three phone screens: the shelf of covers, the index of scenes and frames, and the To be continued page">
+  <img src="screenshots/phones.jpg" alt="Three phone screens: the shelf of covers, the index of scenes and frames, and the page shown after the last strip">
 </p>
-<p align="center"><sub>The shelf of covers, the index, and the last page of a comic that's still being drawn.</sub></p>
+<p align="center"><sub>The shelf of covers, the index, and what you see after the last page.</sub></p>
 
 ## How it works
 
@@ -95,7 +96,7 @@ The comics are prepared ahead of time by `tools/build.py`:
 1. **It finds the panels.** It looks for the cream-colored gutters that run the full height of
    each strip, so nobody has to draw frame boxes by hand.
 2. **It makes web images.** It writes optimized JPEGs, thumbnails and covers. The original PNGs
-   come to about 156 MB and the web versions to about 22 MB. The reader then loads only the
+   come to about 195 MB and the web versions to about 29 MB. The reader then loads only the
    pages near where you are.
 3. **It writes the data.** It combines the panels with the scene and frame names from each
    comic's story file into the `comic.json` the reader uses.
@@ -107,6 +108,7 @@ The comics are prepared ahead of time by `tools/build.py`:
 | `tools/library.json` | The shelf title and the order of the comics |
 | `tools/stories/<comic>.json` | One per comic: its source folder, scenes and frame names |
 | `tools/build.py` | Finds the panels and writes everything in `comics/` |
+| `tools/preview.py` | Serves the site on your computer so you can check it before pushing |
 | `comics/` | Build output. Do not edit by hand |
 | `screenshots/` | Images for this README |
 
@@ -119,6 +121,23 @@ pip install pillow numpy
 python3 tools/build.py
 ```
 
+### Previewing before you push
+
+This opens the site from your own computer, the way GitHub Pages will serve it once you push.
+It needs only Python.
+
+```bash
+python3 tools/preview.py
+```
+
+Add `--phone` to check it on a phone on the same Wi-Fi. The script prints the address to open
+there, and tells you what hasn't been pushed yet. Stop it with Ctrl+C. Nothing goes public
+until you push.
+
+```bash
+git push
+```
+
 ### Adding strips to a comic
 
 1. Drop the new images into the comic's source folder.
@@ -129,11 +148,11 @@ python3 tools/build.py
    starts a new scene.
 
 ```json
-{"file": "CBLCTG - 33.png", "kind": "strip", "scene": "s15", "frames": ["First Frame", "Second Frame", "Third Frame"]}
+{"file": "New Strip - 12.png", "kind": "strip", "scene": "s4", "frames": ["First Frame", "Second Frame", "Third Frame"]}
 ```
 
 Files are listed in reading order, so a redrawn strip such as `10a.png` just replaces
-`10.png` in its line.
+`10.png` in its line. A strip can have one, two or three panels. Give it one name per panel.
 
 When a comic is finished, add its end page with `"kind": "end"` and change `"status"`
 from `"in-progress"` to `"complete"`. The last page then says "The End" instead of
