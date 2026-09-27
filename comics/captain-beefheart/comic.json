@@ -1,0 +1,1340 @@
+{
+ "id": "captain-beefheart",
+ "title": "Captain Beefheart: Laurel Canyon Tour Guide",
+ "subtitle": "The Homes! The Stars! The Restraining Orders!",
+ "issue": "No. 1",
+ "status": "in-progress",
+ "cover": "comics/captain-beefheart/cover.jpg?v=2ef73bce2e",
+ "coverW": 720,
+ "coverH": 1080,
+ "scenes": [
+  {
+   "num": null,
+   "title": "Cover"
+  },
+  {
+   "num": 1,
+   "title": "Paul Simon's Hideaway"
+  },
+  {
+   "num": 2,
+   "title": "Canyon Country Store"
+  },
+  {
+   "num": 3,
+   "title": "On The Road"
+  },
+  {
+   "num": 4,
+   "title": "El Coyote"
+  },
+  {
+   "num": 5,
+   "title": "Party Crashers"
+  },
+  {
+   "num": 6,
+   "title": "Goldie's Guest List"
+  },
+  {
+   "num": 7,
+   "title": "Vincent's Wardrobe"
+  },
+  {
+   "num": 8,
+   "title": "Henry's Assignment"
+  },
+  {
+   "num": 9,
+   "title": "Goldie's Kitchen"
+  },
+  {
+   "num": 10,
+   "title": "Here Professionally"
+  },
+  {
+   "num": 11,
+   "title": "The Pit Stop"
+  },
+  {
+   "num": 12,
+   "title": "The Party Begins"
+  },
+  {
+   "num": 13,
+   "title": "The Back Way"
+  },
+  {
+   "num": 14,
+   "title": "The Ohio Story"
+  },
+  {
+   "num": 15,
+   "title": "Mushrooms Kick In"
+  }
+ ],
+ "pages": [
+  {
+   "id": "01",
+   "src": "comics/captain-beefheart/pages/01.jpg?v=f0cfc8d5cc",
+   "thumb": "comics/captain-beefheart/thumbs/01.jpg?v=df1047b494",
+   "w": 1024,
+   "h": 1536,
+   "kind": "cover",
+   "scene": 0,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Cover",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "02",
+   "src": "comics/captain-beefheart/pages/02.jpg?v=dd6cc5224d",
+   "thumb": "comics/captain-beefheart/thumbs/02.jpg?v=3c03cb0283",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 1,
+   "frames": [
+    {
+     "rect": [
+      7,
+      13,
+      488,
+      995
+     ],
+     "title": "Alone With Pickles",
+     "n": 1
+    },
+    {
+     "rect": [
+      499,
+      13,
+      465,
+      995
+     ],
+     "title": "Bwaarrnk!",
+     "n": 2
+    },
+    {
+     "rect": [
+      966,
+      13,
+      565,
+      995
+     ],
+     "title": "Unexpected Houseguest",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "03",
+   "src": "comics/captain-beefheart/pages/03.jpg?v=211259a21d",
+   "thumb": "comics/captain-beefheart/thumbs/03.jpg?v=d110c6195f",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 1,
+   "frames": [
+    {
+     "rect": [
+      7,
+      10,
+      510,
+      1002
+     ],
+     "title": "I Forgive You",
+     "n": 4
+    },
+    {
+     "rect": [
+      519,
+      10,
+      499,
+      1002
+     ],
+     "title": "One Week Only",
+     "n": 5
+    },
+    {
+     "rect": [
+      1020,
+      10,
+      508,
+      1002
+     ],
+     "title": "Nobody Knows",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "04",
+   "src": "comics/captain-beefheart/pages/04.jpg?v=76b14f3299",
+   "thumb": "comics/captain-beefheart/thumbs/04.jpg?v=1bf247412b",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 1,
+   "frames": [
+    {
+     "rect": [
+      8,
+      5,
+      544,
+      1013
+     ],
+     "title": "Through The Hedge",
+     "n": 7
+    },
+    {
+     "rect": [
+      554,
+      5,
+      508,
+      1013
+     ],
+     "title": "Applesauce For Joni",
+     "n": 8
+    },
+    {
+     "rect": [
+      1065,
+      5,
+      462,
+      1013
+     ],
+     "title": "Hardly Taste Them",
+     "n": 9
+    }
+   ]
+  },
+  {
+   "id": "05",
+   "src": "comics/captain-beefheart/pages/05.jpg?v=0c6d155da8",
+   "thumb": "comics/captain-beefheart/thumbs/05.jpg?v=4110406e64",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 1,
+   "frames": [
+    {
+     "rect": [
+      8,
+      10,
+      509,
+      1003
+     ],
+     "title": "Paul's Trousers",
+     "n": 10
+    },
+    {
+     "rect": [
+      519,
+      10,
+      500,
+      1003
+     ],
+     "title": "Like 'Em Tight",
+     "n": 11
+    },
+    {
+     "rect": [
+      1021,
+      10,
+      507,
+      1003
+     ],
+     "title": "Tell The Girls",
+     "n": 12
+    }
+   ]
+  },
+  {
+   "id": "06",
+   "src": "comics/captain-beefheart/pages/06.jpg?v=56a57df8ba",
+   "thumb": "comics/captain-beefheart/thumbs/06.jpg?v=acf5ec5919",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 2,
+   "frames": [
+    {
+     "rect": [
+      7,
+      6,
+      513,
+      1010
+     ],
+     "title": "Stills's Accountant",
+     "n": 1
+    },
+    {
+     "rect": [
+      522,
+      6,
+      522,
+      1010
+     ],
+     "title": "Not One Celebrity",
+     "n": 2
+    },
+    {
+     "rect": [
+      1045,
+      6,
+      484,
+      1010
+     ],
+     "title": "Captain Who?",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "07",
+   "src": "comics/captain-beefheart/pages/07.jpg?v=2ffbfe8971",
+   "thumb": "comics/captain-beefheart/thumbs/07.jpg?v=b785745049",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 2,
+   "frames": [
+    {
+     "rect": [
+      8,
+      7,
+      509,
+      1007
+     ],
+     "title": "Enter Henry Diltz",
+     "n": 4
+    },
+    {
+     "rect": [
+      522,
+      7,
+      496,
+      1007
+     ],
+     "title": "Excess Tremolo",
+     "n": 5
+    },
+    {
+     "rect": [
+      1022,
+      7,
+      506,
+      1007
+     ],
+     "title": "What's He Wearing?",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "08",
+   "src": "comics/captain-beefheart/pages/08.jpg?v=d3091e9953",
+   "thumb": "comics/captain-beefheart/thumbs/08.jpg?v=a5566de529",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 3,
+   "frames": [
+    {
+     "rect": [
+      8,
+      7,
+      431,
+      1008
+     ],
+     "title": "Red Corvette",
+     "n": 1
+    },
+    {
+     "rect": [
+      443,
+      7,
+      527,
+      1008
+     ],
+     "title": "I'll Ask Somebody",
+     "n": 2
+    },
+    {
+     "rect": [
+      974,
+      7,
+      554,
+      1008
+     ],
+     "title": "There's Dennis",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "09",
+   "src": "comics/captain-beefheart/pages/09.jpg?v=4ea3f0290e",
+   "thumb": "comics/captain-beefheart/thumbs/09.jpg?v=6cc8e793f2",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 3,
+   "frames": [
+    {
+     "rect": [
+      9,
+      8,
+      493,
+      1006
+     ],
+     "title": "Where's The Party?",
+     "n": 4
+    },
+    {
+     "rect": [
+      508,
+      8,
+      521,
+      1006
+     ],
+     "title": "Absolutely!",
+     "n": 5
+    },
+    {
+     "rect": [
+      1036,
+      8,
+      491,
+      1006
+     ],
+     "title": "Which One?",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "10",
+   "src": "comics/captain-beefheart/pages/10.jpg?v=145221c9cf",
+   "thumb": "comics/captain-beefheart/thumbs/10.jpg?v=64890fb0d5",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 4,
+   "frames": [
+    {
+     "rect": [
+      9,
+      10,
+      515,
+      1002
+     ],
+     "title": "Party Of One",
+     "n": 1
+    },
+    {
+     "rect": [
+      527,
+      10,
+      487,
+      1002
+     ],
+     "title": "Do That Again",
+     "n": 2
+    },
+    {
+     "rect": [
+      1018,
+      10,
+      509,
+      1002
+     ],
+     "title": "You're In",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "11",
+   "src": "comics/captain-beefheart/pages/11.jpg?v=79d1a621ed",
+   "thumb": "comics/captain-beefheart/thumbs/11.jpg?v=cb48f6f35c",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 4,
+   "frames": [
+    {
+     "rect": [
+      9,
+      11,
+      517,
+      999
+     ],
+     "title": "I'm Working",
+     "n": 4
+    },
+    {
+     "rect": [
+      530,
+      11,
+      479,
+      999
+     ],
+     "title": "Two People Now",
+     "n": 5
+    },
+    {
+     "rect": [
+      1014,
+      11,
+      513,
+      999
+     ],
+     "title": "Personnel Matters",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "12",
+   "src": "comics/captain-beefheart/pages/12.jpg?v=78d179566d",
+   "thumb": "comics/captain-beefheart/thumbs/12.jpg?v=3b3807e443",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 4,
+   "frames": [
+    {
+     "rect": [
+      9,
+      10,
+      515,
+      1001
+     ],
+     "title": "Got A Pencil?",
+     "n": 7
+    },
+    {
+     "rect": [
+      528,
+      10,
+      484,
+      1001
+     ],
+     "title": "Your First Piece",
+     "n": 8
+    },
+    {
+     "rect": [
+      1015,
+      10,
+      512,
+      1001
+     ],
+     "title": "Already Reading Music",
+     "n": 9
+    }
+   ]
+  },
+  {
+   "id": "13",
+   "src": "comics/captain-beefheart/pages/13.jpg?v=9b73eafe8a",
+   "thumb": "comics/captain-beefheart/thumbs/13.jpg?v=550fc727fe",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 5,
+   "frames": [
+    {
+     "rect": [
+      10,
+      5,
+      538,
+      1009
+     ],
+     "title": "Goldie Hawn's",
+     "n": 1
+    },
+    {
+     "rect": [
+      554,
+      5,
+      473,
+      1009
+     ],
+     "title": "You're Invited?",
+     "n": 2
+    },
+    {
+     "rect": [
+      1033,
+      5,
+      495,
+      1009
+     ],
+     "title": "Don't Spoil It",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "14",
+   "src": "comics/captain-beefheart/pages/14.jpg?v=11e41cd354",
+   "thumb": "comics/captain-beefheart/thumbs/14.jpg?v=97757c5ec7",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 6,
+   "frames": [
+    {
+     "rect": [
+      9,
+      9,
+      1005,
+      1003
+     ],
+     "title": "Vincent Price Confirmed",
+     "n": 1
+    },
+    {
+     "rect": [
+      1018,
+      9,
+      510,
+      1003
+     ],
+     "title": "Dubbing A Porno",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "id": "15",
+   "src": "comics/captain-beefheart/pages/15.jpg?v=d44941be49",
+   "thumb": "comics/captain-beefheart/thumbs/15.jpg?v=6f61769544",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 7,
+   "frames": [
+    {
+     "rect": [
+      9,
+      11,
+      515,
+      1000
+     ],
+     "title": "You Look Employed",
+     "n": 1
+    },
+    {
+     "rect": [
+      529,
+      11,
+      483,
+      1000
+     ],
+     "title": "How Curious",
+     "n": 2
+    },
+    {
+     "rect": [
+      1016,
+      11,
+      510,
+      1000
+     ],
+     "title": "Already Getting Better",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "16",
+   "src": "comics/captain-beefheart/pages/16.jpg?v=2bda9eae71",
+   "thumb": "comics/captain-beefheart/thumbs/16.jpg?v=a041e385e5",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 7,
+   "frames": [
+    {
+     "rect": [
+      10,
+      11,
+      515,
+      1001
+     ],
+     "title": "That Great Piano",
+     "n": 4
+    },
+    {
+     "rect": [
+      529,
+      11,
+      484,
+      1001
+     ],
+     "title": "Getting Work Done",
+     "n": 5
+    },
+    {
+     "rect": [
+      1018,
+      11,
+      508,
+      1001
+     ],
+     "title": "Can't Write Music",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "17",
+   "src": "comics/captain-beefheart/pages/17.jpg?v=00e4236be9",
+   "thumb": "comics/captain-beefheart/thumbs/17.jpg?v=58ebc603e2",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 8,
+   "frames": [
+    {
+     "rect": [
+      8,
+      7,
+      545,
+      1007
+     ],
+     "title": "Late For Goldie's",
+     "n": 1
+    },
+    {
+     "rect": [
+      558,
+      7,
+      485,
+      1007
+     ],
+     "title": "Nobody's Asked Me",
+     "n": 2
+    },
+    {
+     "rect": [
+      1047,
+      7,
+      480,
+      1007
+     ],
+     "title": "Apparently Asked",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "18",
+   "src": "comics/captain-beefheart/pages/18.jpg?v=032820151c",
+   "thumb": "comics/captain-beefheart/thumbs/18.jpg?v=246a9a56b5",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 9,
+   "frames": [
+    {
+     "rect": [
+      9,
+      10,
+      505,
+      1002
+     ],
+     "title": "Vincent Arrives Early",
+     "n": 1
+    },
+    {
+     "rect": [
+      517,
+      10,
+      500,
+      1002
+     ],
+     "title": "The Whole Evening",
+     "n": 2
+    },
+    {
+     "rect": [
+      1021,
+      10,
+      506,
+      1002
+     ],
+     "title": "Everything I Know",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "19",
+   "src": "comics/captain-beefheart/pages/19.jpg?v=6b4c7ce7f0",
+   "thumb": "comics/captain-beefheart/thumbs/19.jpg?v=5c60a7d199",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 9,
+   "frames": [
+    {
+     "rect": [
+      9,
+      10,
+      506,
+      1002
+     ],
+     "title": "A Little Thyme",
+     "n": 4
+    },
+    {
+     "rect": [
+      519,
+      10,
+      498,
+      1002
+     ],
+     "title": "Temporal Thyme",
+     "n": 5
+    },
+    {
+     "rect": [
+      1021,
+      10,
+      505,
+      1002
+     ],
+     "title": "The Cookie Jar",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "20",
+   "src": "comics/captain-beefheart/pages/20.jpg?v=8dcd33db86",
+   "thumb": "comics/captain-beefheart/thumbs/20.jpg?v=5ea6d9337e",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 10,
+   "frames": [
+    {
+     "rect": [
+      10,
+      10,
+      500,
+      1002
+     ],
+     "title": "Out Of Shampoo?",
+     "n": 1
+    },
+    {
+     "rect": [
+      513,
+      10,
+      514,
+      1002
+     ],
+     "title": "Oh... Did He?",
+     "n": 2
+    },
+    {
+     "rect": [
+      1031,
+      10,
+      494,
+      1002
+     ],
+     "title": "Try Downstairs",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "21",
+   "src": "comics/captain-beefheart/pages/21.jpg?v=f60c79dc94",
+   "thumb": "comics/captain-beefheart/thumbs/21.jpg?v=50cfc41e1c",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 10,
+   "frames": [
+    {
+     "rect": [
+      11,
+      8,
+      499,
+      1004
+     ],
+     "title": "The Real Action",
+     "n": 4
+    },
+    {
+     "rect": [
+      512,
+      8,
+      515,
+      1004
+     ],
+     "title": "Unwanted Growth",
+     "n": 5
+    },
+    {
+     "rect": [
+      1030,
+      8,
+      495,
+      1004
+     ],
+     "title": "Here You Are",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "22",
+   "src": "comics/captain-beefheart/pages/22.jpg?v=a622147098",
+   "thumb": "comics/captain-beefheart/thumbs/22.jpg?v=d6fdf999a1",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 11,
+   "frames": [
+    {
+     "rect": [
+      10,
+      8,
+      509,
+      1005
+     ],
+     "title": "Pit Stop",
+     "n": 1
+    },
+    {
+     "rect": [
+      526,
+      8,
+      999,
+      1005
+     ],
+     "title": "Tonight's Supplies",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "id": "23",
+   "src": "comics/captain-beefheart/pages/23.jpg?v=e0cd442931",
+   "thumb": "comics/captain-beefheart/thumbs/23.jpg?v=20a7361a61",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 11,
+   "frames": [
+    {
+     "rect": [
+      11,
+      9,
+      507,
+      1003
+     ],
+     "title": "Cash, Captain",
+     "n": 3
+    },
+    {
+     "rect": [
+      524,
+      9,
+      492,
+      1003
+     ],
+     "title": "Bowling Gutters",
+     "n": 4
+    },
+    {
+     "rect": [
+      1020,
+      9,
+      504,
+      1003
+     ],
+     "title": "Not My Job",
+     "n": 5
+    }
+   ]
+  },
+  {
+   "id": "24",
+   "src": "comics/captain-beefheart/pages/24.jpg?v=aebdf675c2",
+   "thumb": "comics/captain-beefheart/thumbs/24.jpg?v=d58e1c249a",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 12,
+   "frames": [
+    {
+     "rect": [
+      11,
+      10,
+      498,
+      1002
+     ],
+     "title": "People Who Followed",
+     "n": 1
+    },
+    {
+     "rect": [
+      512,
+      10,
+      514,
+      1002
+     ],
+     "title": "Hi, Neil Young",
+     "n": 2
+    },
+    {
+     "rect": [
+      1029,
+      10,
+      496,
+      1002
+     ],
+     "title": "Take My Coat",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "25",
+   "src": "comics/captain-beefheart/pages/25.jpg?v=04443d450c",
+   "thumb": "comics/captain-beefheart/thumbs/25.jpg?v=d812c86681",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 12,
+   "frames": [
+    {
+     "rect": [
+      10,
+      11,
+      501,
+      1001
+     ],
+     "title": "Something Important",
+     "n": 4
+    },
+    {
+     "rect": [
+      512,
+      11,
+      515,
+      1001
+     ],
+     "title": "Other Guests",
+     "n": 5
+    },
+    {
+     "rect": [
+      1027,
+      11,
+      498,
+      1001
+     ],
+     "title": "A Shitload More",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "26",
+   "src": "comics/captain-beefheart/pages/26.jpg?v=63d7dc5a04",
+   "thumb": "comics/captain-beefheart/thumbs/26.jpg?v=ef1d3bb13a",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 12,
+   "frames": [
+    {
+     "rect": [
+      10,
+      9,
+      499,
+      1003
+     ],
+     "title": "Something Intimate",
+     "n": 7
+    },
+    {
+     "rect": [
+      513,
+      9,
+      513,
+      1003
+     ],
+     "title": "Faces Close Together",
+     "n": 8
+    },
+    {
+     "rect": [
+      1029,
+      9,
+      496,
+      1003
+     ],
+     "title": "Stay Standing, Darling",
+     "n": 9
+    }
+   ]
+  },
+  {
+   "id": "27",
+   "src": "comics/captain-beefheart/pages/27.jpg?v=4121326a0e",
+   "thumb": "comics/captain-beefheart/thumbs/27.jpg?v=4981211437",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 12,
+   "frames": [
+    {
+     "rect": [
+      11,
+      8,
+      503,
+      1003
+     ],
+     "title": "Stuffed Mushrooms",
+     "n": 10
+    },
+    {
+     "rect": [
+      514,
+      8,
+      510,
+      1003
+     ],
+     "title": "Apparently Californian",
+     "n": 11
+    },
+    {
+     "rect": [
+      1024,
+      8,
+      501,
+      1003
+     ],
+     "title": "Verrry Interesting...",
+     "n": 12
+    }
+   ]
+  },
+  {
+   "id": "28",
+   "src": "comics/captain-beefheart/pages/28.jpg?v=a922d8d46d",
+   "thumb": "comics/captain-beefheart/thumbs/28.jpg?v=340404dcf6",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 13,
+   "frames": [
+    {
+     "rect": [
+      11,
+      9,
+      519,
+      1004
+     ],
+     "title": "You've Been Promoted",
+     "n": 1
+    },
+    {
+     "rect": [
+      533,
+      9,
+      991,
+      1004
+     ],
+     "title": "Round The Back",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "id": "29",
+   "src": "comics/captain-beefheart/pages/29.jpg?v=cb769d1778",
+   "thumb": "comics/captain-beefheart/thumbs/29.jpg?v=51e3833c83",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 13,
+   "frames": [
+    {
+     "rect": [
+      10,
+      10,
+      500,
+      1003
+     ],
+     "title": "Piano Won't Mind",
+     "n": 3
+    },
+    {
+     "rect": [
+      510,
+      10,
+      515,
+      1003
+     ],
+     "title": "Julie Newmar?",
+     "n": 4
+    },
+    {
+     "rect": [
+      1026,
+      10,
+      499,
+      1003
+     ],
+     "title": "Lining Up",
+     "n": 5
+    }
+   ]
+  },
+  {
+   "id": "30",
+   "src": "comics/captain-beefheart/pages/30.jpg?v=7f495f622b",
+   "thumb": "comics/captain-beefheart/thumbs/30.jpg?v=37013c18e8",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 14,
+   "frames": [
+    {
+     "rect": [
+      7,
+      6,
+      509,
+      1008
+     ],
+     "title": "Where's Dennis?",
+     "n": 1
+    },
+    {
+     "rect": [
+      517,
+      6,
+      505,
+      1008
+     ],
+     "title": "A Whole Person",
+     "n": 2
+    },
+    {
+     "rect": [
+      1022,
+      6,
+      508,
+      1008
+     ],
+     "title": "Lost In Ohio",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "31",
+   "src": "comics/captain-beefheart/pages/31.jpg?v=08e23fb41e",
+   "thumb": "comics/captain-beefheart/thumbs/31.jpg?v=71f56bcea4",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 14,
+   "frames": [
+    {
+     "rect": [
+      7,
+      7,
+      509,
+      1007
+     ],
+     "title": "Three A.M., Ohio",
+     "n": 4
+    },
+    {
+     "rect": [
+      517,
+      7,
+      505,
+      1007
+     ],
+     "title": "Butter My Toast",
+     "n": 5
+    },
+    {
+     "rect": [
+      1021,
+      7,
+      509,
+      1007
+     ],
+     "title": "Left The Building",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "32",
+   "src": "comics/captain-beefheart/pages/32.jpg?v=0642fd8523",
+   "thumb": "comics/captain-beefheart/thumbs/32.jpg?v=a14005955d",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 15,
+   "frames": [
+    {
+     "rect": [
+      9,
+      10,
+      506,
+      1002
+     ],
+     "title": "Jim's Excuse",
+     "n": 1
+    },
+    {
+     "rect": [
+      518,
+      10,
+      501,
+      1002
+     ],
+     "title": "Something Uplifting",
+     "n": 2
+    },
+    {
+     "rect": [
+      1022,
+      10,
+      504,
+      1002
+     ],
+     "title": "That Was Weird",
+     "n": 3
+    }
+   ]
+  }
+ ]
+}

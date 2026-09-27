@@ -1,6 +1,12 @@
-/* Comic viewer: every page sits on one long horizontal ribbon, and a camera
-   glides along it. A "stop" is either a whole page (strip mode) or a single
-   frame (frame mode). */
+/* MVE Comics reader.
+   The shelf shows every comic's cover. Inside a comic, every page sits on one
+   long horizontal ribbon and a camera glides along it. A "stop" is either a
+   whole page (strip mode) or a single frame (frame mode).
+
+   Addresses:  #                    the shelf
+               #<comic>             a comic, from its cover
+               #<comic>/p4f2        page 4, frame 2 (the f part is optional)
+               #p4f2                links shared before the shelf existed */
 (() => {
   'use strict';
 
@@ -8,22 +14,149 @@
   const GAP = 140;               // ribbon units between pages
   const AUTO_FRAME_BELOW = 900;  // strip narrower than this many CSS px => frame mode
   const BLUR_LEVELS = [1.5, 3, 5, 7.5, 10.5, 14];
+  const LEGACY_COMIC = 'keith-richards';
   const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   const $ = id => document.getElementById(id);
+  const make = (tag, cls, text) => {
+    const e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text != null) e.textContent = text;
+    return e;
+  };
   const stage = $('stage'), win = $('win'), ribbon = $('ribbon'), bump = $('bump');
   const store = {
     get(k) { try { return localStorage.getItem(k); } catch { return null; } },
     set(k, v) { try { localStorage.setItem(k, v); } catch { /* private mode */ } },
   };
 
-  let comic, pages, stops = { strip: [], frame: [] };
-  let pref = store.get('krpd-mode') || 'auto';   // auto | strip | frame
-  let mode = 'strip', idx = 0;
+  let library = null;                          // comics/index.json
+  let comic = null, pages = [];                // the open comic
+  let stops = { strip: [], frame: [] };
+  let pref = store.get('mve-mode') || store.get('krpd-mode') || 'auto';   // auto | strip | frame
+  let mode = 'strip', idx = 0, view = 'boot';  // view: boot | shelf | reader
   let cam = { x: 0, y: 0, w: 1536, h: RH }, dragPx = 0, scale = 1;
-  let raf = 0, idleTimer = 0, capTimer = 0;
+  let raf = 0, idleTimer = 0, capTimer = 0, fadeTimer = 0, toastTimer = 0, loadToken = 0;
+  const requests = new Map();
 
-  /* ---------- setup ---------- */
+  /* ---------- data ---------- */
+
+  function getJSON(url) {
+    return fetch(url, { cache: 'no-cache' }).then(r => {
+      if (!r.ok) throw new Error(`${url}: HTTP ${r.status}`);
+      return r.json();
+    });
+  }
+
+  function fetchComic(id) {
+    if (!requests.has(id)) {
+      requests.set(id, getJSON(`comics/${id}/comic.json`).catch(err => {
+        requests.delete(id);
+        throw err;
+      }));
+    }
+    return requests.get(id);
+  }
+
+  function splitTitle(t) {
+    const i = t.indexOf(': ');
+    return i < 0 ? [t, ''] : [t.slice(0, i), t.slice(i + 2)];
+  }
+
+  function toast(msg) {
+    const t = $('toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => t.classList.remove('show'), 4500);
+  }
+
+  /* ---------- shelf ---------- */
+
+  function bookLink(c, variant) {
+    const a = make('a', 'book' + (variant ? ' ' + variant : ''));
+    a.href = '#' + c.id;
+    a.dataset.id = c.id;
+    const cover = make('span', 'book-cover');
+    const img = new Image();
+    img.src = c.cover;
+    img.alt = '';
+    img.width = c.coverW;
+    img.height = c.coverH;
+    img.decoding = 'async';
+    img.draggable = false;
+    cover.append(img);
+    const [main, rest] = splitTitle(c.title);
+    const info = make('span', 'book-info');
+    info.append(make('span', 'book-title', main));
+    if (rest) info.append(make('span', 'book-series', rest));
+    if (variant !== 'mini') {
+      const meta = make('span', 'book-meta', `${c.issue} · ${c.strips} strips`);
+      if (c.status === 'in-progress') meta.append(make('span', 'pill', 'In progress'));
+      info.append(meta, make('span', 'book-resume'));
+    }
+    a.append(cover, info);
+    return a;
+  }
+
+  function savedPosition(id) {
+    try { return JSON.parse(store.get('mve-pos-' + id)) || null; } catch { return null; }
+  }
+
+  function refreshShelf() {
+    $('books').querySelectorAll('.book').forEach(a => {
+      const pos = savedPosition(a.dataset.id);
+      const resume = pos && pos.page > 1;
+      a.href = '#' + a.dataset.id + (resume ? `/p${pos.page}` + (pos.frame ? `f${pos.frame}` : '') : '');
+      a.querySelector('.book-resume').textContent = resume ? `Continue · ${pos.where}` : '';
+    });
+  }
+
+  function showShelf() {
+    loadToken++;                                 // abandon any comic still loading
+    refreshShelf();
+    document.title = library.title;
+    if (view === 'shelf') return;
+    const was = comic && view === 'reader' ? comic.id : null;
+    view = 'shelf';
+    cancelAnimationFrame(raf);
+    setBlur(0);
+    closeOverlays();
+    clearTimeout(idleTimer);
+    document.body.classList.remove('idle', 'fresh');
+    document.body.classList.add('shelf-view');
+    $('reader').inert = true;
+    $('shelf').inert = false;
+    if (was) $('books').querySelector(`[data-id="${was}"]`)?.focus({ preventScroll: true });
+  }
+
+  function enterReader() {
+    if (view === 'reader') return;
+    view = 'reader';
+    document.activeElement?.blur?.();
+    document.body.classList.remove('shelf-view');
+    $('shelf').inert = true;
+    $('reader').inert = false;
+    wake();
+  }
+
+  /* ---------- building a comic ---------- */
+
+  function setupComic(data) {
+    cancelAnimationFrame(raf);
+    clearTimeout(fadeTimer);
+    win.classList.remove('fade');
+    comic = data;
+    pages = data.pages;
+    stops = { strip: [], frame: [] };
+    ribbon.textContent = '';
+    buildLayout();
+    buildIndex();
+    const [main, rest] = splitTitle(data.title);
+    $('t-main').textContent = main;
+    $('t-rest').textContent = rest ? `: ${rest}` : '';
+    $('index-title').textContent = data.title;
+  }
 
   function buildLayout() {
     let X = 0;
@@ -41,7 +174,7 @@
 
       const slot = document.createElement('div');
       slot.className = 'slot';
-      slot.style.cssText = `--x:${p.X};--w:${p.W};--h:${RH};background-image:url(${p.thumb})`;
+      slot.style.cssText = `--x:${p.X};--w:${p.W};--h:${RH};background-image:url("${p.thumb}")`;
       const img = new Image();
       img.alt = `Page ${i + 1}: ${p.frames.map(f => f.title).join(', ')}`;
       img.decoding = 'async';
@@ -87,7 +220,6 @@
     win.style.transform = `translate(${(vw - ww) / 2}px,${(vh - wh) / 2}px)`;
     ribbon.style.setProperty('--s', scale);
     ribbon.style.transform = `translate3d(${-cam.x * scale + dragPx}px,${-cam.y * scale}px,0)`;
-    return (vh - wh) / 2;
   }
 
   function setBlur(pxPerMs) {
@@ -107,7 +239,7 @@
     if (reduceMotion || dur <= 0) { cam = { ...R }; setBlur(0); render(); return; }
     const from = { ...cam }, t0 = performance.now();
     let lastT = t0, lastC = (from.x + from.w / 2);
-    const step = now => {
+    const tick = now => {
       const t = Math.min(1, (now - t0) / dur), e = ease(t);
       cam = {
         x: from.x + (R.x - from.x) * e, y: from.y + (R.y - from.y) * e,
@@ -117,18 +249,30 @@
       const c = cam.x + cam.w / 2, dt = Math.max(1, now - lastT);
       setBlur(Math.abs(c - lastC) * scale / dt);
       lastT = now; lastC = c;
-      if (t < 1) raf = requestAnimationFrame(step);
+      if (t < 1) raf = requestAnimationFrame(tick);
       else { cam = { ...R }; setBlur(0); render(); }
     };
-    raf = requestAnimationFrame(step);
+    raf = requestAnimationFrame(tick);
   }
 
   function fadeTo(R) {
     cancelAnimationFrame(raf);
+    clearTimeout(fadeTimer);
     dragPx = 0; setBlur(0);
     if (reduceMotion) { cam = { ...R }; render(); return; }
     win.classList.add('fade');
-    setTimeout(() => { cam = { ...R }; render(); win.classList.remove('fade'); }, 170);
+    fadeTimer = setTimeout(() => { cam = { ...R }; render(); win.classList.remove('fade'); }, 170);
+  }
+
+  function jumpTo(i) {
+    idx = i;
+    mountAround(list()[idx].page);
+    cancelAnimationFrame(raf);
+    clearTimeout(fadeTimer);
+    win.classList.remove('fade');
+    dragPx = 0; setBlur(0);
+    cam = { ...list()[idx].R };
+    render();
   }
 
   /* ---------- navigation ---------- */
@@ -142,35 +286,47 @@
     idx = i;
     mountAround(next.page);
     const far = Math.abs(next.page - prev.page) > 1;
-    if (how === 'jump') { cam = { ...next.R }; render(); }
-    else if (how === 'fade' || far) fadeTo(next.R);
+    if (how === 'fade' || far) fadeTo(next.R);
     else animateTo(next.R, next.page === prev.page ? 430 : 540);
     updateChrome();
   }
 
+  function edgeBump(d) {
+    if (dragPx) animateTo(list()[idx].R, 260);
+    bump.className = ''; void bump.offsetWidth; bump.className = d > 0 ? 'r' : 'l';
+  }
+
   function step(d) {
     document.body.classList.remove('fresh');
+    if (!$('end').hidden) { if (d < 0) hideEnd(); return; }
     const i = idx + d;
-    if (i < 0 || i >= list().length) {
-      if (dragPx) animateTo(list()[idx].R, 260);
-      bump.className = ''; void bump.offsetWidth; bump.className = d > 0 ? 'r' : 'l';
-      return;
-    }
+    if (i < 0) { edgeBump(d); return; }
+    if (i >= list().length) { if (dragPx) animateTo(list()[idx].R, 260); showEnd(); return; }
     goTo(i);
   }
 
-  function setMode(m, explicit) {
-    if (explicit) { pref = m; store.set('krpd-mode', m); }
-    if (m !== mode) {
-      const cur = list()[idx];
-      mode = m;
-      idx = m === 'strip' ? cur.page
-        : stops.frame.findIndex(s => s.page === cur.page);
-      animateTo(list()[idx].R, 480);
-    }
+  function indexFor(page, frame) {
+    if (mode === 'strip') return page;
+    const i = stops.frame.findIndex(s => s.page === page && s.frame === frame);
+    return i < 0 ? stops.frame.findIndex(s => s.page === page) : i;
+  }
+
+  function syncModeButtons() {
     $('mode-strip').setAttribute('aria-pressed', mode === 'strip');
     $('mode-frame').setAttribute('aria-pressed', mode === 'frame');
-    updateChrome();
+  }
+
+  function setMode(m, explicit) {
+    if (explicit) { pref = m; store.set('mve-mode', m); }
+    if (m !== mode && comic) {
+      const cur = list()[idx];
+      mode = m;
+      idx = indexFor(cur.page, 0);
+      if (view === 'reader') animateTo(list()[idx].R, 480);
+      else cam = { ...list()[idx].R };
+      updateChrome();
+    } else mode = m;
+    syncModeButtons();
   }
 
   function autoMode() {
@@ -178,7 +334,7 @@
     return 1536 * s < AUTO_FRAME_BELOW ? 'frame' : 'strip';
   }
 
-  /* ---------- captions, hash, chrome ---------- */
+  /* ---------- captions, address, chrome ---------- */
 
   function label(stop) {
     const p = pages[stop.page], sc = comic.scenes[p.scene];
@@ -197,15 +353,18 @@
   function updateChrome() {
     const L = list(), stop = L[idx], { scene, frame } = label(stop);
     $('cap-scene').textContent = scene;
-    $('cap-frame').textContent = frame || (matchMedia('(max-width:520px)').matches ? scene : '');
+    $('cap-frame').textContent = frame || (matchMedia('(max-width:560px)').matches ? scene : '');
     $('cap-count').textContent = `${idx + 1}/${L.length}`;
-    $('progress').firstElementChild.style.width = `${(idx / (L.length - 1)) * 100}%`;
+    $('progress').firstElementChild.style.width = `${(idx / Math.max(1, L.length - 1)) * 100}%`;
     $('prev').disabled = idx === 0;
-    $('next').disabled = idx === L.length - 1;
-    const h = `#p${stop.page + 1}` + (stop.frame != null ? `f${stop.frame + 1}` : '');
-    try { history.replaceState(null, '', h); } catch { /* file:// */ }
-    document.title = `${frame || scene} · ${comic.title}`;
     tuckCaption();
+    if (view !== 'reader') return;
+    const pos = { page: stop.page + 1, frame: stop.frame != null ? stop.frame + 1 : 0 };
+    const h = `#${comic.id}/p${pos.page}` + (pos.frame ? `f${pos.frame}` : '');
+    try { history.replaceState(history.state, '', h); } catch { /* file:// */ }
+    document.title = `${frame || scene} · ${comic.title}`;
+    const sc = comic.scenes[pages[stop.page].scene];
+    store.set('mve-pos-' + comic.id, JSON.stringify({ ...pos, where: sc.num ? `Scene ${sc.num}` : sc.title }));
   }
 
   // The caption stays put when there is empty space under the art;
@@ -219,57 +378,110 @@
     if (room < 34) capTimer = setTimeout(() => cap.classList.add('tucked'), 2200);
   }
 
-  function parseHash() {
-    const m = /^#p(\d+)(?:f(\d+))?$/.exec(location.hash);
-    if (!m) return null;
-    const page = Math.min(pages.length, Math.max(1, +m[1])) - 1;
-    const frame = m[2] ? Math.min(pages[page].frames.length, Math.max(1, +m[2])) - 1 : 0;
-    return { page, frame };
-  }
-
-  function indexFor(page, frame) {
-    return mode === 'strip' ? page
-      : stops.frame.findIndex(s => s.page === page && s.frame === frame);
-  }
-
   function wake(hold) {
     document.body.classList.remove('idle');
     clearTimeout(idleTimer);
     if (!hold) idleTimer = setTimeout(() => {
-      if ($('index').hidden) document.body.classList.add('idle');
+      if (view === 'reader' && $('index').hidden && $('end').hidden) document.body.classList.add('idle');
     }, 2800);
+  }
+
+  /* ---------- routing ---------- */
+
+  function parseRoute() {
+    const h = decodeURIComponent(location.hash.replace(/^#\/?/, ''));
+    let m = /^p(\d+)(?:f(\d+))?$/.exec(h);
+    if (m) return { id: LEGACY_COMIC, page: +m[1], frame: m[2] ? +m[2] : 0 };
+    m = /^([\w-]+)(?:\/p(\d+)(?:f(\d+))?)?\/?$/.exec(h);
+    if (m) return { id: m[1], page: m[2] ? +m[2] : 0, frame: m[3] ? +m[3] : 0 };
+    return {};
+  }
+
+  function route() {
+    const r = parseRoute();
+    if (!r.id || !library.comics.some(c => c.id === r.id)) {
+      if (location.hash) history.replaceState(history.state, '', location.pathname + location.search);
+      showShelf();
+      return Promise.resolve();
+    }
+    return openComic(r.id, r.page, r.frame);
+  }
+
+  function navigate(hash, fromShelf) {
+    history.pushState(fromShelf ? { fromShelf: true } : null, '', hash || location.pathname + location.search);
+    route();
+  }
+
+  function goShelf() {
+    if (history.state && history.state.fromShelf) history.back();
+    else navigate('', false);
+  }
+
+  async function openComic(id, page, frame) {
+    const token = ++loadToken;
+    const wasReading = view === 'reader';
+    let fresh = false;
+    if (!comic || comic.id !== id) {
+      let data;
+      try {
+        data = await fetchComic(id);
+      } catch (err) {
+        if (token !== loadToken) return;
+        console.error(err);
+        toast('Could not load that comic. Check your connection and try again.');
+        if (!wasReading) { history.replaceState(null, '', location.pathname + location.search); showShelf(); }
+        return;
+      }
+      if (token !== loadToken) return;
+      setupComic(data);
+      fresh = true;
+    }
+    if (!wasReading || fresh) mode = pref === 'auto' ? autoMode() : pref;
+    syncModeButtons();
+    const p = Math.min(Math.max(page || 1, 1), pages.length) - 1;
+    const f = Math.min(Math.max(frame || 1, 1), pages[p].frames.length) - 1;
+    const target = indexFor(p, f);
+    closeOverlays();
+    if (wasReading && !fresh) {
+      if (target !== idx) goTo(target, 'fade');
+    } else {
+      jumpTo(target);
+      enterReader();
+      updateChrome();
+    }
+    document.body.classList.toggle('fresh', idx === 0);
   }
 
   /* ---------- index overlay ---------- */
 
   function buildIndex() {
     const body = $('index-body');
+    body.textContent = '';
     comic.scenes.forEach((sc, si) => {
-      const sec = document.createElement('div');
-      sec.className = 'scene';
-      const h = document.createElement('h3');
-      h.innerHTML = sc.num ? `<b>Scene ${sc.num}</b>` : '';
+      const sec = make('div', 'scene');
+      const h = make('h3');
+      if (sc.num) h.append(make('b', null, `Scene ${sc.num}`));
       h.append(sc.title);
-      const cards = document.createElement('div');
-      cards.className = 'cards';
+      const cards = make('div', 'cards');
       pages.forEach((p, pi) => {
         if (p.scene !== si) return;
-        const card = document.createElement('div');
-        card.className = 'card' + (p.h > p.w ? ' tall' : '');
+        const card = make('div', 'card' + (p.h > p.w ? ' tall' : ''));
         card.dataset.page = pi;
-        const tb = document.createElement('button');
-        tb.className = 'thumb';
-        tb.innerHTML = `<img loading="lazy" alt="" src="${p.thumb}">`;
+        const tb = make('button', 'thumb');
+        const img = new Image();
+        img.loading = 'lazy';
+        img.alt = '';
+        img.src = p.thumb;
+        tb.append(img);
         tb.setAttribute('aria-label', `Go to page ${pi + 1}`);
         tb.onclick = () => openAt(pi, 0);
-        const ol = document.createElement('ol');
+        const ol = make('ol');
         p.frames.forEach((f, fi) => {
-          const li = document.createElement('li'), b = document.createElement('button');
-          const num = document.createElement('span');
-          num.textContent = sc.num ? `${sc.num}.${f.n}` : '•';
-          b.append(num, f.title);
+          const li = make('li'), b = make('button');
+          b.append(make('span', null, sc.num ? `${sc.num}.${f.n}` : '•'), f.title);
           b.onclick = () => openAt(pi, fi);
-          li.append(b); ol.append(li);
+          li.append(b);
+          ol.append(li);
         });
         card.append(tb, ol);
         cards.append(card);
@@ -283,11 +495,12 @@
     const el = $('index');
     el.hidden = !open;
     if (open) {
+      $('end').hidden = true;
       wake(true);
       const cur = list()[idx].page;
       el.querySelectorAll('.card').forEach(c => c.classList.toggle('current', +c.dataset.page === cur));
       el.querySelector('.card.current')?.scrollIntoView({ block: 'center' });
-      $('close-index').focus();
+      $('close-index').focus({ preventScroll: true });
     } else wake();
   }
 
@@ -297,7 +510,41 @@
     goTo(indexFor(page, frame), 'fade');
   }
 
+  /* ---------- end of a comic ---------- */
+
+  function showEnd() {
+    const done = comic.status !== 'in-progress';
+    $('end-kicker').textContent = done ? 'The End' : 'To be continued…';
+    $('end-title').textContent = comic.title;
+    $('end-note').textContent = done ? 'Thanks for reading.'
+      : 'This one is still being drawn. New strips are on the way.';
+    const others = library.comics.filter(c => c.id !== comic.id);
+    $('end-books').replaceChildren(...others.map(c => bookLink(c, 'mini')));
+    $('end-more').hidden = !others.length;
+    $('end').hidden = false;
+    wake(true);
+    $('end-shelf').focus({ preventScroll: true });
+  }
+
+  function hideEnd() {
+    if ($('end').hidden) return;
+    $('end').hidden = true;
+    wake();
+  }
+
+  function closeOverlays() {
+    $('index').hidden = true;
+    $('end').hidden = true;
+  }
+
   /* ---------- input ---------- */
+
+  function onBookClick(e) {
+    const a = e.target.closest('a.book');
+    if (!a || e.defaultPrevented || e.button || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    e.preventDefault();
+    navigate(a.getAttribute('href'), view === 'shelf');
+  }
 
   function bindInput() {
     let drag = null;
@@ -305,12 +552,12 @@
     window.visualViewport?.addEventListener('resize', () => stage.classList.toggle('zoomed', zoomed()));
 
     stage.addEventListener('pointerdown', e => {
-      if (e.button || zoomed() || drag) return;
+      if (e.button || zoomed() || drag || !comic) return;
       drag = { id: e.pointerId, x: e.clientX, y: e.clientY, t: performance.now(), dx: 0, moved: false };
       try { stage.setPointerCapture(e.pointerId); } catch { /* ignore */ }
     });
     stage.addEventListener('pointermove', e => {
-      if (e.pointerType === 'mouse') wake();
+      if (e.pointerType === 'mouse' && view === 'reader') wake();
       if (!drag || e.pointerId !== drag.id) return;
       drag.dx = e.clientX - drag.x;
       if (!drag.moved && Math.abs(drag.dx) > 10 && Math.abs(drag.dx) > Math.abs(e.clientY - drag.y)) {
@@ -350,6 +597,12 @@
     $('mode-frame').onclick = () => setMode('frame', true);
     $('open-index').onclick = () => toggleIndex(true);
     $('close-index').onclick = () => toggleIndex(false);
+    $('to-shelf').onclick = goShelf;
+    $('end-shelf').onclick = goShelf;
+    $('end-restart').onclick = () => { hideEnd(); goTo(0, 'fade'); };
+    $('end').addEventListener('click', e => { if (e.target === $('end')) hideEnd(); });
+    $('books').addEventListener('click', onBookClick);
+    $('end-books').addEventListener('click', onBookClick);
 
     const fsEl = document.documentElement;
     const canFs = fsEl.requestFullscreen || fsEl.webkitRequestFullscreen;
@@ -361,10 +614,18 @@
     if (canFs) $('fullscreen').onclick = toggleFs; else $('fullscreen').hidden = true;
 
     addEventListener('keydown', e => {
-      if (e.metaKey || e.ctrlKey || e.altKey) return;
-      const indexOpen = !$('index').hidden;
-      if (e.key === 'Escape') { if (indexOpen) toggleIndex(false); return; }
+      if (view !== 'reader' || e.metaKey || e.ctrlKey || e.altKey) return;
+      const indexOpen = !$('index').hidden, endOpen = !$('end').hidden;
+      if (e.key === 'Escape') {
+        if (indexOpen) toggleIndex(false);
+        else if (endOpen) hideEnd();
+        return;
+      }
       if (indexOpen) { if (e.key === 'i' || e.key === 'I') toggleIndex(false); return; }
+      if (endOpen) {
+        if (['ArrowLeft', 'ArrowUp', 'PageUp', 'k'].includes(e.key)) { hideEnd(); e.preventDefault(); }
+        return;
+      }
       const onButton = e.target instanceof HTMLButtonElement;
       switch (e.key) {
         case 'ArrowRight': case 'ArrowDown': case 'PageDown': case 'j': step(1); break;
@@ -384,46 +645,33 @@
     addEventListener('resize', () => {
       clearTimeout(resizeT);
       resizeT = setTimeout(() => {
+        if (!comic) return;
         if (pref === 'auto') setMode(autoMode(), false);
         cancelAnimationFrame(raf); dragPx = 0; setBlur(0);
         cam = { ...list()[idx].R }; render(); tuckCaption();
       }, 60);
     });
-    addEventListener('hashchange', () => {
-      const h = parseHash(); if (!h) return;
-      if (!$('index').hidden) toggleIndex(false);
-      const i = indexFor(h.page, h.frame);
-      if (i !== idx) goTo(i, 'fade');
-    });
+    // Both fire for some navigations; route() is safe to repeat.
+    addEventListener('popstate', () => { if (library) route(); });
+    addEventListener('hashchange', () => { if (library) route(); });
   }
 
   /* ---------- go ---------- */
 
   async function init() {
-    comic = await (await fetch('comic.json')).json();
-    pages = comic.pages;
-    $('title').textContent = comic.title;
     buildBlurFilters();
-    buildLayout();
-    buildIndex();
-    mode = pref === 'auto' ? autoMode() : pref;
-    const h = parseHash();
-    idx = h ? indexFor(h.page, h.frame) : 0;
-    if (idx === 0) document.body.classList.add('fresh');
-    setMode(mode, false);
-    mountAround(list()[idx].page);
-    cam = { ...list()[idx].R };
-    render();
     bindInput();
-    updateChrome();
+    syncModeButtons();
+    library = await getJSON('comics/index.json');
+    $('books').replaceChildren(...library.comics.map(c => bookLink(c)));
+    await route();
     document.body.classList.remove('loading');
-    wake();
   }
 
   init().catch(err => {
     console.error(err);
     document.body.classList.remove('loading');
-    $('hint').textContent = 'Could not load the comic. Please reload.';
-    $('hint').style.opacity = 1;
+    document.body.classList.add('shelf-view');
+    $('books').replaceChildren(make('p', 'lead', 'Could not load the comics. Please reload the page.'));
   });
 })();

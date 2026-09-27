@@ -1,0 +1,30 @@
+{
+ "title": "MVE Comics",
+ "tagline": "From the Mega Vegas Elvis Universe",
+ "comics": [
+  {
+   "id": "keith-richards",
+   "title": "Keith Richards: Psychic Detective",
+   "subtitle": "The Case of the Guilty Millionaire",
+   "issue": "No. 1",
+   "status": "complete",
+   "cover": "comics/keith-richards/cover.jpg?v=f42736cc06",
+   "coverW": 720,
+   "coverH": 1080,
+   "strips": 18,
+   "frames": 53
+  },
+  {
+   "id": "captain-beefheart",
+   "title": "Captain Beefheart: Laurel Canyon Tour Guide",
+   "subtitle": "The Homes! The Stars! The Restraining Orders!",
+   "issue": "No. 1",
+   "status": "in-progress",
+   "cover": "comics/captain-beefheart/cover.jpg?v=2ef73bce2e",
+   "coverW": 720,
+   "coverH": 1080,
+   "strips": 31,
+   "frames": 90
+  }
+ ]
+}

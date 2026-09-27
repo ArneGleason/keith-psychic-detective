@@ -3,20 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Keith Richards: Psychic Detective</title>
-<meta name="description" content="Keith Richards: Psychic Detective No. 1. The Case of the Guilty Millionaire. A comic from the world of Mega Vegas Elvis.">
+<title>MVE Comics</title>
+<meta name="description" content="Comics from the Mega Vegas Elvis Universe. Pick a cover and read a whole strip, or one frame at a time.">
 <meta name="theme-color" content="#0e0b0a">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Keith Richards: Psychic Detective">
-<meta property="og:description" content="No. 1: The Case of the Guilty Millionaire. From the world of Mega Vegas Elvis.">
-<meta property="og:image" content="https://arnegleason.github.io/keith-psychic-detective/pages/01.jpg">
+<meta property="og:title" content="MVE Comics">
+<meta property="og:description" content="Comics from the Mega Vegas Elvis Universe. Pick a cover and start reading.">
+<meta property="og:image" content="https://arnegleason.github.io/keith-psychic-detective/social.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230e0b0a'/%3E%3Cpath d='M6 30c10-14 42-14 52 0-10 14-42 14-52 0z' fill='%23f6d64a'/%3E%3Ccircle cx='32' cy='30' r='9' fill='%23e5392b'/%3E%3Ccircle cx='32' cy='30' r='4' fill='%230e0b0a'/%3E%3C/svg%3E">
-<link rel="preload" as="fetch" href="comic.json" crossorigin>
-<link rel="preload" as="image" href="pages/01.jpg">
-<link rel="stylesheet" href="viewer.css">
+<link rel="preload" as="fetch" href="comics/index.json" crossorigin>
+<link rel="stylesheet" href="viewer.css?v=2">
 </head>
 <body class="loading">
 
@@ -26,48 +27,86 @@
   <defs id="blur-defs"></defs>
 </svg>
 
-<main id="stage" aria-label="Comic reader">
-  <div id="bump">
-    <div id="win"><div id="ribbon"></div></div>
-  </div>
+<!-- ============ the shelf ============ -->
+<main id="shelf" aria-labelledby="shelf-banner">
+  <header class="shelf-head">
+    <div class="logo" aria-hidden="true">MVE<br>Comics</div>
+    <h1 class="banner" id="shelf-banner">From the <b>Mega Vegas Elvis</b> Universe!</h1>
+    <p class="lead">Pick a comic to start reading.</p>
+  </header>
+  <div class="books" id="books"></div>
+  <p class="shelf-foot">Big screens show a whole strip at a time. Phones go frame by frame.
+    Switch between them with the Strip / Frame buttons.</p>
 </main>
 
-<button class="nav prev" id="prev" aria-label="Previous" title="Previous (←)">
-  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4l-8 8 8 8"/></svg>
-</button>
-<button class="nav next" id="next" aria-label="Next" title="Next (→)">
-  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4l8 8-8 8"/></svg>
-</button>
-
-<header id="bar" class="chrome">
-  <h1 id="title">Keith Richards: Psychic Detective</h1>
-  <div class="seg" role="group" aria-label="Reading mode">
-    <button id="mode-strip" title="One strip at a time (S)">Strip</button>
-    <button id="mode-frame" title="One frame at a time (S)">Frame</button>
+<!-- ============ the reader ============ -->
+<div id="reader">
+  <div id="stage" role="region" aria-label="Comic reader">
+    <div id="bump">
+      <div id="win"><div id="ribbon"></div></div>
+    </div>
   </div>
-  <button class="icon" id="open-index" aria-label="Index" title="Index (I)">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-  </button>
-  <button class="icon" id="fullscreen" aria-label="Full screen" title="Full screen (F)">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5"/></svg>
-  </button>
-</header>
 
-<div id="caption" aria-live="polite"><span id="cap-scene"></span><span id="cap-frame"></span><span id="cap-count"></span></div>
-<div id="hint">Tap the sides, swipe, or use the <kbd>←</kbd> <kbd>→</kbd> keys</div>
-<div id="progress"><i></i></div>
+  <button class="nav prev" id="prev" aria-label="Previous" title="Previous (←)">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4l-8 8 8 8"/></svg>
+  </button>
+  <button class="nav next" id="next" aria-label="Next" title="Next (→)">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4l8 8-8 8"/></svg>
+  </button>
 
-<section id="index" hidden aria-label="Index">
-  <div class="index-head">
-    <h2>Index</h2>
-    <button class="icon" id="close-index" aria-label="Close index">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg>
+  <header id="bar" class="chrome">
+    <button class="icon" id="to-shelf" aria-label="All comics" title="All comics">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6v7H4zM14 4h6v7h-6zM4 15h6v5H4zM14 15h6v5h-6z"/></svg>
     </button>
-  </div>
-  <div id="index-body"></div>
-</section>
+    <h2 id="title"><span id="t-main"></span><span id="t-rest"></span></h2>
+    <div class="seg" role="group" aria-label="Reading mode">
+      <button id="mode-strip" title="One strip at a time (S)">Strip</button>
+      <button id="mode-frame" title="One frame at a time (S)">Frame</button>
+    </div>
+    <button class="icon" id="open-index" aria-label="Index" title="Index (I)">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+    <button class="icon" id="fullscreen" aria-label="Full screen" title="Full screen (F)">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5"/></svg>
+    </button>
+  </header>
 
-<noscript><p style="color:#eee;padding:2rem;font-family:sans-serif">This comic reader needs JavaScript. The pages are in the <a href="pages/" style="color:#f6d64a">pages</a> folder.</p></noscript>
-<script src="viewer.js" defer></script>
+  <div id="caption" aria-live="polite"><span id="cap-scene"></span><span id="cap-frame"></span><span id="cap-count"></span></div>
+  <div id="hint">Tap the sides, swipe, or use the <kbd>←</kbd> <kbd>→</kbd> keys</div>
+  <div id="progress"><i></i></div>
+
+  <section id="index" hidden aria-label="Index">
+    <div class="index-head">
+      <div>
+        <h2>Index</h2>
+        <p id="index-title"></p>
+      </div>
+      <button class="icon" id="close-index" aria-label="Close index">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg>
+      </button>
+    </div>
+    <div id="index-body"></div>
+  </section>
+
+  <section id="end" hidden aria-label="End of comic">
+    <div class="end-card">
+      <p class="end-kicker" id="end-kicker"></p>
+      <h2 class="end-title" id="end-title"></h2>
+      <p class="end-note" id="end-note"></p>
+      <div class="end-actions">
+        <button class="btn" id="end-restart">Back to the cover</button>
+        <button class="btn primary" id="end-shelf">All comics</button>
+      </div>
+      <div class="end-more" id="end-more">
+        <h3>More from MVE Comics</h3>
+        <div id="end-books"></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div id="toast" role="status"></div>
+<noscript><p style="color:#eee;padding:2rem;font-family:sans-serif">This comic reader needs JavaScript.</p></noscript>
+<script src="viewer.js?v=2" defer></script>
 </body>
 </html>
