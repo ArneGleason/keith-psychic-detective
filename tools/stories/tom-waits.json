@@ -1,0 +1,22 @@
+{
+  "title": "Tom Waits: Night Manager",
+  "subtitle": "Every Room Has a Story. Most Want Cash Up Front.",
+  "issue": "No. 1",
+  "status": "in-progress",
+  "source": "source-images-tom-waits",
+  "scenes": [
+    {"id": "cover", "title": "Cover"},
+    {"id": "s1", "num": 1, "title": "The Smell"},
+    {"id": "s2", "num": 2, "title": "The Parking Lot"},
+    {"id": "s3", "num": 3, "title": "Back At The Desk"}
+  ],
+  "pages": [
+    {"file": "TWNM - 1.png", "kind": "cover", "scene": "cover", "frames": ["Cover"]},
+    {"file": "TWNM - 2.png", "kind": "strip", "scene": "s1", "frames": ["Chuck Settles In", "What's That Smell?", "Yeah. What Now?"]},
+    {"file": "TWNM - 3.png", "kind": "strip", "scene": "s1", "frames": ["Burning My Nose", "Sinuses Cost Extra", "I'll Handle It"]},
+    {"file": "TWNM - 4.png", "kind": "strip", "scene": "s1", "frames": ["Job For Fats", "Something's Cooking"]},
+    {"file": "TWNM - 5.png", "kind": "strip", "scene": "s2", "frames": ["Slim's Barbecue"]},
+    {"file": "TWNM - 6.png", "kind": "strip", "scene": "s2", "frames": ["Tempting Doris Day", "That's My Room!", "Led You On"]},
+    {"file": "TWNM - 7.png", "kind": "strip", "scene": "s3", "frames": ["Wrong Customer", "On Purpose", "A Little Romance"]}
+  ]
+}

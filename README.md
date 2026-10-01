@@ -1,7 +1,7 @@
 <h1 align="center">MVE Comics</h1>
 
 <p align="center">
-  Comics from the <b>Mega Vegas Elvis Universe</b>, where rock legends take on some very unlikely side jobs.<br>
+  Comics from the <b>Mega Vegas Elvis Universe</b>, where music legends take on some very unlikely side jobs.<br>
   They come with a small web reader that fits any screen, from a laptop to a phone.
 </p>
 
@@ -15,29 +15,22 @@
 
 ## The comics
 
-<table>
-<tr>
-<td width="50%" valign="top">
-
-<a href="https://arnegleason.github.io/keith-psychic-detective/#keith-richards"><img src="comics/keith-richards/cover.jpg" alt="Cover of Keith Richards: Psychic Detective No. 1"></a>
+<p align="center">
+  <a href="https://arnegleason.github.io/keith-psychic-detective/#keith-richards"><img src="comics/keith-richards/cover.jpg" width="32%" alt="Cover of Keith Richards: Psychic Detective No. 1"></a>
+  <a href="https://arnegleason.github.io/keith-psychic-detective/#captain-beefheart"><img src="comics/captain-beefheart/cover.jpg" width="32%" alt="Cover of Captain Beefheart: Laurel Canyon Tour Guide No. 1"></a>
+  <a href="https://arnegleason.github.io/keith-psychic-detective/#tom-waits"><img src="comics/tom-waits/cover.jpg" width="32%" alt="Cover of Tom Waits: Night Manager No. 1"></a>
+</p>
 
 ### Keith Richards: Psychic Detective
-**No. 1: The Case of the Guilty Millionaire**
+**No. 1: The Case of the Guilty Millionaire** · Complete · 18 strips · [Start reading](https://arnegleason.github.io/keith-psychic-detective/#keith-richards)
 
 The red phone rings. It's Henry Kissinger, mid-pedicure, with a job. A body has turned up at
 Ambassador Boris Backhandov's private reception in Las Vegas, and the ambassador will pay
 generously for the truth, provided it leaves him out of it. Keith takes the case, with
 Hervé Villechaize and 400 lbs. of muscle.
 
-Complete · 18 strips · [Start reading](https://arnegleason.github.io/keith-psychic-detective/#keith-richards)
-
-</td>
-<td width="50%" valign="top">
-
-<a href="https://arnegleason.github.io/keith-psychic-detective/#captain-beefheart"><img src="comics/captain-beefheart/cover.jpg" alt="Cover of Captain Beefheart: Laurel Canyon Tour Guide No. 1"></a>
-
 ### Captain Beefheart: Laurel Canyon Tour Guide
-**No. 1: The Homes! The Stars! The Restraining Orders!**
+**No. 1: The Homes! The Stars! The Restraining Orders!** · Complete · 43 strips · [Start reading](https://arnegleason.github.io/keith-psychic-detective/#captain-beefheart)
 
 Captain Beefheart runs celebrity tours of Laurel Canyon from a rusty VW bus. Sightings not
 necessarily visual. Today he recruits Clint, a waiter from El Coyote, into his band, dresses him
@@ -45,11 +38,13 @@ from Vincent Price's wardrobe, and heads for Goldie Hawn's party, mostly for the
 in Goldie's kitchen, the stuffed mushrooms are getting a pinch of Temporal Thyme. By the end of
 the night, Dennis has flooded the waterfall again, and Clint finds out what the plunger was for.
 
-Complete · 43 strips · [Start reading](https://arnegleason.github.io/keith-psychic-detective/#captain-beefheart)
+### Tom Waits: Night Manager
+**No. 1: Every Room Has a Story. Most Want Cash Up Front.** · In progress · 6 strips so far · [Start reading](https://arnegleason.github.io/keith-psychic-detective/#tom-waits)
 
-</td>
-</tr>
-</table>
+San Diego, 1973. Tom works the night desk at the Hotel Elysian, and sends a ghost named Fats when
+something needs doing. At 2:40 a.m., guest Chuck Connors calls down about a smell. It's Slim Pickens,
+grilling liver in the parking lot to tempt Doris Day, under the wrong window. Tom swears he only
+mentioned a blonde upstairs.
 
 ## Reading on any screen
 
@@ -96,7 +91,7 @@ The comics are prepared ahead of time by `tools/build.py`:
 1. **It finds the panels.** It looks for the cream-colored gutters that run the full height of
    each strip, so nobody has to draw frame boxes by hand.
 2. **It makes web images.** It writes optimized JPEGs, thumbnails and covers. The original PNGs
-   come to about 195 MB and the web versions to about 29 MB. The reader then loads only the
+   come to about 224 MB and the web versions to about 34 MB. The reader then loads only the
    pages near where you are.
 3. **It writes the data.** It combines the panels with the scene and frame names from each
    comic's story file into the `comic.json` the reader uses.

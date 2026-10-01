@@ -1,5 +1,9 @@
 {
   "title": "MVE Comics",
   "tagline": "From the Mega Vegas Elvis Universe",
-  "comics": ["keith-richards", "captain-beefheart"]
+  "comics": [
+    "keith-richards",
+    "captain-beefheart",
+    "tom-waits"
+  ]
 }

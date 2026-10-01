@@ -235,6 +235,8 @@
 
   function animateTo(R, dur) {
     cancelAnimationFrame(raf);
+    clearTimeout(fadeTimer);
+    win.classList.remove('fade');
     cam.x -= dragPx / scale; dragPx = 0;          // fold any drag into the camera
     if (reduceMotion || dur <= 0) { cam = { ...R }; setBlur(0); render(); return; }
     const from = { ...cam }, t0 = performance.now();
@@ -255,13 +257,16 @@
     raf = requestAnimationFrame(tick);
   }
 
-  function fadeTo(R) {
+  // Fades out, jumps to whichever stop is current when the fade ends, fades back in.
+  // Reading idx and mode at that moment, not when the fade began, keeps a resize or
+  // a Strip/Frame switch during the fade from being overwritten by a stale target.
+  function fadeTo() {
     cancelAnimationFrame(raf);
     clearTimeout(fadeTimer);
     dragPx = 0; setBlur(0);
-    if (reduceMotion) { cam = { ...R }; render(); return; }
+    if (reduceMotion) { cam = { ...list()[idx].R }; render(); return; }
     win.classList.add('fade');
-    fadeTimer = setTimeout(() => { cam = { ...R }; render(); win.classList.remove('fade'); }, 170);
+    fadeTimer = setTimeout(() => { cam = { ...list()[idx].R }; render(); win.classList.remove('fade'); }, 170);
   }
 
   function jumpTo(i) {
@@ -286,7 +291,7 @@
     idx = i;
     mountAround(next.page);
     const far = Math.abs(next.page - prev.page) > 1;
-    if (how === 'fade' || far) fadeTo(next.R);
+    if (how === 'fade' || far) fadeTo();
     else animateTo(next.R, next.page === prev.page ? 430 : 540);
     updateChrome();
   }
@@ -647,7 +652,8 @@
       resizeT = setTimeout(() => {
         if (!comic) return;
         if (pref === 'auto') setMode(autoMode(), false);
-        cancelAnimationFrame(raf); dragPx = 0; setBlur(0);
+        cancelAnimationFrame(raf); clearTimeout(fadeTimer); win.classList.remove('fade');
+        dragPx = 0; setBlur(0);
         cam = { ...list()[idx].R }; render(); tuckCaption();
       }, 60);
     });

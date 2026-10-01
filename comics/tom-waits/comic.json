@@ -1,0 +1,267 @@
+{
+ "id": "tom-waits",
+ "title": "Tom Waits: Night Manager",
+ "subtitle": "Every Room Has a Story. Most Want Cash Up Front.",
+ "issue": "No. 1",
+ "status": "in-progress",
+ "cover": "comics/tom-waits/cover.jpg?v=6f08cd1dd3",
+ "coverW": 720,
+ "coverH": 1080,
+ "scenes": [
+  {
+   "num": null,
+   "title": "Cover"
+  },
+  {
+   "num": 1,
+   "title": "The Smell"
+  },
+  {
+   "num": 2,
+   "title": "The Parking Lot"
+  },
+  {
+   "num": 3,
+   "title": "Back At The Desk"
+  }
+ ],
+ "pages": [
+  {
+   "id": "01",
+   "src": "comics/tom-waits/pages/01.jpg?v=c975b9ebaf",
+   "thumb": "comics/tom-waits/thumbs/01.jpg?v=a3418ef908",
+   "w": 1024,
+   "h": 1536,
+   "kind": "cover",
+   "scene": 0,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Cover",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "02",
+   "src": "comics/tom-waits/pages/02.jpg?v=e62439fd85",
+   "thumb": "comics/tom-waits/thumbs/02.jpg?v=f0bf9f3086",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 1,
+   "frames": [
+    {
+     "rect": [
+      6,
+      4,
+      544,
+      1014
+     ],
+     "title": "Chuck Settles In",
+     "n": 1
+    },
+    {
+     "rect": [
+      549,
+      4,
+      481,
+      1014
+     ],
+     "title": "What's That Smell?",
+     "n": 2
+    },
+    {
+     "rect": [
+      1030,
+      4,
+      502,
+      1014
+     ],
+     "title": "Yeah. What Now?",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "03",
+   "src": "comics/tom-waits/pages/03.jpg?v=aa7b1e3d58",
+   "thumb": "comics/tom-waits/thumbs/03.jpg?v=59f2593679",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 1,
+   "frames": [
+    {
+     "rect": [
+      5,
+      5,
+      541,
+      1012
+     ],
+     "title": "Burning My Nose",
+     "n": 4
+    },
+    {
+     "rect": [
+      544,
+      5,
+      515,
+      1012
+     ],
+     "title": "Sinuses Cost Extra",
+     "n": 5
+    },
+    {
+     "rect": [
+      1058,
+      5,
+      474,
+      1012
+     ],
+     "title": "I'll Handle It",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "04",
+   "src": "comics/tom-waits/pages/04.jpg?v=0ee425f938",
+   "thumb": "comics/tom-waits/thumbs/04.jpg?v=a7a9ccb677",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 1,
+   "frames": [
+    {
+     "rect": [
+      3,
+      5,
+      450,
+      1013
+     ],
+     "title": "Job For Fats",
+     "n": 7
+    },
+    {
+     "rect": [
+      450,
+      5,
+      1082,
+      1013
+     ],
+     "title": "Something's Cooking",
+     "n": 8
+    }
+   ]
+  },
+  {
+   "id": "05",
+   "src": "comics/tom-waits/pages/05.jpg?v=001f77dad9",
+   "thumb": "comics/tom-waits/thumbs/05.jpg?v=e8df2218bd",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 2,
+   "frames": [
+    {
+     "rect": [
+      4,
+      4,
+      1528,
+      1013
+     ],
+     "title": "Slim's Barbecue",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "06",
+   "src": "comics/tom-waits/pages/06.jpg?v=98540b73c2",
+   "thumb": "comics/tom-waits/thumbs/06.jpg?v=a6f44c6f28",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 2,
+   "frames": [
+    {
+     "rect": [
+      4,
+      4,
+      510,
+      1014
+     ],
+     "title": "Tempting Doris Day",
+     "n": 2
+    },
+    {
+     "rect": [
+      513,
+      4,
+      510,
+      1014
+     ],
+     "title": "That's My Room!",
+     "n": 3
+    },
+    {
+     "rect": [
+      1023,
+      4,
+      510,
+      1014
+     ],
+     "title": "Led You On",
+     "n": 4
+    }
+   ]
+  },
+  {
+   "id": "07",
+   "src": "comics/tom-waits/pages/07.jpg?v=eabadf9262",
+   "thumb": "comics/tom-waits/thumbs/07.jpg?v=230bf87af7",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 3,
+   "frames": [
+    {
+     "rect": [
+      5,
+      4,
+      516,
+      1013
+     ],
+     "title": "Wrong Customer",
+     "n": 1
+    },
+    {
+     "rect": [
+      522,
+      4,
+      521,
+      1013
+     ],
+     "title": "On Purpose",
+     "n": 2
+    },
+    {
+     "rect": [
+      1043,
+      4,
+      489,
+      1013
+     ],
+     "title": "A Little Romance",
+     "n": 3
+    }
+   ]
+  }
+ ]
+}
