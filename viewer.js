@@ -470,7 +470,8 @@
       const cards = make('div', 'cards');
       pages.forEach((p, pi) => {
         if (p.scene !== si) return;
-        const card = make('div', 'card' + (p.h > p.w ? ' tall' : ''));
+        // Covers and extra-wide strips are shown whole rather than cropped to the 3:2 thumbnail box.
+        const card = make('div', 'card' + (p.h > p.w ? ' tall' : p.w / p.h > 1.6 ? ' wide' : ''));
         card.dataset.page = pi;
         const tb = make('button', 'thumb');
         const img = new Image();

@@ -8,7 +8,12 @@
     {"id": "cover", "title": "Cover"},
     {"id": "s1", "num": 1, "title": "The Smell"},
     {"id": "s2", "num": 2, "title": "The Parking Lot"},
-    {"id": "s3", "num": 3, "title": "Back At The Desk"}
+    {"id": "s3", "num": 3, "title": "Back At The Desk"},
+    {"id": "s4", "num": 4, "title": "Mr. Smith"},
+    {"id": "s5", "num": 5, "title": "Room 712"},
+    {"id": "s6", "num": 6, "title": "To The Kitchen"},
+    {"id": "s7", "num": 7, "title": "Chicago, 1926"},
+    {"id": "s8", "num": 8, "title": "The Kitchen"}
   ],
   "pages": [
     {"file": "TWNM - 1.png", "kind": "cover", "scene": "cover", "frames": ["Cover"]},
@@ -17,6 +22,13 @@
     {"file": "TWNM - 4.png", "kind": "strip", "scene": "s1", "frames": ["Job For Fats", "Something's Cooking"]},
     {"file": "TWNM - 5.png", "kind": "strip", "scene": "s2", "frames": ["Slim's Barbecue"]},
     {"file": "TWNM - 6.png", "kind": "strip", "scene": "s2", "frames": ["Tempting Doris Day", "That's My Room!", "Led You On"]},
-    {"file": "TWNM - 7.png", "kind": "strip", "scene": "s3", "frames": ["Wrong Customer", "On Purpose", "A Little Romance"]}
+    {"file": "TWNM - 7.png", "kind": "strip", "scene": "s3", "frames": ["Wrong Customer", "On Purpose", "A Little Romance"]},
+    {"file": "TWNM-batch02 - 2.png", "kind": "strip", "scene": "s3", "frames": ["Complimentary Mints", "Cheating Yourself", "Business Picking Up"]},
+    {"file": "TWNM-batch02 - 3new.png", "kind": "strip", "scene": "s4", "frames": ["Not Leon Redbone", "Voice Down", "The Guitar's Room"]},
+    {"file": "TWNM-batch02 - 4new.png", "kind": "strip", "scene": "s5", "frames": ["Meanwhile, Upstairs", "Know My Work", "An Honest Opinion"]},
+    {"file": "TWNM-batch02 - 5new.png", "kind": "strip", "scene": "s5", "frames": ["Mister Tambourine Man", "Well?", "Hotels."]},
+    {"file": "TWNM-batch02 - 6.png", "kind": "strip", "scene": "s6", "frames": ["Getting Hungry", "Take A Walk", "A Worse Gig"]},
+    {"file": "TWNM-batch02 - 7new.png", "kind": "strip", "scene": "s7", "frames": ["A Private Engagement", "Bigger Pockets", "Till Friday"]},
+    {"file": "TWNM-batch02 - 8.png", "kind": "strip", "scene": "s8", "frames": ["Best-Paying Kidnapping", "Shatner's Sandwich", "Never Started"]}
   ]
 }

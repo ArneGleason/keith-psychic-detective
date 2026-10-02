@@ -23,6 +23,26 @@
   {
    "num": 3,
    "title": "Back At The Desk"
+  },
+  {
+   "num": 4,
+   "title": "Mr. Smith"
+  },
+  {
+   "num": 5,
+   "title": "Room 712"
+  },
+  {
+   "num": 6,
+   "title": "To The Kitchen"
+  },
+  {
+   "num": 7,
+   "title": "Chicago, 1926"
+  },
+  {
+   "num": 8,
+   "title": "The Kitchen"
   }
  ],
  "pages": [
@@ -259,6 +279,293 @@
       1013
      ],
      "title": "A Little Romance",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "08",
+   "src": "comics/tom-waits/pages/08.jpg?v=b737ba461d",
+   "thumb": "comics/tom-waits/thumbs/08.jpg?v=6fc738cf4c",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 3,
+   "frames": [
+    {
+     "rect": [
+      4,
+      2,
+      511,
+      1013
+     ],
+     "title": "Complimentary Mints",
+     "n": 4
+    },
+    {
+     "rect": [
+      514,
+      2,
+      509,
+      1013
+     ],
+     "title": "Cheating Yourself",
+     "n": 5
+    },
+    {
+     "rect": [
+      1021,
+      2,
+      512,
+      1013
+     ],
+     "title": "Business Picking Up",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "09",
+   "src": "comics/tom-waits/pages/09.jpg?v=eed51f5262",
+   "thumb": "comics/tom-waits/thumbs/09.jpg?v=ced0492a18",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 4,
+   "frames": [
+    {
+     "rect": [
+      4,
+      3,
+      510,
+      1011
+     ],
+     "title": "Not Leon Redbone",
+     "n": 1
+    },
+    {
+     "rect": [
+      514,
+      3,
+      435,
+      1011
+     ],
+     "title": "Voice Down",
+     "n": 2
+    },
+    {
+     "rect": [
+      949,
+      3,
+      584,
+      1011
+     ],
+     "title": "The Guitar's Room",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "10",
+   "src": "comics/tom-waits/pages/10.jpg?v=a52a0d4b7f",
+   "thumb": "comics/tom-waits/thumbs/10.jpg?v=27496244f0",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 5,
+   "frames": [
+    {
+     "rect": [
+      4,
+      3,
+      509,
+      1012
+     ],
+     "title": "Meanwhile, Upstairs",
+     "n": 1
+    },
+    {
+     "rect": [
+      513,
+      3,
+      510,
+      1012
+     ],
+     "title": "Know My Work",
+     "n": 2
+    },
+    {
+     "rect": [
+      1023,
+      3,
+      510,
+      1012
+     ],
+     "title": "An Honest Opinion",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "11",
+   "src": "comics/tom-waits/pages/11.jpg?v=cd3080d93e",
+   "thumb": "comics/tom-waits/thumbs/11.jpg?v=16ac531112",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 5,
+   "frames": [
+    {
+     "rect": [
+      4,
+      3,
+      509,
+      1013
+     ],
+     "title": "Mister Tambourine Man",
+     "n": 4
+    },
+    {
+     "rect": [
+      513,
+      3,
+      510,
+      1013
+     ],
+     "title": "Well?",
+     "n": 5
+    },
+    {
+     "rect": [
+      1023,
+      3,
+      510,
+      1013
+     ],
+     "title": "Hotels.",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "12",
+   "src": "comics/tom-waits/pages/12.jpg?v=c08638baa1",
+   "thumb": "comics/tom-waits/thumbs/12.jpg?v=2c20b137ad",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 6,
+   "frames": [
+    {
+     "rect": [
+      4,
+      4,
+      511,
+      1011
+     ],
+     "title": "Getting Hungry",
+     "n": 1
+    },
+    {
+     "rect": [
+      515,
+      4,
+      508,
+      1011
+     ],
+     "title": "Take A Walk",
+     "n": 2
+    },
+    {
+     "rect": [
+      1023,
+      4,
+      510,
+      1011
+     ],
+     "title": "A Worse Gig",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "13",
+   "src": "comics/tom-waits/pages/13.jpg?v=f8bcc4152b",
+   "thumb": "comics/tom-waits/thumbs/13.jpg?v=1c1537d061",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 7,
+   "frames": [
+    {
+     "rect": [
+      4,
+      3,
+      507,
+      1013
+     ],
+     "title": "A Private Engagement",
+     "n": 1
+    },
+    {
+     "rect": [
+      509,
+      3,
+      517,
+      1013
+     ],
+     "title": "Bigger Pockets",
+     "n": 2
+    },
+    {
+     "rect": [
+      1025,
+      3,
+      508,
+      1013
+     ],
+     "title": "Till Friday",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "14",
+   "src": "comics/tom-waits/pages/14.jpg?v=29f96a6a75",
+   "thumb": "comics/tom-waits/thumbs/14.jpg?v=37a5af4149",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 8,
+   "frames": [
+    {
+     "rect": [
+      4,
+      4,
+      507,
+      1011
+     ],
+     "title": "Best-Paying Kidnapping",
+     "n": 1
+    },
+    {
+     "rect": [
+      512,
+      4,
+      512,
+      1011
+     ],
+     "title": "Shatner's Sandwich",
+     "n": 2
+    },
+    {
+     "rect": [
+      1024,
+      4,
+      509,
+      1011
+     ],
+     "title": "Never Started",
      "n": 3
     }
    ]
