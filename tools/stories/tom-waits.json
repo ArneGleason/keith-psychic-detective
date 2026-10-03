@@ -16,19 +16,19 @@
     {"id": "s8", "num": 8, "title": "The Kitchen"}
   ],
   "pages": [
-    {"file": "TWNM - 1.png", "kind": "cover", "scene": "cover", "frames": ["Cover"]},
-    {"file": "TWNM - 2.png", "kind": "strip", "scene": "s1", "frames": ["Chuck Settles In", "What's That Smell?", "Yeah. What Now?"]},
-    {"file": "TWNM - 3.png", "kind": "strip", "scene": "s1", "frames": ["Burning My Nose", "Sinuses Cost Extra", "I'll Handle It"]},
-    {"file": "TWNM - 4.png", "kind": "strip", "scene": "s1", "frames": ["Job For Fats", "Something's Cooking"]},
-    {"file": "TWNM - 5.png", "kind": "strip", "scene": "s2", "frames": ["Slim's Barbecue"]},
-    {"file": "TWNM - 6.png", "kind": "strip", "scene": "s2", "frames": ["Tempting Doris Day", "That's My Room!", "Led You On"]},
-    {"file": "TWNM - 7.png", "kind": "strip", "scene": "s3", "frames": ["Wrong Customer", "On Purpose", "A Little Romance"]},
-    {"file": "TWNM-batch02 - 2.png", "kind": "strip", "scene": "s3", "frames": ["Complimentary Mints", "Cheating Yourself", "Business Picking Up"]},
-    {"file": "TWNM-batch02 - 3new.png", "kind": "strip", "scene": "s4", "frames": ["Not Leon Redbone", "Voice Down", "The Guitar's Room"]},
-    {"file": "TWNM-batch02 - 4new.png", "kind": "strip", "scene": "s5", "frames": ["Meanwhile, Upstairs", "Know My Work", "An Honest Opinion"]},
-    {"file": "TWNM-batch02 - 5new.png", "kind": "strip", "scene": "s5", "frames": ["Mister Tambourine Man", "Well?", "Hotels."]},
-    {"file": "TWNM-batch02 - 6.png", "kind": "strip", "scene": "s6", "frames": ["Getting Hungry", "Take A Walk", "A Worse Gig"]},
-    {"file": "TWNM-batch02 - 7new.png", "kind": "strip", "scene": "s7", "frames": ["A Private Engagement", "Bigger Pockets", "Till Friday"]},
-    {"file": "TWNM-batch02 - 8.png", "kind": "strip", "scene": "s8", "frames": ["Best-Paying Kidnapping", "Shatner's Sandwich", "Never Started"]}
+    {"file": "000-cover.png", "kind": "cover", "scene": "cover", "frames": ["Cover"]},
+    {"file": "010-chuck-bedtime.png", "kind": "strip", "scene": "s1", "frames": ["Chuck Settles In", "What's That Smell?", "Yeah. What Now?"]},
+    {"file": "020-chuck-complaint.png", "kind": "strip", "scene": "s1", "frames": ["Burning My Nose", "Sinuses Cost Extra", "I'll Handle It"]},
+    {"file": "030-first-summoning.png", "kind": "strip", "scene": "s1", "frames": ["Job For Fats", "Something's Cooking"]},
+    {"file": "040-parking-lot.png", "kind": "strip", "scene": "s2", "frames": ["Slim's Barbecue"]},
+    {"file": "050-doris-day-mixup.png", "kind": "strip", "scene": "s2", "frames": ["Tempting Doris Day", "That's My Room!", "Led You On"]},
+    {"file": "060-fats-report.png", "kind": "strip", "scene": "s3", "frames": ["Wrong Customer", "On Purpose", "A Little Romance"]},
+    {"file": "070-lobby-mints.png", "kind": "strip", "scene": "s3", "frames": ["Complimentary Mints", "Cheating Yourself", "Business Picking Up"]},
+    {"file": "080-leon-checkin.png", "kind": "strip", "scene": "s4", "frames": ["Not Leon Redbone", "Voice Down", "The Guitar's Room"]},
+    {"file": "090-shatner-room-service.png", "kind": "strip", "scene": "s5", "frames": ["Meanwhile, Upstairs", "Know My Work", "An Honest Opinion"]},
+    {"file": "100-shatner-audition.png", "kind": "strip", "scene": "s5", "frames": ["Mister Tambourine Man", "Well?", "Hotels."]},
+    {"file": "110-second-summoning.png", "kind": "strip", "scene": "s6", "frames": ["Getting Hungry", "Take A Walk", "A Worse Gig"]},
+    {"file": "120-capone-memory.png", "kind": "strip", "scene": "s7", "frames": ["A Private Engagement", "Bigger Pockets", "Till Friday"]},
+    {"file": "130-sandwich-payoff.png", "kind": "strip", "scene": "s8", "frames": ["Best-Paying Kidnapping", "Shatner's Sandwich", "Never Started"]}
   ]
 }

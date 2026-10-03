@@ -92,7 +92,7 @@ The comics are prepared ahead of time by `tools/build.py`:
 1. **It finds the panels.** It looks for the cream-colored gutters that run the full height of
    each strip, so nobody has to draw frame boxes by hand.
 2. **It makes web images.** It writes optimized JPEGs, thumbnails and covers. The original PNGs
-   come to about 245 MB and the web versions to about 36 MB. The reader then loads only the
+   come to about 240 MB and the web versions to about 36 MB. The reader then loads only the
    pages near where you are.
 3. **It writes the data.** It combines the panels with the scene and frame names from each
    comic's story file into the `comic.json` the reader uses.

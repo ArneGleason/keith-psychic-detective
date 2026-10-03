@@ -4,7 +4,7 @@
  "subtitle": "Every Room Has a Story. Most Want Cash Up Front.",
  "issue": "No. 1",
  "status": "in-progress",
- "cover": "comics/tom-waits/cover.jpg?v=6f08cd1dd3",
+ "cover": "comics/tom-waits/cover.jpg?v=b2990d7e41",
  "coverW": 720,
  "coverH": 1080,
  "scenes": [
@@ -48,8 +48,8 @@
  "pages": [
   {
    "id": "01",
-   "src": "comics/tom-waits/pages/01.jpg?v=c975b9ebaf",
-   "thumb": "comics/tom-waits/thumbs/01.jpg?v=a3418ef908",
+   "src": "comics/tom-waits/pages/01.jpg?v=51931b0635",
+   "thumb": "comics/tom-waits/thumbs/01.jpg?v=6ed2aa90e8",
    "w": 1024,
    "h": 1536,
    "kind": "cover",
@@ -69,8 +69,8 @@
   },
   {
    "id": "02",
-   "src": "comics/tom-waits/pages/02.jpg?v=e62439fd85",
-   "thumb": "comics/tom-waits/thumbs/02.jpg?v=f0bf9f3086",
+   "src": "comics/tom-waits/pages/02.jpg?v=ccc9297d0b",
+   "thumb": "comics/tom-waits/thumbs/02.jpg?v=b6e5d741d1",
    "w": 1536,
    "h": 1024,
    "kind": "strip",
@@ -78,30 +78,30 @@
    "frames": [
     {
      "rect": [
-      6,
+      3,
       4,
-      544,
-      1014
+      541,
+      1011
      ],
      "title": "Chuck Settles In",
      "n": 1
     },
     {
      "rect": [
-      549,
+      545,
       4,
-      481,
-      1014
+      480,
+      1011
      ],
      "title": "What's That Smell?",
      "n": 2
     },
     {
      "rect": [
-      1030,
+      1025,
       4,
-      502,
-      1014
+      508,
+      1011
      ],
      "title": "Yeah. What Now?",
      "n": 3
@@ -110,8 +110,8 @@
   },
   {
    "id": "03",
-   "src": "comics/tom-waits/pages/03.jpg?v=aa7b1e3d58",
-   "thumb": "comics/tom-waits/thumbs/03.jpg?v=59f2593679",
+   "src": "comics/tom-waits/pages/03.jpg?v=ee0a51bb4b",
+   "thumb": "comics/tom-waits/thumbs/03.jpg?v=2755138014",
    "w": 1536,
    "h": 1024,
    "kind": "strip",
@@ -120,8 +120,8 @@
     {
      "rect": [
       5,
-      5,
-      541,
+      3,
+      529,
       1012
      ],
      "title": "Burning My Nose",
@@ -129,9 +129,9 @@
     },
     {
      "rect": [
-      544,
-      5,
-      515,
+      534,
+      3,
+      510,
       1012
      ],
      "title": "Sinuses Cost Extra",
@@ -139,9 +139,9 @@
     },
     {
      "rect": [
-      1058,
-      5,
-      474,
+      1043,
+      3,
+      489,
       1012
      ],
      "title": "I'll Handle It",
@@ -151,8 +151,8 @@
   },
   {
    "id": "04",
-   "src": "comics/tom-waits/pages/04.jpg?v=0ee425f938",
-   "thumb": "comics/tom-waits/thumbs/04.jpg?v=a7a9ccb677",
+   "src": "comics/tom-waits/pages/04.jpg?v=4eee1d6b13",
+   "thumb": "comics/tom-waits/thumbs/04.jpg?v=1b39937f4a",
    "w": 1536,
    "h": 1024,
    "kind": "strip",
@@ -160,7 +160,7 @@
    "frames": [
     {
      "rect": [
-      3,
+      4,
       5,
       450,
       1013
@@ -170,9 +170,9 @@
     },
     {
      "rect": [
-      450,
+      454,
       5,
-      1082,
+      1078,
       1013
      ],
      "title": "Something's Cooking",
@@ -182,8 +182,8 @@
   },
   {
    "id": "05",
-   "src": "comics/tom-waits/pages/05.jpg?v=001f77dad9",
-   "thumb": "comics/tom-waits/thumbs/05.jpg?v=e8df2218bd",
+   "src": "comics/tom-waits/pages/05.jpg?v=47b1f06a39",
+   "thumb": "comics/tom-waits/thumbs/05.jpg?v=15bd2b1516",
    "w": 1536,
    "h": 1024,
    "kind": "strip",
@@ -194,7 +194,7 @@
       4,
       4,
       1528,
-      1013
+      1014
      ],
      "title": "Slim's Barbecue",
      "n": 1
@@ -203,8 +203,8 @@
   },
   {
    "id": "06",
-   "src": "comics/tom-waits/pages/06.jpg?v=98540b73c2",
-   "thumb": "comics/tom-waits/thumbs/06.jpg?v=a6f44c6f28",
+   "src": "comics/tom-waits/pages/06.jpg?v=62e6f2c8ec",
+   "thumb": "comics/tom-waits/thumbs/06.jpg?v=826cf605b5",
    "w": 1536,
    "h": 1024,
    "kind": "strip",
@@ -212,7 +212,7 @@
    "frames": [
     {
      "rect": [
-      4,
+      3,
       4,
       510,
       1014
@@ -224,7 +224,7 @@
      "rect": [
       513,
       4,
-      510,
+      512,
       1014
      ],
      "title": "That's My Room!",
@@ -232,9 +232,9 @@
     },
     {
      "rect": [
-      1023,
+      1025,
       4,
-      510,
+      508,
       1014
      ],
      "title": "Led You On",
@@ -244,8 +244,8 @@
   },
   {
    "id": "07",
-   "src": "comics/tom-waits/pages/07.jpg?v=eabadf9262",
-   "thumb": "comics/tom-waits/thumbs/07.jpg?v=230bf87af7",
+   "src": "comics/tom-waits/pages/07.jpg?v=2c2ef52017",
+   "thumb": "comics/tom-waits/thumbs/07.jpg?v=703353a318",
    "w": 1536,
    "h": 1024,
    "kind": "strip",
@@ -253,20 +253,20 @@
    "frames": [
     {
      "rect": [
-      5,
       4,
-      516,
-      1013
+      4,
+      545,
+      1012
      ],
      "title": "Wrong Customer",
      "n": 1
     },
     {
      "rect": [
-      522,
+      550,
       4,
-      521,
-      1013
+      492,
+      1012
      ],
      "title": "On Purpose",
      "n": 2
@@ -276,7 +276,7 @@
       1043,
       4,
       489,
-      1013
+      1012
      ],
      "title": "A Little Romance",
      "n": 3
@@ -285,8 +285,8 @@
   },
   {
    "id": "08",
-   "src": "comics/tom-waits/pages/08.jpg?v=b737ba461d",
-   "thumb": "comics/tom-waits/thumbs/08.jpg?v=6fc738cf4c",
+   "src": "comics/tom-waits/pages/08.jpg?v=83bf252dff",
+   "thumb": "comics/tom-waits/thumbs/08.jpg?v=b77ca9a177",
    "w": 1536,
    "h": 1024,
    "kind": "strip",
@@ -294,30 +294,30 @@
    "frames": [
     {
      "rect": [
-      4,
       2,
-      511,
-      1013
+      3,
+      513,
+      1012
      ],
      "title": "Complimentary Mints",
      "n": 4
     },
     {
      "rect": [
+      511,
+      3,
       514,
-      2,
-      509,
-      1013
+      1012
      ],
      "title": "Cheating Yourself",
      "n": 5
     },
     {
      "rect": [
-      1021,
-      2,
-      512,
-      1013
+      1022,
+      3,
+      511,
+      1012
      ],
      "title": "Business Picking Up",
      "n": 6
@@ -326,8 +326,8 @@
   },
   {
    "id": "09",
-   "src": "comics/tom-waits/pages/09.jpg?v=eed51f5262",
-   "thumb": "comics/tom-waits/thumbs/09.jpg?v=ced0492a18",
+   "src": "comics/tom-waits/pages/09.jpg?v=e7f529d665",
+   "thumb": "comics/tom-waits/thumbs/09.jpg?v=b9faddf320",
    "w": 1536,
    "h": 1024,
    "kind": "strip",
@@ -335,10 +335,10 @@
    "frames": [
     {
      "rect": [
-      4,
       3,
-      510,
-      1011
+      4,
+      512,
+      1010
      ],
      "title": "Not Leon Redbone",
      "n": 1
@@ -346,19 +346,19 @@
     {
      "rect": [
       514,
-      3,
-      435,
-      1011
+      4,
+      433,
+      1010
      ],
      "title": "Voice Down",
      "n": 2
     },
     {
      "rect": [
-      949,
-      3,
-      584,
-      1011
+      946,
+      4,
+      586,
+      1010
      ],
      "title": "The Guitar's Room",
      "n": 3
@@ -367,8 +367,8 @@
   },
   {
    "id": "10",
-   "src": "comics/tom-waits/pages/10.jpg?v=a52a0d4b7f",
-   "thumb": "comics/tom-waits/thumbs/10.jpg?v=27496244f0",
+   "src": "comics/tom-waits/pages/10.jpg?v=a21cfdda27",
+   "thumb": "comics/tom-waits/thumbs/10.jpg?v=3bce31e923",
    "w": 1536,
    "h": 1024,
    "kind": "strip",
@@ -376,9 +376,9 @@
    "frames": [
     {
      "rect": [
-      4,
       3,
-      509,
+      3,
+      511,
       1012
      ],
      "title": "Meanwhile, Upstairs",
@@ -386,9 +386,9 @@
     },
     {
      "rect": [
-      513,
+      512,
       3,
-      510,
+      512,
       1012
      ],
      "title": "Know My Work",
@@ -398,7 +398,7 @@
      "rect": [
       1023,
       3,
-      510,
+      511,
       1012
      ],
      "title": "An Honest Opinion",
@@ -408,8 +408,8 @@
   },
   {
    "id": "11",
-   "src": "comics/tom-waits/pages/11.jpg?v=cd3080d93e",
-   "thumb": "comics/tom-waits/thumbs/11.jpg?v=16ac531112",
+   "src": "comics/tom-waits/pages/11.jpg?v=33135f56ef",
+   "thumb": "comics/tom-waits/thumbs/11.jpg?v=3d9ee0dd90",
    "w": 1536,
    "h": 1024,
    "kind": "strip",
@@ -417,9 +417,9 @@
    "frames": [
     {
      "rect": [
-      4,
       3,
-      509,
+      3,
+      584,
       1013
      ],
      "title": "Mister Tambourine Man",
@@ -427,9 +427,9 @@
     },
     {
      "rect": [
-      513,
+      586,
       3,
-      510,
+      479,
       1013
      ],
      "title": "Well?",
@@ -437,9 +437,9 @@
     },
     {
      "rect": [
-      1023,
+      1065,
       3,
-      510,
+      469,
       1013
      ],
      "title": "Hotels.",
@@ -449,8 +449,8 @@
   },
   {
    "id": "12",
-   "src": "comics/tom-waits/pages/12.jpg?v=c08638baa1",
-   "thumb": "comics/tom-waits/thumbs/12.jpg?v=2c20b137ad",
+   "src": "comics/tom-waits/pages/12.jpg?v=8ab060802e",
+   "thumb": "comics/tom-waits/thumbs/12.jpg?v=aaf30a9890",
    "w": 1536,
    "h": 1024,
    "kind": "strip",
@@ -458,9 +458,9 @@
    "frames": [
     {
      "rect": [
+      3,
       4,
-      4,
-      511,
+      513,
       1011
      ],
      "title": "Getting Hungry",
@@ -468,9 +468,9 @@
     },
     {
      "rect": [
-      515,
+      516,
       4,
-      508,
+      506,
       1011
      ],
      "title": "Take A Walk",
@@ -478,9 +478,9 @@
     },
     {
      "rect": [
-      1023,
+      1022,
       4,
-      510,
+      511,
       1011
      ],
      "title": "A Worse Gig",
@@ -490,8 +490,8 @@
   },
   {
    "id": "13",
-   "src": "comics/tom-waits/pages/13.jpg?v=f8bcc4152b",
-   "thumb": "comics/tom-waits/thumbs/13.jpg?v=1c1537d061",
+   "src": "comics/tom-waits/pages/13.jpg?v=8838505a04",
+   "thumb": "comics/tom-waits/thumbs/13.jpg?v=aef5cbc896",
    "w": 1536,
    "h": 1024,
    "kind": "strip",
@@ -499,9 +499,9 @@
    "frames": [
     {
      "rect": [
-      4,
       3,
-      507,
+      3,
+      508,
       1013
      ],
      "title": "A Private Engagement",
@@ -511,7 +511,7 @@
      "rect": [
       509,
       3,
-      517,
+      518,
       1013
      ],
      "title": "Bigger Pockets",
@@ -521,7 +521,7 @@
      "rect": [
       1025,
       3,
-      508,
+      509,
       1013
      ],
      "title": "Till Friday",
@@ -531,8 +531,8 @@
   },
   {
    "id": "14",
-   "src": "comics/tom-waits/pages/14.jpg?v=29f96a6a75",
-   "thumb": "comics/tom-waits/thumbs/14.jpg?v=37a5af4149",
+   "src": "comics/tom-waits/pages/14.jpg?v=9610acbe1c",
+   "thumb": "comics/tom-waits/thumbs/14.jpg?v=90c5720267",
    "w": 1536,
    "h": 1024,
    "kind": "strip",
@@ -543,27 +543,27 @@
       4,
       4,
       507,
-      1011
+      1010
      ],
      "title": "Best-Paying Kidnapping",
      "n": 1
     },
     {
      "rect": [
-      512,
+      513,
       4,
-      512,
-      1011
+      511,
+      1010
      ],
      "title": "Shatner's Sandwich",
      "n": 2
     },
     {
      "rect": [
-      1024,
+      1025,
       4,
-      509,
-      1011
+      507,
+      1010
      ],
      "title": "Never Started",
      "n": 3
