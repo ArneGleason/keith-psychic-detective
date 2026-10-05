@@ -3,7 +3,7 @@
  "title": "Tom Waits: Night Manager",
  "subtitle": "Every Room Has a Story. Most Want Cash Up Front.",
  "issue": "No. 1",
- "status": "in-progress",
+ "status": "complete",
  "cover": "comics/tom-waits/cover.jpg?v=b2990d7e41",
  "coverW": 720,
  "coverH": 1080,
@@ -43,6 +43,74 @@
   {
    "num": 8,
    "title": "The Kitchen"
+  },
+  {
+   "num": 9,
+   "title": "The Cigarette Racket"
+  },
+  {
+   "num": 10,
+   "title": "Love Letters"
+  },
+  {
+   "num": 11,
+   "title": "The Complaint"
+  },
+  {
+   "num": 12,
+   "title": "Hard-Bitten Don"
+  },
+  {
+   "num": 13,
+   "title": "Room 416"
+  },
+  {
+   "num": 14,
+   "title": "Happy Together"
+  },
+  {
+   "num": 15,
+   "title": "Last Wishes"
+  },
+  {
+   "num": 16,
+   "title": "Cherries Jubilee"
+  },
+  {
+   "num": 17,
+   "title": "Irresistible"
+  },
+  {
+   "num": 18,
+   "title": "Calling Johnny"
+  },
+  {
+   "num": 19,
+   "title": "Coming Down"
+  },
+  {
+   "num": 20,
+   "title": "The Warm-Up"
+  },
+  {
+   "num": 21,
+   "title": "The Hatbox"
+  },
+  {
+   "num": 22,
+   "title": "Guest Host"
+  },
+  {
+   "num": 23,
+   "title": "You're Fired"
+  },
+  {
+   "num": 24,
+   "title": "Sunrise"
+  },
+  {
+   "num": null,
+   "title": "The End"
   }
  ],
  "pages": [
@@ -567,6 +635,1299 @@
      ],
      "title": "Never Started",
      "n": 3
+    }
+   ]
+  },
+  {
+   "id": "15",
+   "src": "comics/tom-waits/pages/15.jpg?v=f583a86b3b",
+   "thumb": "comics/tom-waits/thumbs/15.jpg?v=22898077e8",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 9,
+   "frames": [
+    {
+     "rect": [
+      4,
+      3,
+      509,
+      1011
+     ],
+     "title": "Swallowed My Quarter",
+     "n": 1
+    },
+    {
+     "rect": [
+      513,
+      3,
+      571,
+      1011
+     ],
+     "title": "Running A Racket",
+     "n": 2
+    },
+    {
+     "rect": [
+      1083,
+      3,
+      450,
+      1011
+     ],
+     "title": "The Ice Machine",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "16",
+   "src": "comics/tom-waits/pages/16.jpg?v=e5a7b9b227",
+   "thumb": "comics/tom-waits/thumbs/16.jpg?v=0bc34ce244",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 9,
+   "frames": [
+    {
+     "rect": [
+      4,
+      4,
+      510,
+      1011
+     ],
+     "title": "Question Everybody",
+     "n": 4
+    },
+    {
+     "rect": [
+      513,
+      4,
+      511,
+      1011
+     ],
+     "title": "The Handoff",
+     "n": 5
+    },
+    {
+     "rect": [
+      1023,
+      4,
+      510,
+      1011
+     ],
+     "title": "All Night",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "17",
+   "src": "comics/tom-waits/pages/17.jpg?v=d101566ee1",
+   "thumb": "comics/tom-waits/thumbs/17.jpg?v=2df4d4d009",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 10,
+   "frames": [
+    {
+     "rect": [
+      3,
+      4,
+      512,
+      1013
+     ],
+     "title": "Must You Smoke?",
+     "n": 1
+    },
+    {
+     "rect": [
+      512,
+      4,
+      514,
+      1013
+     ],
+     "title": "Another Love Letter",
+     "n": 2
+    },
+    {
+     "rect": [
+      1023,
+      4,
+      511,
+      1013
+     ],
+     "title": "He's Gorgeous",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "18",
+   "src": "comics/tom-waits/pages/18.jpg?v=c194f155c5",
+   "thumb": "comics/tom-waits/thumbs/18.jpg?v=afd32b880e",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 11,
+   "frames": [
+    {
+     "rect": [
+      4,
+      3,
+      1054,
+      1012
+     ],
+     "title": "Calling Me Ma'am",
+     "n": 1
+    },
+    {
+     "rect": [
+      1056,
+      3,
+      476,
+      1012
+     ],
+     "title": "You Correct Him?",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "id": "19",
+   "src": "comics/tom-waits/pages/19.jpg?v=6f8a3eeccc",
+   "thumb": "comics/tom-waits/thumbs/19.jpg?v=78e3816c38",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 11,
+   "frames": [
+    {
+     "rect": [
+      4,
+      3,
+      509,
+      1013
+     ],
+     "title": "Three Times",
+     "n": 3
+    },
+    {
+     "rect": [
+      512,
+      3,
+      513,
+      1013
+     ],
+     "title": "A Lady Shouldn't",
+     "n": 4
+    },
+    {
+     "rect": [
+      1024,
+      3,
+      508,
+      1013
+     ],
+     "title": "Two Bourbons",
+     "n": 5
+    }
+   ]
+  },
+  {
+   "id": "20",
+   "src": "comics/tom-waits/pages/20.jpg?v=dda7364862",
+   "thumb": "comics/tom-waits/thumbs/20.jpg?v=39a2c4bd50",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 12,
+   "frames": [
+    {
+     "rect": [
+      3,
+      3,
+      510,
+      1013
+     ],
+     "title": "Knotts Speaking",
+     "n": 1
+    },
+    {
+     "rect": [
+      512,
+      3,
+      511,
+      1013
+     ],
+     "title": "Vending Racket",
+     "n": 2
+    },
+    {
+     "rect": [
+      1022,
+      3,
+      511,
+      1013
+     ],
+     "title": "Ice Is Free",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "21",
+   "src": "comics/tom-waits/pages/21.jpg?v=b7fb1d5609",
+   "thumb": "comics/tom-waits/thumbs/21.jpg?v=5ab0338f09",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 12,
+   "frames": [
+    {
+     "rect": [
+      3,
+      4,
+      510,
+      1012
+     ],
+     "title": "Personal Attention",
+     "n": 4
+    },
+    {
+     "rect": [
+      511,
+      4,
+      516,
+      1012
+     ],
+     "title": "Aliases",
+     "n": 5
+    },
+    {
+     "rect": [
+      1024,
+      4,
+      509,
+      1012
+     ],
+     "title": "How Many Names?",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "22",
+   "src": "comics/tom-waits/pages/22.jpg?v=32dea2867d",
+   "thumb": "comics/tom-waits/thumbs/22.jpg?v=a7065b65bb",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 13,
+   "frames": [
+    {
+     "rect": [
+      4,
+      4,
+      509,
+      1015
+     ],
+     "title": "Grants Wishes",
+     "n": 1
+    },
+    {
+     "rect": [
+      512,
+      4,
+      513,
+      1015
+     ],
+     "title": "Came With Earrings",
+     "n": 2
+    },
+    {
+     "rect": [
+      1023,
+      4,
+      510,
+      1015
+     ],
+     "title": "Worth The Money",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "23",
+   "src": "comics/tom-waits/pages/23.jpg?v=c54d7489db",
+   "thumb": "comics/tom-waits/thumbs/23.jpg?v=8a6ee72ab7",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 13,
+   "frames": [
+    {
+     "rect": [
+      4,
+      4,
+      477,
+      1015
+     ],
+     "title": "A Sign",
+     "n": 4
+    },
+    {
+     "rect": [
+      479,
+      4,
+      1054,
+      1015
+     ],
+     "title": "An Honest Dealer",
+     "n": 5
+    }
+   ]
+  },
+  {
+   "id": "24",
+   "src": "comics/tom-waits/pages/24.jpg?v=8deff88d01",
+   "thumb": "comics/tom-waits/thumbs/24.jpg?v=d1c23c232c",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 13,
+   "frames": [
+    {
+     "rect": [
+      4,
+      3,
+      477,
+      1016
+     ],
+     "title": "A Nightcap",
+     "n": 6
+    },
+    {
+     "rect": [
+      479,
+      3,
+      576,
+      1016
+     ],
+     "title": "Someone To Share",
+     "n": 7
+    },
+    {
+     "rect": [
+      1053,
+      3,
+      480,
+      1016
+     ],
+     "title": "Wicked Little Thing",
+     "n": 8
+    }
+   ]
+  },
+  {
+   "id": "25",
+   "src": "comics/tom-waits/pages/25.jpg?v=f7461df967",
+   "thumb": "comics/tom-waits/thumbs/25.jpg?v=145765a890",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 13,
+   "frames": [
+    {
+     "rect": [
+      3,
+      4,
+      512,
+      1015
+     ],
+     "title": "You've Been Summoned",
+     "n": 9
+    },
+    {
+     "rect": [
+      512,
+      4,
+      510,
+      1015
+     ],
+     "title": "Bathtub Running",
+     "n": 10
+    },
+    {
+     "rect": [
+      1019,
+      4,
+      514,
+      1015
+     ],
+     "title": "Step Lively",
+     "n": 11
+    }
+   ]
+  },
+  {
+   "id": "26",
+   "src": "comics/tom-waits/pages/26.jpg?v=fe5a78c608",
+   "thumb": "comics/tom-waits/thumbs/26.jpg?v=9fb313b148",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 14,
+   "frames": [
+    {
+     "rect": [
+      4,
+      3,
+      660,
+      1013
+     ],
+     "title": "Who Are You?",
+     "n": 1
+    },
+    {
+     "rect": [
+      663,
+      3,
+      439,
+      1013
+     ],
+     "title": "The Turtles",
+     "n": 2
+    },
+    {
+     "rect": [
+      1100,
+      3,
+      433,
+      1013
+     ],
+     "title": "Trained Professional",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "27",
+   "src": "comics/tom-waits/pages/27.jpg?v=b158f98025",
+   "thumb": "comics/tom-waits/thumbs/27.jpg?v=64afd15812",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 14,
+   "frames": [
+    {
+     "rect": [
+      4,
+      3,
+      508,
+      1012
+     ],
+     "title": "Happy Together",
+     "n": 4
+    },
+    {
+     "rect": [
+      510,
+      3,
+      515,
+      1012
+     ],
+     "title": "Communist Slogan",
+     "n": 5
+    },
+    {
+     "rect": [
+      1023,
+      3,
+      510,
+      1012
+     ],
+     "title": "First Love",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "28",
+   "src": "comics/tom-waits/pages/28.jpg?v=a6d9d2208c",
+   "thumb": "comics/tom-waits/thumbs/28.jpg?v=3a7a7f46a5",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 15,
+   "frames": [
+    {
+     "rect": [
+      3,
+      0,
+      509,
+      1019
+     ],
+     "title": "A Worse Night",
+     "n": 1
+    },
+    {
+     "rect": [
+      512,
+      0,
+      514,
+      1019
+     ],
+     "title": "The Sales Pitch",
+     "n": 2
+    },
+    {
+     "rect": [
+      1025,
+      0,
+      509,
+      1019
+     ],
+     "title": "What Else?",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "29",
+   "src": "comics/tom-waits/pages/29.jpg?v=1abd9e1163",
+   "thumb": "comics/tom-waits/thumbs/29.jpg?v=fabc02f8d4",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 15,
+   "frames": [
+    {
+     "rect": [
+      4,
+      4,
+      476,
+      1015
+     ],
+     "title": "Any Last Wishes?",
+     "n": 4
+    },
+    {
+     "rect": [
+      479,
+      4,
+      574,
+      1015
+     ],
+     "title": "Plenty Of Brandy",
+     "n": 5
+    },
+    {
+     "rect": [
+      1052,
+      4,
+      479,
+      1015
+     ],
+     "title": "Surprise Me",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "30",
+   "src": "comics/tom-waits/pages/30.jpg?v=69a9992071",
+   "thumb": "comics/tom-waits/thumbs/30.jpg?v=bd6cf5bb55",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 16,
+   "frames": [
+    {
+     "rect": [
+      2,
+      4,
+      479,
+      1014
+     ],
+     "title": "Offer Your Guest",
+     "n": 1
+    },
+    {
+     "rect": [
+      478,
+      4,
+      546,
+      1014
+     ],
+     "title": "Old Acquaintance",
+     "n": 2
+    },
+    {
+     "rect": [
+      1022,
+      4,
+      512,
+      1014
+     ],
+     "title": "Separate Checks?",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "31",
+   "src": "comics/tom-waits/pages/31.jpg?v=868e092eef",
+   "thumb": "comics/tom-waits/thumbs/31.jpg?v=9b808ff57b",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 16,
+   "frames": [
+    {
+     "rect": [
+      3,
+      0,
+      509,
+      1020
+     ],
+     "title": "Drinking Brandy",
+     "n": 4
+    },
+    {
+     "rect": [
+      512,
+      0,
+      514,
+      1020
+     ],
+     "title": "A Second Bottle",
+     "n": 5
+    },
+    {
+     "rect": [
+      1024,
+      0,
+      509,
+      1020
+     ],
+     "title": "A Floor Show",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "32",
+   "src": "comics/tom-waits/pages/32.jpg?v=3dc61cf75a",
+   "thumb": "comics/tom-waits/thumbs/32.jpg?v=6606359080",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 17,
+   "frames": [
+    {
+     "rect": [
+      3,
+      3,
+      511,
+      1016
+     ],
+     "title": "My Performance",
+     "n": 1
+    },
+    {
+     "rect": [
+      511,
+      3,
+      514,
+      1016
+     ],
+     "title": "Checking On Price",
+     "n": 2
+    },
+    {
+     "rect": [
+      1023,
+      3,
+      511,
+      1016
+     ],
+     "title": "Any Wish?",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "33",
+   "src": "comics/tom-waits/pages/33.jpg?v=550df85d45",
+   "thumb": "comics/tom-waits/thumbs/33.jpg?v=2e55b9dc4e",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 17,
+   "frames": [
+    {
+     "rect": [
+      3,
+      3,
+      511,
+      1016
+     ],
+     "title": "Dear Friends",
+     "n": 4
+    },
+    {
+     "rect": [
+      512,
+      3,
+      514,
+      1016
+     ],
+     "title": "With A Curtain",
+     "n": 5
+    },
+    {
+     "rect": [
+      1024,
+      3,
+      510,
+      1016
+     ],
+     "title": "Before Or After?",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "34",
+   "src": "comics/tom-waits/pages/34.jpg?v=a7c2ed907d",
+   "thumb": "comics/tom-waits/thumbs/34.jpg?v=de2ca961f0",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 17,
+   "frames": [
+    {
+     "rect": [
+      3,
+      2,
+      511,
+      1018
+     ],
+     "title": "Never Finished",
+     "n": 7
+    },
+    {
+     "rect": [
+      512,
+      2,
+      514,
+      1018
+     ],
+     "title": "You Weren't There",
+     "n": 8
+    },
+    {
+     "rect": [
+      1023,
+      2,
+      511,
+      1018
+     ],
+     "title": "Remarkable Little Fellow",
+     "n": 9
+    }
+   ]
+  },
+  {
+   "id": "35",
+   "src": "comics/tom-waits/pages/35.jpg?v=7b8e86cb3e",
+   "thumb": "comics/tom-waits/thumbs/35.jpg?v=3049415ead",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 17,
+   "frames": [
+    {
+     "rect": [
+      3,
+      3,
+      482,
+      1017
+     ],
+     "title": "Irresistible",
+     "n": 10
+    },
+    {
+     "rect": [
+      481,
+      3,
+      521,
+      1017
+     ],
+     "title": "No Limits",
+     "n": 11
+    },
+    {
+     "rect": [
+      999,
+      3,
+      535,
+      1017
+     ],
+     "title": "It Approves!",
+     "n": 12
+    }
+   ]
+  },
+  {
+   "id": "36",
+   "src": "comics/tom-waits/pages/36.jpg?v=5f04c28aaf",
+   "thumb": "comics/tom-waits/thumbs/36.jpg?v=38424f13b8",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 18,
+   "frames": [
+    {
+     "rect": [
+      3,
+      3,
+      511,
+      1018
+     ],
+     "title": "Johnny Must See",
+     "n": 1
+    },
+    {
+     "rect": [
+      511,
+      3,
+      512,
+      1018
+     ],
+     "title": "Johnny Who?",
+     "n": 2
+    },
+    {
+     "rect": [
+      1020,
+      3,
+      514,
+      1018
+     ],
+     "title": "Your Employer",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "37",
+   "src": "comics/tom-waits/pages/37.jpg?v=93a283f76d",
+   "thumb": "comics/tom-waits/thumbs/37.jpg?v=96e964c58e",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 18,
+   "frames": [
+    {
+     "rect": [
+      3,
+      3,
+      511,
+      1018
+     ],
+     "title": "Wish-Granting Statue",
+     "n": 4
+    },
+    {
+     "rect": [
+      511,
+      3,
+      515,
+      1018
+     ],
+     "title": "And William Shatner",
+     "n": 5
+    },
+    {
+     "rect": [
+      1023,
+      3,
+      511,
+      1018
+     ],
+     "title": "Back To Bed",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "38",
+   "src": "comics/tom-waits/pages/38.jpg?v=a75f646c99",
+   "thumb": "comics/tom-waits/thumbs/38.jpg?v=0896044b50",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 19,
+   "frames": [
+    {
+     "rect": [
+      3,
+      3,
+      512,
+      1018
+     ],
+     "title": "A Demonstration",
+     "n": 1
+    },
+    {
+     "rect": [
+      512,
+      3,
+      513,
+      1018
+     ],
+     "title": "His Room's Empty",
+     "n": 2
+    },
+    {
+     "rect": [
+      1022,
+      3,
+      511,
+      1018
+     ],
+     "title": "Worth The Risk",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "39",
+   "src": "comics/tom-waits/pages/39.jpg?v=b1637bd0ec",
+   "thumb": "comics/tom-waits/thumbs/39.jpg?v=caae62d72e",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 19,
+   "frames": [
+    {
+     "rect": [
+      4,
+      4,
+      510,
+      1013
+     ],
+     "title": "Pitch The Show",
+     "n": 4
+    },
+    {
+     "rect": [
+      511,
+      4,
+      514,
+      1013
+     ],
+     "title": "You Follow People",
+     "n": 5
+    },
+    {
+     "rect": [
+      1022,
+      4,
+      512,
+      1013
+     ],
+     "title": "Unscripted",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "40",
+   "src": "comics/tom-waits/pages/40.jpg?v=b57783b18b",
+   "thumb": "comics/tom-waits/thumbs/40.jpg?v=6959644b27",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 20,
+   "frames": [
+    {
+     "rect": [
+      3,
+      3,
+      511,
+      1017
+     ],
+     "title": "A Simple Wish",
+     "n": 1
+    },
+    {
+     "rect": [
+      511,
+      3,
+      515,
+      1017
+     ],
+     "title": "Apparently Not",
+     "n": 2
+    },
+    {
+     "rect": [
+      1023,
+      3,
+      510,
+      1017
+     ],
+     "title": "The Warm-Up",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "41",
+   "src": "comics/tom-waits/pages/41.jpg?v=38dd0ba9f5",
+   "thumb": "comics/tom-waits/thumbs/41.jpg?v=bf5c3c9c4f",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 21,
+   "frames": [
+    {
+     "rect": [
+      2,
+      3,
+      513,
+      1017
+     ],
+     "title": "In The Hatbox",
+     "n": 1
+    },
+    {
+     "rect": [
+      511,
+      3,
+      516,
+      1017
+     ],
+     "title": "A Real Emerald?",
+     "n": 2
+    },
+    {
+     "rect": [
+      1022,
+      3,
+      513,
+      1017
+     ],
+     "title": "Away With It",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "42",
+   "src": "comics/tom-waits/pages/42.jpg?v=99c1274863",
+   "thumb": "comics/tom-waits/thumbs/42.jpg?v=656c8819bd",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 22,
+   "frames": [
+    {
+     "rect": [
+      3,
+      3,
+      511,
+      1018
+     ],
+     "title": "Floated And Nodded",
+     "n": 1
+    },
+    {
+     "rect": [
+      511,
+      3,
+      511,
+      1018
+     ],
+     "title": "Guest Host",
+     "n": 2
+    },
+    {
+     "rect": [
+      1020,
+      3,
+      514,
+      1018
+     ],
+     "title": "Anything You Want",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "43",
+   "src": "comics/tom-waits/pages/43.jpg?v=87533f3eef",
+   "thumb": "comics/tom-waits/thumbs/43.jpg?v=d718d7145e",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 22,
+   "frames": [
+    {
+     "rect": [
+      3,
+      3,
+      509,
+      1018
+     ],
+     "title": "Open With Shakespeare",
+     "n": 4
+    },
+    {
+     "rect": [
+      510,
+      3,
+      513,
+      1018
+     ],
+     "title": "What A Crock",
+     "n": 5
+    },
+    {
+     "rect": [
+      1021,
+      3,
+      513,
+      1018
+     ],
+     "title": "More Brandy",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "44",
+   "src": "comics/tom-waits/pages/44.jpg?v=7cb0364c91",
+   "thumb": "comics/tom-waits/thumbs/44.jpg?v=979057efc7",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 23,
+   "frames": [
+    {
+     "rect": [
+      3,
+      3,
+      512,
+      1017
+     ],
+     "title": "My Cigars",
+     "n": 1
+    },
+    {
+     "rect": [
+      512,
+      3,
+      514,
+      1017
+     ],
+     "title": "Help Yourself, Johnny",
+     "n": 2
+    },
+    {
+     "rect": [
+      1022,
+      3,
+      511,
+      1017
+     ],
+     "title": "You're Fired!",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "45",
+   "src": "comics/tom-waits/pages/45.jpg?v=66b2cf16dd",
+   "thumb": "comics/tom-waits/thumbs/45.jpg?v=3af584430f",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 23,
+   "frames": [
+    {
+     "rect": [
+      3,
+      4,
+      511,
+      1017
+     ],
+     "title": "Never Again",
+     "n": 4
+    },
+    {
+     "rect": [
+      512,
+      4,
+      513,
+      1017
+     ],
+     "title": "Unemployed!",
+     "n": 5
+    },
+    {
+     "rect": [
+      1021,
+      4,
+      513,
+      1017
+     ],
+     "title": "Thirty Seconds",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "46",
+   "src": "comics/tom-waits/pages/46.jpg?v=130c51f88b",
+   "thumb": "comics/tom-waits/thumbs/46.jpg?v=3ea1c33805",
+   "w": 1536,
+   "h": 1024,
+   "kind": "strip",
+   "scene": 24,
+   "frames": [
+    {
+     "rect": [
+      4,
+      3,
+      1529,
+      1017
+     ],
+     "title": "Month's Young",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "47",
+   "src": "comics/tom-waits/pages/47.jpg?v=8606c0dfc8",
+   "thumb": "comics/tom-waits/thumbs/47.jpg?v=c0480ad290",
+   "w": 1024,
+   "h": 1536,
+   "kind": "end",
+   "scene": 25,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Tune In",
+     "n": 1
     }
    ]
   }

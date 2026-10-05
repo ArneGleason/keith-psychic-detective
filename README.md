@@ -39,13 +39,13 @@ in Goldie's kitchen, the stuffed mushrooms are getting a pinch of Temporal Thyme
 the night, Dennis has flooded the waterfall again, and Clint finds out what the plunger was for.
 
 ### Tom Waits: Night Manager
-**No. 1: Every Room Has a Story. Most Want Cash Up Front.** · In progress · 13 strips so far · [Start reading](https://arnegleason.github.io/keith-psychic-detective/#tom-waits)
+**No. 1: Every Room Has a Story. Most Want Cash Up Front.** · Complete · 45 strips · [Start reading](https://arnegleason.github.io/keith-psychic-detective/#tom-waits)
 
 San Diego, 1973. Tom works the night desk at the Hotel Elysian, and sends a ghost named Fats when
-something needs doing. At 2:40 a.m., guest Chuck Connors calls down about a smell. It's Slim Pickens,
-grilling liver in the parking lot to tempt Doris Day, under the wrong window. Tom swears he only
-mentioned a blonde upstairs. Then a guest who is definitely not Leon Redbone checks in, William
-Shatner sings for room service, and Fats recalls the best-paying kidnapping he ever had.
+something needs doing. Over one long night, Slim Pickens grills liver under Chuck Connors's window,
+William Shatner sings for room service, and Doris and Mary help themselves to the guests' jewelry on
+tips from Fats. Vincent Price buys a wish-granting idol, Fats makes it float, and by sunrise Johnny
+Carson has fired Tom and his hotel security man, Don Knotts. For the second time this month.
 
 ## Reading on any screen
 
@@ -92,7 +92,7 @@ The comics are prepared ahead of time by `tools/build.py`:
 1. **It finds the panels.** It looks for the cream-colored gutters that run the full height of
    each strip, so nobody has to draw frame boxes by hand.
 2. **It makes web images.** It writes optimized JPEGs, thumbnails and covers. The original PNGs
-   come to about 240 MB and the web versions to about 36 MB. The reader then loads only the
+   come to about 325 MB and the web versions to about 50 MB. The reader then loads only the
    pages near where you are.
 3. **It writes the data.** It combines the panels with the scene and frame names from each
    comic's story file into the `comic.json` the reader uses.
