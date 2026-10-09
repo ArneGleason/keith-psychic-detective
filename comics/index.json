@@ -11,6 +11,8 @@
    "cover": "comics/keith-richards/cover.jpg?v=f42736cc06",
    "coverW": 720,
    "coverH": 1080,
+   "unit": "strip",
+   "units": 18,
    "strips": 18,
    "frames": 53
   },
@@ -23,6 +25,8 @@
    "cover": "comics/captain-beefheart/cover.jpg?v=2ef73bce2e",
    "coverW": 720,
    "coverH": 1080,
+   "unit": "strip",
+   "units": 43,
    "strips": 43,
    "frames": 117
   },
@@ -35,8 +39,24 @@
    "cover": "comics/tom-waits/cover.jpg?v=b2990d7e41",
    "coverW": 720,
    "coverH": 1080,
+   "unit": "strip",
+   "units": 45,
    "strips": 45,
    "frames": 128
+  },
+  {
+   "id": "primate-suspects",
+   "title": "The Primate Suspects",
+   "subtitle": "Four Heroes. One Shared Brain Cell.",
+   "issue": "No. 1",
+   "status": "in-progress",
+   "cover": "comics/primate-suspects/cover.jpg?v=69add35f22",
+   "coverW": 720,
+   "coverH": 1080,
+   "unit": "episode",
+   "units": 3,
+   "strips": 3,
+   "frames": 12
   }
  ]
 }

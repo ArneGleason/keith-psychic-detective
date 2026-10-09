@@ -16,9 +16,10 @@
 ## The comics
 
 <p align="center">
-  <a href="https://arnegleason.github.io/keith-psychic-detective/#keith-richards"><img src="comics/keith-richards/cover.jpg" width="32%" alt="Cover of Keith Richards: Psychic Detective No. 1"></a>
-  <a href="https://arnegleason.github.io/keith-psychic-detective/#captain-beefheart"><img src="comics/captain-beefheart/cover.jpg" width="32%" alt="Cover of Captain Beefheart: Laurel Canyon Tour Guide No. 1"></a>
-  <a href="https://arnegleason.github.io/keith-psychic-detective/#tom-waits"><img src="comics/tom-waits/cover.jpg" width="32%" alt="Cover of Tom Waits: Night Manager No. 1"></a>
+  <a href="https://arnegleason.github.io/keith-psychic-detective/#keith-richards"><img src="comics/keith-richards/cover.jpg" width="24%" alt="Cover of Keith Richards: Psychic Detective No. 1"></a>
+  <a href="https://arnegleason.github.io/keith-psychic-detective/#captain-beefheart"><img src="comics/captain-beefheart/cover.jpg" width="24%" alt="Cover of Captain Beefheart: Laurel Canyon Tour Guide No. 1"></a>
+  <a href="https://arnegleason.github.io/keith-psychic-detective/#tom-waits"><img src="comics/tom-waits/cover.jpg" width="24%" alt="Cover of Tom Waits: Night Manager No. 1"></a>
+  <a href="https://arnegleason.github.io/keith-psychic-detective/#primate-suspects"><img src="comics/primate-suspects/cover.jpg" width="24%" alt="Cover of The Primate Suspects No. 1"></a>
 </p>
 
 ### Keith Richards: Psychic Detective
@@ -47,19 +48,28 @@ William Shatner sings for room service, and Doris and Mary help themselves to th
 tips from Fats. Vincent Price buys a wish-granting idol, Fats makes it float, and by sunrise Johnny
 Carson has fired Tom and his hotel security man, Don Knotts. For the second time this month.
 
+### The Primate Suspects
+**Four Heroes. One Shared Brain Cell.** · In progress · 3 episodes so far · [Start reading](https://arnegleason.github.io/keith-psychic-detective/#primate-suspects)
+
+Major Malfunction disables any machine by touching it. Professor Hindsight sees the future five
+minutes too late. The Mind Boggler has telepathy, but only with himself. Count Napula stops time
+while he naps. Unlike the other comics, this one is a run of standalone one-page episodes, each a
+page of four panels, about breakfast, bananas and laundry going wrong at their secret headquarters.
+
 ## Reading on any screen
 
 <img src="screenshots/slide.gif" align="right" width="280" alt="Frame mode on a phone, sliding from frame to frame along a Captain Beefheart strip with motion blur">
 
 The reader fits each comic to the screen it's on.
 
-- **On a laptop** you see a whole strip at a time.
+- **On a laptop** you see a whole strip or page at a time.
 - **On a phone** it goes frame by frame. Each move slides along the strip with a touch of
-  motion blur, so you always know where you are in the page.
+  motion blur, so you always know where you are in the page. A full-page episode opens on
+  the whole page, then zooms into each panel in reading order.
 - **Getting around.** Tap the right or left side of the screen, swipe, or use the arrow keys.
   Tap the middle to hide the controls.
 - **Strip or Frame.** The reader picks a mode to suit the screen, and the switch at the top
-  changes it.
+  changes it. For a comic made of full pages, the switch reads Page and Frame.
 - **Index.** Every frame has a scene number and a short name, like *2.4 Zis Is Kissinger*.
   The index lists them all and jumps straight to any one.
 - **Picks up where you left off.** The shelf remembers where you stopped in each comic.
@@ -70,7 +80,7 @@ The reader fits each comic to the screen it's on.
 |---|---|
 | <kbd>→</kbd> <kbd>↓</kbd> <kbd>Space</kbd> | Next |
 | <kbd>←</kbd> <kbd>↑</kbd> | Previous |
-| <kbd>S</kbd> | Switch between strip and frame |
+| <kbd>S</kbd> | Switch between strip or page, and frame |
 | <kbd>I</kbd> | Index |
 | <kbd>F</kbd> | Full screen |
 | <kbd>Home</kbd> <kbd>End</kbd> | First or last |
@@ -89,10 +99,12 @@ nothing to install. GitHub Pages serves the repository as it is, so publishing i
 
 The comics are prepared ahead of time by `tools/build.py`:
 
-1. **It finds the panels.** It looks for the cream-colored gutters that run the full height of
-   each strip, so nobody has to draw frame boxes by hand.
+1. **It finds the panels.** It looks for the cream-colored gutters between panels, so nobody
+   has to draw frame boxes by hand. A strip is split where gutters run its full height. A full
+   page is split into rows first, then each row into panels, and a title banner across the top
+   is left out.
 2. **It makes web images.** It writes optimized JPEGs, thumbnails and covers. The original PNGs
-   come to about 325 MB and the web versions to about 50 MB. The reader then loads only the
+   come to about 340 MB and the web versions to about 52 MB. The reader then loads only the
    pages near where you are.
 3. **It writes the data.** It combines the panels with the scene and frame names from each
    comic's story file into the `comic.json` the reader uses.
@@ -100,7 +112,7 @@ The comics are prepared ahead of time by `tools/build.py`:
 
 | Path | What it is |
 |---|---|
-| `source-images*/` | The original artwork, one folder per comic |
+| `source-images*/` | The original artwork, one folder per comic. Subfolders are never read |
 | `tools/library.json` | The shelf title and the order of the comics |
 | `tools/stories/<comic>.json` | One per comic: its source folder, scenes and frame names |
 | `tools/build.py` | Finds the panels and writes everything in `comics/` |
@@ -161,6 +173,22 @@ from `"in-progress"` to `"complete"`. The last page then says "The End" instead 
    title, `source` folder, scenes and pages.
 3. Add `"new-comic"` to the `comics` list in `tools/library.json`. The shelf follows that order.
 4. Run the build.
+
+For a comic of standalone one-page episodes, like The Primate Suspects, add `"format": "pages"`
+to its story file and give each page `"kind": "page"` and its own scene. Its scenes are then
+called episodes. A new page dropped into its folder before it's named becomes a new episode,
+titled from its file name, so `04-the-big-heist.png` shows up as Episode 4, "The Big Heist".
+
+```json
+{"file": "04-the-big-heist.png", "kind": "page", "scene": "e4", "frames": ["First", "Second", "Third", "Fourth"]}
+```
+
+### Keeping reference images
+
+A folder of reference images can live inside a comic's source folder, for example
+`source-images-primate-suspects/reference images/`. The build never reads subfolders, so they
+stay out of the reader. Any folder there whose name contains "reference" is also left out of git,
+so it stays on your computer and isn't published with the site.
 
 ### When the build complains
 

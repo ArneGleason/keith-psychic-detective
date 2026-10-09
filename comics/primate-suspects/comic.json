@@ -1,0 +1,239 @@
+{
+ "id": "primate-suspects",
+ "title": "The Primate Suspects",
+ "subtitle": "Four Heroes. One Shared Brain Cell.",
+ "issue": "No. 1",
+ "status": "in-progress",
+ "unit": "episode",
+ "sceneLabel": "Episode",
+ "cover": "comics/primate-suspects/cover.jpg?v=69add35f22",
+ "coverW": 720,
+ "coverH": 1080,
+ "scenes": [
+  {
+   "num": null,
+   "title": "Cover"
+  },
+  {
+   "num": 1,
+   "title": "Breakfast of Chimpions"
+  },
+  {
+   "num": 2,
+   "title": "Fruit of the Looming Disaster"
+  },
+  {
+   "num": 3,
+   "title": "A Little Off the Coat"
+  }
+ ],
+ "pages": [
+  {
+   "id": "01",
+   "src": "comics/primate-suspects/pages/01.jpg?v=efd3e6416e",
+   "thumb": "comics/primate-suspects/thumbs/01.jpg?v=051df22295",
+   "w": 1024,
+   "h": 1536,
+   "kind": "cover",
+   "scene": 0,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Cover",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "02",
+   "src": "comics/primate-suspects/pages/02.jpg?v=d9d2becd8c",
+   "thumb": "comics/primate-suspects/thumbs/02.jpg?v=21ee707685",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 1,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Breakfast of Chimpions",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      9,
+      140,
+      501,
+      615
+     ],
+     "title": "Morning, Major",
+     "n": 1
+    },
+    {
+     "rect": [
+      511,
+      140,
+      503,
+      615
+     ],
+     "title": "Every Bloody Time",
+     "n": 2
+    },
+    {
+     "rect": [
+      10,
+      757,
+      500,
+      763
+     ],
+     "title": "Fixed The Toilet",
+     "n": 3
+    },
+    {
+     "rect": [
+      511,
+      757,
+      502,
+      763
+     ],
+     "title": "Called A Plumber",
+     "n": 4
+    }
+   ]
+  },
+  {
+   "id": "03",
+   "src": "comics/primate-suspects/pages/03.jpg?v=d10668b3b5",
+   "thumb": "comics/primate-suspects/thumbs/03.jpg?v=3d4c1e7cc4",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 2,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Fruit of the Looming Disaster",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      9,
+      133,
+      501,
+      624
+     ],
+     "title": "Banana Thoughts",
+     "n": 1
+    },
+    {
+     "rect": [
+      515,
+      133,
+      500,
+      624
+     ],
+     "title": "Who Said That?",
+     "n": 2
+    },
+    {
+     "rect": [
+      10,
+      759,
+      500,
+      764
+     ],
+     "title": "Another Mind",
+     "n": 3
+    },
+    {
+     "rect": [
+      515,
+      759,
+      499,
+      764
+     ],
+     "title": "The Blender",
+     "n": 4
+    }
+   ]
+  },
+  {
+   "id": "04",
+   "src": "comics/primate-suspects/pages/04.jpg?v=c7cbcb9b60",
+   "thumb": "comics/primate-suspects/thumbs/04.jpg?v=1cf54d947e",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 3,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "A Little Off the Coat",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      6,
+      111,
+      510,
+      655
+     ],
+     "title": "Ten Minutes",
+     "n": 1
+    },
+    {
+     "rect": [
+      516,
+      111,
+      503,
+      655
+     ],
+     "title": "A Boil Wash",
+     "n": 2
+    },
+    {
+     "rect": [
+      8,
+      767,
+      505,
+      758
+     ],
+     "title": "It's Shrinking!",
+     "n": 3
+    },
+    {
+     "rect": [
+      514,
+      767,
+      505,
+      758
+     ],
+     "title": "Still Using That?",
+     "n": 4
+    }
+   ]
+  }
+ ]
+}

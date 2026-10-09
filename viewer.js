@@ -1,7 +1,9 @@
 /* MVE Comics reader.
    The shelf shows every comic's cover. Inside a comic, every page sits on one
    long horizontal ribbon and a camera glides along it. A "stop" is either a
-   whole page (strip mode) or a single frame (frame mode).
+   whole page (strip mode, labelled "Page" for comics made of full pages) or a
+   single frame (frame mode). In frame mode a full page opens on the whole page
+   (its "intro" frame) before visiting its panels.
 
    Addresses:  #                    the shelf
                #<comic>             a comic, from its cover
@@ -12,7 +14,8 @@
 
   const RH = 1024;               // ribbon height; every page is scaled to it
   const GAP = 140;               // ribbon units between pages
-  const AUTO_FRAME_BELOW = 900;  // strip narrower than this many CSS px => frame mode
+  const AUTO_FRAME_BELOW = 900;       // a wide strip shown narrower than this many CSS px => frame mode
+  const AUTO_FRAME_BELOW_TALL = 600;  // a tall page shown narrower than this => frame mode
   const BLUR_LEVELS = [1.5, 3, 5, 7.5, 10.5, 14];
   const LEGACY_COMIC = 'keith-richards';
   const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -58,6 +61,9 @@
     return requests.get(id);
   }
 
+  const countOf = (n, unit) => `${n} ${unit}${n === 1 ? '' : 's'}`;
+  const sceneWord = () => (comic && comic.sceneLabel) || 'Scene';
+
   function splitTitle(t) {
     const i = t.indexOf(': ');
     return i < 0 ? [t, ''] : [t.slice(0, i), t.slice(i + 2)];
@@ -89,9 +95,9 @@
     const [main, rest] = splitTitle(c.title);
     const info = make('span', 'book-info');
     info.append(make('span', 'book-title', main));
-    if (rest) info.append(make('span', 'book-series', rest));
+    if (rest || c.subtitle) info.append(make('span', 'book-series', rest || c.subtitle));
     if (variant !== 'mini') {
-      const meta = make('span', 'book-meta', `${c.issue} · ${c.strips} strips`);
+      const meta = make('span', 'book-meta', `${c.issue} · ${countOf(c.units ?? c.strips, c.unit || 'strip')}`);
       if (c.status === 'in-progress') meta.append(make('span', 'pill', 'In progress'));
       info.append(meta, make('span', 'book-resume'));
     }
@@ -156,6 +162,9 @@
     $('t-main').textContent = main;
     $('t-rest').textContent = rest ? `: ${rest}` : '';
     $('index-title').textContent = data.title;
+    const whole = data.unit === 'episode' ? 'page' : 'strip';
+    $('mode-strip').textContent = whole[0].toUpperCase() + whole.slice(1);
+    $('mode-strip').title = `One ${whole} at a time (S)`;
   }
 
   function buildLayout() {
@@ -334,24 +343,41 @@
     syncModeButtons();
   }
 
+  // The most common shape among a comic's strips or pages, ignoring covers.
+  function typicalPage() {
+    const tally = new Map();
+    for (const p of pages || []) {
+      if (p.kind !== 'strip' && p.kind !== 'page') continue;
+      const k = `${p.w}x${p.h}`;
+      tally.set(k, (tally.get(k) || 0) + 1);
+    }
+    const best = [...tally].sort((a, b) => b[1] - a[1])[0];
+    if (!best) return { w: 1536, h: 1024 };
+    const [w, h] = best[0].split('x').map(Number);
+    return { w, h };
+  }
+
+  // Whole strips or pages when they would show big enough to read, otherwise frame by frame.
   function autoMode() {
-    const s = Math.min(stage.clientWidth / 1536, stage.clientHeight / RH);
-    return 1536 * s < AUTO_FRAME_BELOW ? 'frame' : 'strip';
+    const t = typicalPage();
+    const s = Math.min(stage.clientWidth / t.w, stage.clientHeight / t.h);
+    return t.w * s < (t.w > t.h ? AUTO_FRAME_BELOW : AUTO_FRAME_BELOW_TALL) ? 'frame' : 'strip';
   }
 
   /* ---------- captions, address, chrome ---------- */
 
   function label(stop) {
     const p = pages[stop.page], sc = comic.scenes[p.scene];
-    const scene = sc.num ? `Scene ${sc.num} · ${sc.title}` : sc.title;
+    const scene = sc.num ? `${sceneWord()} ${sc.num} · ${sc.title}` : sc.title;
+    const panels = p.frames.filter(f => !f.intro);
     let frame;
     if (stop.frame != null) {
       const f = p.frames[stop.frame];
-      frame = sc.num ? `${sc.num}.${f.n}  ${f.title}` : f.title;
-    } else if (sc.num) {
-      const a = p.frames[0].n, b = p.frames[p.frames.length - 1].n;
-      frame = a === b ? `${sc.num}.${a}  ${p.frames[0].title}` : `${sc.num}.${a} – ${sc.num}.${b}`;
-    } else frame = p.frames[0].title;
+      frame = f.intro ? '' : sc.num ? `${sc.num}.${f.n}  ${f.title}` : f.title;
+    } else if (sc.num && panels.length) {
+      const a = panels[0].n, b = panels[panels.length - 1].n;
+      frame = a === b ? `${sc.num}.${a}  ${panels[0].title}` : `${sc.num}.${a} – ${sc.num}.${b}`;
+    } else frame = (panels[0] || p.frames[0]).title;
     return { scene, frame: frame === scene ? '' : frame };
   }
 
@@ -369,7 +395,7 @@
     try { history.replaceState(history.state, '', h); } catch { /* file:// */ }
     document.title = `${frame || scene} · ${comic.title}`;
     const sc = comic.scenes[pages[stop.page].scene];
-    store.set('mve-pos-' + comic.id, JSON.stringify({ ...pos, where: sc.num ? `Scene ${sc.num}` : sc.title }));
+    store.set('mve-pos-' + comic.id, JSON.stringify({ ...pos, where: sc.num ? `${sceneWord()} ${sc.num}` : sc.title }));
   }
 
   // The caption stays put when there is empty space under the art;
@@ -465,7 +491,7 @@
     comic.scenes.forEach((sc, si) => {
       const sec = make('div', 'scene');
       const h = make('h3');
-      if (sc.num) h.append(make('b', null, `Scene ${sc.num}`));
+      if (sc.num) h.append(make('b', null, `${sceneWord()} ${sc.num}`));
       h.append(sc.title);
       const cards = make('div', 'cards');
       pages.forEach((p, pi) => {
@@ -483,6 +509,7 @@
         tb.onclick = () => openAt(pi, 0);
         const ol = make('ol');
         p.frames.forEach((f, fi) => {
+          if (f.intro) return;              // the thumbnail already opens the whole page
           const li = make('li'), b = make('button');
           b.append(make('span', null, sc.num ? `${sc.num}.${f.n}` : '•'), f.title);
           b.onclick = () => openAt(pi, fi);
@@ -523,7 +550,7 @@
     $('end-kicker').textContent = done ? 'The End' : 'To be continued…';
     $('end-title').textContent = comic.title;
     $('end-note').textContent = done ? 'Thanks for reading.'
-      : 'This one is still being drawn. New strips are on the way.';
+      : `This one is still being drawn. New ${comic.unit || 'strip'}s are on the way.`;
     const others = library.comics.filter(c => c.id !== comic.id);
     $('end-books').replaceChildren(...others.map(c => bookLink(c, 'mini')));
     $('end-more').hidden = !others.length;

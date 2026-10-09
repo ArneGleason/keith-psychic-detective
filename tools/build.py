@@ -10,13 +10,23 @@ Output   comics/index.json           the shelf
          comics/<id>/cover.jpg       the cover at shelf size
          social.jpg                  link-preview image showing every cover
 
-Frames are found by looking for the cream-coloured gutters that run the full
-height of each strip. A page can override detection with
-"gutters": [[x0, x1], ...] in its story file (inner gutters only).
+Frames are found by looking for the cream-coloured gutters between panels.
+A "strip" is one row of panels, split at gutters that run its full height. A
+strip can override detection with "gutters": [[x0, x1], ...] in its story file
+(inner gutters only). A "page" is a full page of panels in rows. Its rows are
+split at gutters that run its full width, and each row at its own column
+gutters. A short band across the top with no columns is taken as the title
+banner, not a panel. In frame mode a page opens on the whole page, then visits
+each panel in reading order.
+
+A comic whose story file says "format": "pages" is a series of standalone
+episodes, one page each. Its scenes are episodes, and unnamed pages added to
+its folder each become a new episode named after the file.
 
 Images in a comic's source folder that its story file does not list are added
 at the end under "New Pages" with numbered frames, so new strips show up before
-they have been named. List a file under "skip" to leave it out.
+they have been named. List a file under "skip" to leave it out. Subfolders,
+such as a folder of reference images, are never read.
 
 Usage:  pip install pillow numpy
         python3 tools/build.py            build every comic
@@ -95,6 +105,44 @@ def panel_rects(rgb, override=None):
     return rects
 
 
+def page_rects(rgb):
+    """Panels on a full page laid out in rows.
+
+    Returns (banner, panels): the title banner's rect or None, and the panel
+    rects in reading order, left to right and then top to bottom.
+    """
+    h, w, _ = rgb.shape
+    cream = cream_mask(rgb)
+    rows = runs(cream[:, int(w * .05):int(w * .95)].mean(axis=1) > .8)
+    edges = [(-1, -1), *rows, (h, h)]
+    bands = [(a[1] + 1, b[0]) for a, b in zip(edges, edges[1:]) if b[0] - a[1] - 1 >= 40]
+    banner, panels = None, []
+    for i, (y0, y1) in enumerate(bands):
+        m = int((y1 - y0) * .08)
+        cols = runs(cream[y0 + m:y1 - m].mean(axis=0) > .8)
+        left = next((c for c in cols if c[0] <= 2), (0, -1))
+        right = next((c for c in cols if c[1] >= w - 3), (w, w - 1))
+        gut = [left, *(c for c in cols if c[0] > 2 and c[1] < w - 3), right]
+        ry0, ry1 = max(0, y0 - PAD), min(h, y1 + PAD)
+        cells = []
+        for a, b in zip(gut, gut[1:]):
+            x0 = max(0, a[1] + 1 - PAD)
+            cells.append([x0, ry0, min(w, b[0] + PAD) - x0, ry1 - ry0])
+        if i == 0 and len(bands) > 1 and len(cells) == 1 and y1 - y0 < h * .15:
+            banner = cells[0]
+        else:
+            panels += cells
+    return banner, panels
+
+
+def episode_title(filename):
+    """'04-the-big-heist.png' -> 'The Big Heist'"""
+    stem = re.sub(r"^[\d\s._-]+", "", Path(filename).stem)
+    words = re.split(r"[\s_-]+", stem)
+    small = {"a", "an", "and", "at", "by", "for", "in", "of", "off", "on", "or", "the", "to"}
+    return " ".join(wd if k and wd.lower() in small else wd[:1].upper() + wd[1:] for k, wd in enumerate(words) if wd) or stem
+
+
 # ---------- helpers ----------
 
 def natural_key(name):
@@ -131,11 +179,21 @@ def build_comic(cid):
 
     scenes = list(story["scenes"])
     page_cfgs = list(story["pages"])
+    episodic = story.get("format") == "pages"
     skip = set(story.get("skip", []))
     extra = sorted((f.name for f in src.iterdir()
-                    if f.suffix.lower() in IMAGE_TYPES and f.name not in listed and f.name not in skip),
+                    if f.is_file() and f.suffix.lower() in IMAGE_TYPES
+                    and f.name not in listed and f.name not in skip),
                    key=natural_key)
-    if extra:
+    if extra and episodic:
+        print(f"  NOTE: {len(extra)} image(s) not named in {story_path.name} yet, "
+              f"each added at the end as a new episode: {', '.join(extra)}")
+        num = max((s.get("num") or 0 for s in scenes), default=0)
+        for f in extra:
+            num += 1
+            scenes.append({"id": f"_new{num}", "num": num, "title": episode_title(f)})
+            page_cfgs.append({"file": f, "kind": "auto", "scene": f"_new{num}"})
+    elif extra:
         print(f"  NOTE: {len(extra)} image(s) not named in {story_path.name} yet, "
               f"added at the end as New Pages: {', '.join(extra)}")
         scenes.append({"id": "_new", "title": "New Pages"})
@@ -149,7 +207,19 @@ def build_comic(cid):
         w, h = im.size
         kind, names = p["kind"], p.get("frames")
         rects = [[0, 0, w, h]]
-        if kind in ("strip", "auto"):
+        intro = False
+        if kind == "auto" and episodic and h > w:
+            kind, names = "page", None
+        if kind == "page":
+            _, found = page_rects(np.asarray(im))
+            if names is None:
+                names = [None] * len(found)
+            elif len(found) != len(names):
+                sys.exit(f"{cid}: {p['file']}: found {len(found)} panels but {story_path.name} names "
+                         f"{len(names)}. Fix the names, or check that the gutters between panels are clear.")
+            # In frame mode a page opens on the whole page, titled with its episode, before its panels.
+            rects, names, intro = [[0, 0, w, h], *found], [None, *names], True
+        elif kind in ("strip", "auto"):
             found = panel_rects(np.asarray(im), p.get("gutters"))
             if kind == "auto":
                 kind = "strip" if w > h and len(found) > 1 else "splash"
@@ -161,7 +231,10 @@ def build_comic(cid):
                 rects = found
 
         frames = []
-        for rect, name in zip(rects, names):
+        for j, (rect, name) in enumerate(zip(rects, names)):
+            if intro and j == 0:
+                frames.append({"rect": rect, "title": scenes[scene_ix[p["scene"]]]["title"], "n": 0, "intro": True})
+                continue
             k = frame_counter[p["scene"]] = frame_counter.get(p["scene"], 0) + 1
             frames.append({"rect": rect, "title": name or f"Frame {k}", "n": k})
 
@@ -188,22 +261,27 @@ def build_comic(cid):
         "subtitle": story.get("subtitle", ""),
         "issue": story.get("issue", ""),
         "status": story.get("status", "complete"),
+        "unit": "episode" if episodic else "strip",
+        "sceneLabel": "Episode" if episodic else "Scene",
         "cover": cover_url, "coverW": cover_size[0], "coverH": cover_size[1],
         "scenes": [{"num": s.get("num"), "title": s["title"]} for s in scenes],
         "pages": pages,
     }
     (out / "comic.json").write_text(json.dumps(comic, indent=1, ensure_ascii=False) + "\n")
-    print(f"  {len(pages)} pages, {sum(len(p['frames']) for p in pages)} frames, {total / 1e6:.1f} MB")
+    panels = sum(1 for p in pages for f in p["frames"] if not f.get("intro"))
+    print(f"  {len(pages)} pages, {panels} frames, {total / 1e6:.1f} MB")
     return comic
 
 
 # ---------- the shelf ----------
 
 def shelf_entry(comic):
-    strips = [p for p in comic["pages"] if p["kind"] == "strip"]
+    units = [p for p in comic["pages"] if p["kind"] in ("strip", "page")]
     return {k: comic[k] for k in ("id", "title", "subtitle", "issue", "status", "cover", "coverW", "coverH")} | {
-        "strips": len(strips),
-        "frames": sum(len(p["frames"]) for p in strips),
+        "unit": comic.get("unit", "strip"),
+        "units": len(units),
+        "strips": len(units),
+        "frames": sum(1 for p in units for f in p["frames"] if not f.get("intro")),
     }
 
 

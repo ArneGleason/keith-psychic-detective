@@ -1,0 +1,20 @@
+{
+  "title": "The Primate Suspects",
+  "subtitle": "Four Heroes. One Shared Brain Cell.",
+  "issue": "No. 1",
+  "status": "in-progress",
+  "format": "pages",
+  "source": "source-images-primate-suspects",
+  "scenes": [
+    {"id": "cover", "title": "Cover"},
+    {"id": "e1", "num": 1, "title": "Breakfast of Chimpions"},
+    {"id": "e2", "num": 2, "title": "Fruit of the Looming Disaster"},
+    {"id": "e3", "num": 3, "title": "A Little Off the Coat"}
+  ],
+  "pages": [
+    {"file": "00-primate-suspects-cover.png", "kind": "cover", "scene": "cover", "frames": ["Cover"]},
+    {"file": "01-breakfast-of-chimpions.png", "kind": "page", "scene": "e1", "frames": ["Morning, Major", "Every Bloody Time", "Fixed The Toilet", "Called A Plumber"]},
+    {"file": "02-fruit-of-the-looming-disaster.png", "kind": "page", "scene": "e2", "frames": ["Banana Thoughts", "Who Said That?", "Another Mind", "The Blender"]},
+    {"file": "03-a-little-off-the-coat.png", "kind": "page", "scene": "e3", "frames": ["Ten Minutes", "A Boil Wash", "It's Shrinking!", "Still Using That?"]}
+  ]
+}

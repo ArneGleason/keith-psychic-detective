@@ -4,6 +4,8 @@
  "subtitle": "Every Room Has a Story. Most Want Cash Up Front.",
  "issue": "No. 1",
  "status": "complete",
+ "unit": "strip",
+ "sceneLabel": "Scene",
  "cover": "comics/tom-waits/cover.jpg?v=b2990d7e41",
  "coverW": 720,
  "coverH": 1080,
