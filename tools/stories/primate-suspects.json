@@ -9,12 +9,16 @@
     {"id": "cover", "title": "Cover"},
     {"id": "e1", "num": 1, "title": "Breakfast of Chimpions"},
     {"id": "e2", "num": 2, "title": "Fruit of the Looming Disaster"},
-    {"id": "e3", "num": 3, "title": "A Little Off the Coat"}
+    {"id": "e3", "num": 3, "title": "A Little Off the Coat"},
+    {"id": "e4", "num": 4, "title": "A Little Off the Sides"},
+    {"id": "e5", "num": 5, "title": "Natural Waste Management"}
   ],
   "pages": [
     {"file": "00-primate-suspects-cover.png", "kind": "cover", "scene": "cover", "frames": ["Cover"]},
     {"file": "01-breakfast-of-chimpions.png", "kind": "page", "scene": "e1", "frames": ["Morning, Major", "Every Bloody Time", "Fixed The Toilet", "Called A Plumber"]},
     {"file": "02-fruit-of-the-looming-disaster.png", "kind": "page", "scene": "e2", "frames": ["Banana Thoughts", "Who Said That?", "Another Mind", "The Blender"]},
-    {"file": "03-a-little-off-the-coat.png", "kind": "page", "scene": "e3", "frames": ["Ten Minutes", "A Boil Wash", "It's Shrinking!", "Still Using That?"]}
+    {"file": "03-a-little-off-the-coat.png", "kind": "page", "scene": "e3", "frames": ["Ten Minutes", "A Boil Wash", "It's Shrinking!", "Still Using That?"]},
+    {"file": "04-a-little-off-the-sides.png", "kind": "page", "scene": "e4", "frames": ["Passed With Distinction", "Four Hours", "Plenty Of Time", "A Transplant", "It Says Permanent", "Mostly."]},
+    {"file": "05-natural-waste-management.png", "kind": "page", "scene": "e5", "frames": ["Lavatory Brush", "One Of Us", "Barber's Certificate", "Lack Of Progress", "A Movement", "Blast Radius"]}
   ]
 }

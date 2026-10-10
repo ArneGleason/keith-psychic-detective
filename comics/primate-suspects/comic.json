@@ -25,6 +25,14 @@
   {
    "num": 3,
    "title": "A Little Off the Coat"
+  },
+  {
+   "num": 4,
+   "title": "A Little Off the Sides"
+  },
+  {
+   "num": 5,
+   "title": "Natural Waste Management"
   }
  ],
  "pages": [
@@ -232,6 +240,170 @@
      ],
      "title": "Still Using That?",
      "n": 4
+    }
+   ]
+  },
+  {
+   "id": "05",
+   "src": "comics/primate-suspects/pages/05.jpg?v=d147df71a1",
+   "thumb": "comics/primate-suspects/thumbs/05.jpg?v=9019d57ed4",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 4,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "A Little Off the Sides",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      7,
+      110,
+      335,
+      630
+     ],
+     "title": "Passed With Distinction",
+     "n": 1
+    },
+    {
+     "rect": [
+      343,
+      110,
+      340,
+      630
+     ],
+     "title": "Four Hours",
+     "n": 2
+    },
+    {
+     "rect": [
+      684,
+      110,
+      335,
+      630
+     ],
+     "title": "Plenty Of Time",
+     "n": 3
+    },
+    {
+     "rect": [
+      7,
+      738,
+      339,
+      787
+     ],
+     "title": "A Transplant",
+     "n": 4
+    },
+    {
+     "rect": [
+      347,
+      738,
+      324,
+      787
+     ],
+     "title": "It Says Permanent",
+     "n": 5
+    },
+    {
+     "rect": [
+      671,
+      738,
+      348,
+      787
+     ],
+     "title": "Mostly.",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "06",
+   "src": "comics/primate-suspects/pages/06.jpg?v=f9667f43fe",
+   "thumb": "comics/primate-suspects/thumbs/06.jpg?v=fce3cc5f43",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 5,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Natural Waste Management",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      7,
+      110,
+      336,
+      629
+     ],
+     "title": "Lavatory Brush",
+     "n": 1
+    },
+    {
+     "rect": [
+      344,
+      110,
+      339,
+      629
+     ],
+     "title": "One Of Us",
+     "n": 2
+    },
+    {
+     "rect": [
+      684,
+      110,
+      335,
+      629
+     ],
+     "title": "Barber's Certificate",
+     "n": 3
+    },
+    {
+     "rect": [
+      7,
+      737,
+      338,
+      787
+     ],
+     "title": "Lack Of Progress",
+     "n": 4
+    },
+    {
+     "rect": [
+      346,
+      737,
+      331,
+      787
+     ],
+     "title": "A Movement",
+     "n": 5
+    },
+    {
+     "rect": [
+      678,
+      737,
+      341,
+      787
+     ],
+     "title": "Blast Radius",
+     "n": 6
     }
    ]
   }

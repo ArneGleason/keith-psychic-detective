@@ -49,12 +49,13 @@ tips from Fats. Vincent Price buys a wish-granting idol, Fats makes it float, an
 Carson has fired Tom and his hotel security man, Don Knotts. For the second time this month.
 
 ### The Primate Suspects
-**Four Heroes. One Shared Brain Cell.** · In progress · 3 episodes so far · [Start reading](https://arnegleason.github.io/keith-psychic-detective/#primate-suspects)
+**Four Heroes. One Shared Brain Cell.** · In progress · 5 episodes so far · [Start reading](https://arnegleason.github.io/keith-psychic-detective/#primate-suspects)
 
 Major Malfunction disables any machine by touching it. Professor Hindsight sees the future five
 minutes too late. The Mind Boggler has telepathy, but only with himself. Count Napula stops time
-while he naps. Unlike the other comics, this one is a run of standalone one-page episodes, each a
-page of four panels, about breakfast, bananas and laundry going wrong at their secret headquarters.
+while he naps. Unlike the other comics, this one is a run of one-page episodes, each a page of
+four or six panels, about breakfast, bananas, laundry and one very bad haircut going wrong at their
+secret headquarters. Most stand alone, and some carry on into the next.
 
 ## Reading on any screen
 
@@ -104,7 +105,7 @@ The comics are prepared ahead of time by `tools/build.py`:
    page is split into rows first, then each row into panels, and a title banner across the top
    is left out.
 2. **It makes web images.** It writes optimized JPEGs, thumbnails and covers. The original PNGs
-   come to about 340 MB and the web versions to about 52 MB. The reader then loads only the
+   come to about 345 MB and the web versions to about 53 MB. The reader then loads only the
    pages near where you are.
 3. **It writes the data.** It combines the panels with the scene and frame names from each
    comic's story file into the `comic.json` the reader uses.

@@ -54,9 +54,9 @@
    "coverW": 720,
    "coverH": 1080,
    "unit": "episode",
-   "units": 3,
-   "strips": 3,
-   "frames": 12
+   "units": 5,
+   "strips": 5,
+   "frames": 24
   }
  ]
 }
