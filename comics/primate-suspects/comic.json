@@ -33,6 +33,14 @@
   {
    "num": 5,
    "title": "Natural Waste Management"
+  },
+  {
+   "num": 6,
+   "title": "An Exact Fit"
+  },
+  {
+   "num": 7,
+   "title": "A Delicate Touch"
   }
  ],
  "pages": [
@@ -404,6 +412,150 @@
      ],
      "title": "Blast Radius",
      "n": 6
+    }
+   ]
+  },
+  {
+   "id": "07",
+   "src": "comics/primate-suspects/pages/07.jpg?v=5c671100eb",
+   "thumb": "comics/primate-suspects/thumbs/07.jpg?v=b1de750c83",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 6,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "An Exact Fit",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      6,
+      94,
+      345,
+      663
+     ],
+     "title": "Borrow Something",
+     "n": 1
+    },
+    {
+     "rect": [
+      351,
+      94,
+      324,
+      663
+     ],
+     "title": "Load-Bearing",
+     "n": 2
+    },
+    {
+     "rect": [
+      675,
+      94,
+      344,
+      663
+     ],
+     "title": "Cyril's Salvage",
+     "n": 3
+    },
+    {
+     "rect": [
+      6,
+      756,
+      343,
+      761
+     ],
+     "title": "Not You.",
+     "n": 4
+    },
+    {
+     "rect": [
+      348,
+      756,
+      328,
+      761
+     ],
+     "title": "An Exact Fit",
+     "n": 5
+    },
+    {
+     "rect": [
+      676,
+      756,
+      343,
+      761
+     ],
+     "title": "Bad Decisions",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "08",
+   "src": "comics/primate-suspects/pages/08.jpg?v=96043f3111",
+   "thumb": "comics/primate-suspects/thumbs/08.jpg?v=f7a768fa2b",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 7,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "A Delicate Touch",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      10,
+      129,
+      502,
+      628
+     ],
+     "title": "Not A Man",
+     "n": 1
+    },
+    {
+     "rect": [
+      514,
+      129,
+      500,
+      628
+     ],
+     "title": "No Sweat",
+     "n": 2
+    },
+    {
+     "rect": [
+      11,
+      759,
+      442,
+      727
+     ],
+     "title": "Speechless",
+     "n": 3
+    },
+    {
+     "rect": [
+      444,
+      759,
+      569,
+      727
+     ],
+     "title": "Boom",
+     "n": 4
     }
    ]
   }

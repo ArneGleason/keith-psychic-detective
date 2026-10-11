@@ -49,13 +49,13 @@ tips from Fats. Vincent Price buys a wish-granting idol, Fats makes it float, an
 Carson has fired Tom and his hotel security man, Don Knotts. For the second time this month.
 
 ### The Primate Suspects
-**Four Heroes. One Shared Brain Cell.** · In progress · 5 episodes so far · [Start reading](https://arnegleason.github.io/keith-psychic-detective/#primate-suspects)
+**Four Heroes. One Shared Brain Cell.** · In progress · 7 episodes so far · [Start reading](https://arnegleason.github.io/keith-psychic-detective/#primate-suspects)
 
 Major Malfunction disables any machine by touching it. Professor Hindsight sees the future five
 minutes too late. The Mind Boggler has telepathy, but only with himself. Count Napula stops time
 while he naps. Unlike the other comics, this one is a run of one-page episodes, each a page of
-four or six panels, about breakfast, bananas, laundry and one very bad haircut going wrong at their
-secret headquarters. Most stand alone, and some carry on into the next.
+four or six panels, about breakfast, bananas, laundry, one very bad haircut, a load-bearing garden
+gnome and a bomb going wrong. Most stand alone, and some carry on into the next.
 
 ## Reading on any screen
 
@@ -105,7 +105,7 @@ The comics are prepared ahead of time by `tools/build.py`:
    page is split into rows first, then each row into panels, and a title banner across the top
    is left out.
 2. **It makes web images.** It writes optimized JPEGs, thumbnails and covers. The original PNGs
-   come to about 345 MB and the web versions to about 53 MB. The reader then loads only the
+   come to about 350 MB and the web versions to about 54 MB. The reader then loads only the
    pages near where you are.
 3. **It writes the data.** It combines the panels with the scene and frame names from each
    comic's story file into the `comic.json` the reader uses.
@@ -175,7 +175,7 @@ from `"in-progress"` to `"complete"`. The last page then says "The End" instead 
 3. Add `"new-comic"` to the `comics` list in `tools/library.json`. The shelf follows that order.
 4. Run the build.
 
-For a comic of standalone one-page episodes, like The Primate Suspects, add `"format": "pages"`
+For a comic of one-page episodes, like The Primate Suspects, add `"format": "pages"`
 to its story file and give each page `"kind": "page"` and its own scene. Its scenes are then
 called episodes. A new page dropped into its folder before it's named becomes a new episode,
 titled from its file name, so `04-the-big-heist.png` shows up as Episode 4, "The Big Heist".
@@ -197,6 +197,11 @@ so it stays on your computer and isn't published with the site.
   green glow does on Keith Richards page 13. Add the gutter positions by hand to that page's
   line, as `"gutters": [[508, 516], [1012, 1022]]`. Each pair is the left and right pixel
   edge of one gutter between panels.
+- **A full page finds too few panels.** Art that runs over a gutter, like the BOOM between the
+  last two panels of Primate Suspects episode 7, hides it. Give that page's line
+  `"gutters": [null, [[448, 448]]]`, one entry per row of panels from the top. `null` keeps the
+  row as detected, and a pair gives the left and right edge of a hidden gutter. Use the same
+  number twice to split the row at a single line.
 - **Listed but not found.** A file named in the story file is missing from the source folder.
   Check the spelling, including spaces.
 - To leave an image in the folder out of the comic, add its file name to a `"skip"` list

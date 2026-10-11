@@ -15,8 +15,9 @@ A "strip" is one row of panels, split at gutters that run its full height. A
 strip can override detection with "gutters": [[x0, x1], ...] in its story file
 (inner gutters only). A "page" is a full page of panels in rows. Its rows are
 split at gutters that run its full width, and each row at its own column
-gutters. A short band across the top with no columns is taken as the title
-banner, not a panel. In frame mode a page opens on the whole page, then visits
+gutters. A short band across the top is taken as the title banner, not a
+panel. A page can override one row's gutters with "gutters": [null, [[x0, x1]]],
+one entry per panel row, where null keeps what was detected. In frame mode a page opens on the whole page, then visits
 each panel in reading order.
 
 A comic whose story file says "format": "pages" is a series of standalone
@@ -105,33 +106,49 @@ def panel_rects(rgb, override=None):
     return rects
 
 
-def page_rects(rgb):
+def page_rects(rgb, overrides=None):
     """Panels on a full page laid out in rows.
 
     Returns (banner, panels): the title banner's rect or None, and the panel
     rects in reading order, left to right and then top to bottom.
+
+    The first band is the title banner when it is short: under 15% of the page
+    and under half the height of the row below it. It is never split into
+    panels, even when its lettering is the same cream as the gutters.
+
+    overrides is an optional list with one entry per panel row, top to bottom
+    and not counting the banner. An entry of null keeps the detected gutters.
+    A list of [x0, x1] pairs replaces that row's inner gutters, for a row whose
+    gutter is hidden by artwork. A gutter can be a single line, [x, x].
     """
     h, w, _ = rgb.shape
     cream = cream_mask(rgb)
     rows = runs(cream[:, int(w * .05):int(w * .95)].mean(axis=1) > .8)
     edges = [(-1, -1), *rows, (h, h)]
     bands = [(a[1] + 1, b[0]) for a, b in zip(edges, edges[1:]) if b[0] - a[1] - 1 >= 40]
-    banner, panels = None, []
+    banner = None
+    if len(bands) > 1:
+        top_h, next_h = bands[0][1] - bands[0][0], bands[1][1] - bands[1][0]
+        if top_h < h * .15 and top_h < next_h * .5:
+            y0, y1 = bands.pop(0)
+            banner = [0, max(0, y0 - PAD), w, min(h, y1 + PAD) - max(0, y0 - PAD)]
+    overrides = list(overrides or [])
+    if len(overrides) > len(bands):
+        raise ValueError(f"gutter overrides name {len(overrides)} rows, but the page has {len(bands)}")
+    panels = []
     for i, (y0, y1) in enumerate(bands):
         m = int((y1 - y0) * .08)
         cols = runs(cream[y0 + m:y1 - m].mean(axis=0) > .8)
         left = next((c for c in cols if c[0] <= 2), (0, -1))
         right = next((c for c in cols if c[1] >= w - 3), (w, w - 1))
-        gut = [left, *(c for c in cols if c[0] > 2 and c[1] < w - 3), right]
+        inner = [c for c in cols if c[0] > 2 and c[1] < w - 3]
+        if i < len(overrides) and overrides[i] is not None:
+            inner = [tuple(g) for g in overrides[i]]
+        gut = [left, *inner, right]
         ry0, ry1 = max(0, y0 - PAD), min(h, y1 + PAD)
-        cells = []
         for a, b in zip(gut, gut[1:]):
             x0 = max(0, a[1] + 1 - PAD)
-            cells.append([x0, ry0, min(w, b[0] + PAD) - x0, ry1 - ry0])
-        if i == 0 and len(bands) > 1 and len(cells) == 1 and y1 - y0 < h * .15:
-            banner = cells[0]
-        else:
-            panels += cells
+            panels.append([x0, ry0, min(w, b[0] + PAD) - x0, ry1 - ry0])
     return banner, panels
 
 
@@ -211,12 +228,13 @@ def build_comic(cid):
         if kind == "auto" and episodic and h > w:
             kind, names = "page", None
         if kind == "page":
-            _, found = page_rects(np.asarray(im))
+            _, found = page_rects(np.asarray(im), p.get("gutters"))
             if names is None:
                 names = [None] * len(found)
             elif len(found) != len(names):
                 sys.exit(f"{cid}: {p['file']}: found {len(found)} panels but {story_path.name} names "
-                         f"{len(names)}. Fix the names, or check that the gutters between panels are clear.")
+                         f"{len(names)}. Fix the names, or add a \"gutters\" override for the row whose "
+                         f"gutter is hidden by artwork.")
             # In frame mode a page opens on the whole page, titled with its episode, before its panels.
             rects, names, intro = [[0, 0, w, h], *found], [None, *names], True
         elif kind in ("strip", "auto"):
