@@ -136,8 +136,11 @@ def main():
             a.querySelector('.book-title').textContent + ': ' + a.querySelector('.book-meta').textContent)""")
         print("shelf: " + " | ".join(shelf))
         for other in (c for c in ids if c != args.comic):
+            title = json.loads((ROOT / "comics" / other / "comic.json").read_text())["title"]
             pg.goto(base + "#" + other + "/p2")
-            pg.wait_for_function(READY, timeout=30000)
+            # Only the address changes, and the comic loads after it, so wait for its title.
+            pg.wait_for_function(f"""() => document.getElementById('index-title').textContent === {json.dumps(title)}
+                && ({READY})()""", timeout=30000)
             s = pg.evaluate(STATE)
             print(f"other comic opens: {other}, {s['mode']} mode, {s['scene']}")
         browser.close()
