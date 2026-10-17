@@ -49,13 +49,14 @@ tips from Fats. Vincent Price buys a wish-granting idol, Fats makes it float, an
 Carson has fired Tom and his hotel security man, Don Knotts. For the second time this month.
 
 ### The Primate Suspects
-**Four Heroes. One Shared Brain Cell.** · In progress · 7 episodes so far · [Start reading](https://arnegleason.github.io/keith-psychic-detective/#primate-suspects)
+**Four Heroes. One Shared Brain Cell.** · In progress · 15 episodes so far · [Start reading](https://arnegleason.github.io/keith-psychic-detective/#primate-suspects)
 
 Major Malfunction disables any machine by touching it. Professor Hindsight sees the future five
 minutes too late. The Mind Boggler has telepathy, but only with himself. Count Napula stops time
 while he naps. Unlike the other comics, this one is a run of one-page episodes, each a page of
-four or six panels, about breakfast, bananas, laundry, one very bad haircut, a load-bearing garden
-gnome and a bomb going wrong. Most stand alone, and some carry on into the next.
+four or six panels. Breakfast, laundry, haircuts, a bomb, a broken organ and a diner's soup all go
+wrong, and Clive, a garden gnome from the junkyard next door, starts selling love advice. Most
+episodes stand alone, and some carry on into the next.
 
 ## Reading on any screen
 
@@ -105,7 +106,7 @@ The comics are prepared ahead of time by `tools/build.py`:
    page is split into rows first, then each row into panels, and a title banner across the top
    is left out.
 2. **It makes web images.** It writes optimized JPEGs, thumbnails and covers. The original PNGs
-   come to about 350 MB and the web versions to about 54 MB. The reader then loads only the
+   come to about 370 MB and the web versions to about 57 MB. The reader then loads only the
    pages near where you are.
 3. **It writes the data.** It combines the panels with the scene and frame names from each
    comic's story file into the `comic.json` the reader uses.
@@ -118,6 +119,9 @@ The comics are prepared ahead of time by `tools/build.py`:
 | `tools/stories/<comic>.json` | One per comic: its source folder, scenes and frame names |
 | `tools/build.py` | Finds the panels and writes everything in `comics/` |
 | `tools/preview.py` | Serves the site on your computer so you can check it before pushing |
+| `tools/show_panels.py` | Draws the panels the build found, to check them at a glance |
+| `tools/check_reader.py` | Reads a comic through in a headless browser on a phone and a laptop |
+| `tools/readme_screenshots.py` | Rebuilds the README images from the real reader |
 | `comics/` | Build output. Do not edit by hand |
 | `screenshots/` | Images for this README |
 
@@ -145,6 +149,38 @@ until you push.
 
 ```bash
 git push
+```
+
+### Checking your work
+
+These three tools check a build before you push. The last two drive a headless browser, so they
+need Playwright as well. They use your installed Google Chrome. Without Chrome, run
+`python3 -m playwright install chromium` once.
+
+```bash
+pip install playwright
+```
+
+`show_panels.py` draws a numbered box on every panel the build found, so a missed gutter or a
+banner read as a panel stands out. Give it page numbers or a range to see just the new ones.
+
+```bash
+python3 tools/show_panels.py primate-suspects 9-16
+```
+
+`check_reader.py` reads a comic from start to finish on a phone and a laptop. It confirms every
+stop comes in order, that the end page appears, that every image loads, and that the other comics
+still open. Add `--live` to check the published site after a push.
+
+```bash
+python3 tools/check_reader.py primate-suspects
+```
+
+`readme_screenshots.py` rebuilds the images in `screenshots/` from the reader itself. After adding
+a comic or episodes, `phones` refreshes the shelf image, which shows each comic's count.
+
+```bash
+python3 tools/readme_screenshots.py phones
 ```
 
 ### Adding strips to a comic

@@ -13,7 +13,15 @@
     {"id": "e4", "num": 4, "title": "A Little Off the Sides"},
     {"id": "e5", "num": 5, "title": "Natural Waste Management"},
     {"id": "e6", "num": 6, "title": "An Exact Fit"},
-    {"id": "e7", "num": 7, "title": "A Delicate Touch"}
+    {"id": "e7", "num": 7, "title": "A Delicate Touch"},
+    {"id": "e8", "num": 8, "title": "Contemplation Time"},
+    {"id": "e9", "num": 9, "title": "A Delicate Improvement"},
+    {"id": "e10", "num": 10, "title": "Parental Guidance"},
+    {"id": "e11", "num": 11, "title": "Breakfast Encounters"},
+    {"id": "e12", "num": 12, "title": "A Captive Audience"},
+    {"id": "e13", "num": 13, "title": "Table Talk"},
+    {"id": "e14", "num": 14, "title": "Room for Improvement"},
+    {"id": "e15", "num": 15, "title": "Love Life Advice"}
   ],
   "pages": [
     {"file": "00-primate-suspects-cover.png", "kind": "cover", "scene": "cover", "frames": ["Cover"]},
@@ -24,6 +32,14 @@
     {"file": "05-natural-waste-management.png", "kind": "page", "scene": "e5", "frames": ["Lavatory Brush", "One Of Us", "Barber's Certificate", "Lack Of Progress", "A Movement", "Blast Radius"]},
     {"file": "06-an-exact-fit.png", "kind": "page", "scene": "e6", "frames": ["Borrow Something", "Load-Bearing", "Cyril's Salvage", "Not You.", "An Exact Fit", "Bad Decisions"]},
     {"file": "07-a-delicate-touch.png", "kind": "page", "scene": "e7", "frames": ["Not A Man", "No Sweat", "Speechless", "Boom"],
-      "gutters": [null, [[448, 448]]]}
+      "gutters": [null, [[448, 448]]]},
+    {"file": "08-contemplation-time.png", "kind": "page", "scene": "e8", "frames": ["Since Tuesday", "Looking Hairless", "Contemplation Clock", "Enslaved By It", "Five Minutes Fast", "Any More?"]},
+    {"file": "09-a-delicate-improvement.png", "kind": "page", "scene": "e9", "frames": ["Borrow Your Muscles", "Honeymoon Present", "Delicate Things", "Honeymoon Clown", "Bear Up Somehow", "Anniversary Figurine"]},
+    {"file": "10-parental-guidance.png", "kind": "page", "scene": "e10", "frames": ["Make Him Useful", "Origin Story", "My Cousin", "Character Development", "Killing Off Parents", "The Toaster"]},
+    {"file": "11-breakfast-encounters.png", "kind": "page", "scene": "e11", "frames": ["Surprise Me", "Raisin Bland", "Private Crunch", "All-Bloat", "Choco Comets", "Short Of Crew"]},
+    {"file": "12-a-captive-audience.png", "kind": "page", "scene": "e12", "frames": ["Don't You Sleep?", "People Pay", "A Loyal Audience", "Act One", "Appendix D", "Director's Commentary"]},
+    {"file": "13-table-talk.png", "kind": "page", "scene": "e13", "frames": ["His Last Mistake", "Explain Soup", "Compromised Toast", "His Usual", "Only Your Soup", "Brought Separately"]},
+    {"file": "14-room-for-improvement.png", "kind": "page", "scene": "e14", "frames": ["Pool Table Sale", "Stopped Turning", "Anything Valuable", "Whirr-Klack!", "Fix The Fan", "Three Keyboards"]},
+    {"file": "15-love-life-advice.png", "kind": "page", "scene": "e15", "frames": ["Been Calling", "A Pair", "Love Advice", "Split It", "Count On Two", "The Queue"]}
   ]
 }

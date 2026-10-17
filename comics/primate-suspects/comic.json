@@ -41,6 +41,38 @@
   {
    "num": 7,
    "title": "A Delicate Touch"
+  },
+  {
+   "num": 8,
+   "title": "Contemplation Time"
+  },
+  {
+   "num": 9,
+   "title": "A Delicate Improvement"
+  },
+  {
+   "num": 10,
+   "title": "Parental Guidance"
+  },
+  {
+   "num": 11,
+   "title": "Breakfast Encounters"
+  },
+  {
+   "num": 12,
+   "title": "A Captive Audience"
+  },
+  {
+   "num": 13,
+   "title": "Table Talk"
+  },
+  {
+   "num": 14,
+   "title": "Room for Improvement"
+  },
+  {
+   "num": 15,
+   "title": "Love Life Advice"
   }
  ],
  "pages": [
@@ -556,6 +588,662 @@
      ],
      "title": "Boom",
      "n": 4
+    }
+   ]
+  },
+  {
+   "id": "09",
+   "src": "comics/primate-suspects/pages/09.jpg?v=fbe515c23d",
+   "thumb": "comics/primate-suspects/thumbs/09.jpg?v=03afb21d2e",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 8,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Contemplation Time",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      6,
+      111,
+      349,
+      664
+     ],
+     "title": "Since Tuesday",
+     "n": 1
+    },
+    {
+     "rect": [
+      352,
+      111,
+      321,
+      664
+     ],
+     "title": "Looking Hairless",
+     "n": 2
+    },
+    {
+     "rect": [
+      670,
+      111,
+      348,
+      664
+     ],
+     "title": "Contemplation Clock",
+     "n": 3
+    },
+    {
+     "rect": [
+      7,
+      776,
+      347,
+      749
+     ],
+     "title": "Enslaved By It",
+     "n": 4
+    },
+    {
+     "rect": [
+      352,
+      776,
+      320,
+      749
+     ],
+     "title": "Five Minutes Fast",
+     "n": 5
+    },
+    {
+     "rect": [
+      669,
+      776,
+      349,
+      749
+     ],
+     "title": "Any More?",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "10",
+   "src": "comics/primate-suspects/pages/10.jpg?v=2c22f139a6",
+   "thumb": "comics/primate-suspects/thumbs/10.jpg?v=e0141b2cf1",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 9,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "A Delicate Improvement",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      6,
+      79,
+      321,
+      642
+     ],
+     "title": "Borrow Your Muscles",
+     "n": 1
+    },
+    {
+     "rect": [
+      327,
+      79,
+      372,
+      642
+     ],
+     "title": "Honeymoon Present",
+     "n": 2
+    },
+    {
+     "rect": [
+      699,
+      79,
+      321,
+      642
+     ],
+     "title": "Delicate Things",
+     "n": 3
+    },
+    {
+     "rect": [
+      6,
+      719,
+      321,
+      806
+     ],
+     "title": "Honeymoon Clown",
+     "n": 4
+    },
+    {
+     "rect": [
+      328,
+      719,
+      371,
+      806
+     ],
+     "title": "Bear Up Somehow",
+     "n": 5
+    },
+    {
+     "rect": [
+      699,
+      719,
+      320,
+      806
+     ],
+     "title": "Anniversary Figurine",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "11",
+   "src": "comics/primate-suspects/pages/11.jpg?v=992c14f9d3",
+   "thumb": "comics/primate-suspects/thumbs/11.jpg?v=c939657384",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 10,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Parental Guidance",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      7,
+      95,
+      344,
+      672
+     ],
+     "title": "Make Him Useful",
+     "n": 1
+    },
+    {
+     "rect": [
+      348,
+      95,
+      333,
+      672
+     ],
+     "title": "Origin Story",
+     "n": 2
+    },
+    {
+     "rect": [
+      680,
+      95,
+      338,
+      672
+     ],
+     "title": "My Cousin",
+     "n": 3
+    },
+    {
+     "rect": [
+      7,
+      765,
+      343,
+      755
+     ],
+     "title": "Character Development",
+     "n": 4
+    },
+    {
+     "rect": [
+      348,
+      765,
+      332,
+      755
+     ],
+     "title": "Killing Off Parents",
+     "n": 5
+    },
+    {
+     "rect": [
+      679,
+      765,
+      339,
+      755
+     ],
+     "title": "The Toaster",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "12",
+   "src": "comics/primate-suspects/pages/12.jpg?v=0c311078c5",
+   "thumb": "comics/primate-suspects/thumbs/12.jpg?v=2b448788d6",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 11,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Breakfast Encounters",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      7,
+      119,
+      341,
+      657
+     ],
+     "title": "Surprise Me",
+     "n": 1
+    },
+    {
+     "rect": [
+      347,
+      119,
+      332,
+      657
+     ],
+     "title": "Raisin Bland",
+     "n": 2
+    },
+    {
+     "rect": [
+      677,
+      119,
+      341,
+      657
+     ],
+     "title": "Private Crunch",
+     "n": 3
+    },
+    {
+     "rect": [
+      7,
+      776,
+      341,
+      732
+     ],
+     "title": "All-Bloat",
+     "n": 4
+    },
+    {
+     "rect": [
+      347,
+      776,
+      332,
+      732
+     ],
+     "title": "Choco Comets",
+     "n": 5
+    },
+    {
+     "rect": [
+      677,
+      776,
+      341,
+      732
+     ],
+     "title": "Short Of Crew",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "13",
+   "src": "comics/primate-suspects/pages/13.jpg?v=d082dab417",
+   "thumb": "comics/primate-suspects/thumbs/13.jpg?v=5090123b0f",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 12,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "A Captive Audience",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      7,
+      118,
+      343,
+      631
+     ],
+     "title": "Don't You Sleep?",
+     "n": 1
+    },
+    {
+     "rect": [
+      348,
+      118,
+      330,
+      631
+     ],
+     "title": "People Pay",
+     "n": 2
+    },
+    {
+     "rect": [
+      677,
+      118,
+      340,
+      631
+     ],
+     "title": "A Loyal Audience",
+     "n": 3
+    },
+    {
+     "rect": [
+      8,
+      748,
+      342,
+      757
+     ],
+     "title": "Act One",
+     "n": 4
+    },
+    {
+     "rect": [
+      348,
+      748,
+      330,
+      757
+     ],
+     "title": "Appendix D",
+     "n": 5
+    },
+    {
+     "rect": [
+      677,
+      748,
+      340,
+      757
+     ],
+     "title": "Director's Commentary",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "14",
+   "src": "comics/primate-suspects/pages/14.jpg?v=c7a6021aaf",
+   "thumb": "comics/primate-suspects/thumbs/14.jpg?v=7203af3b3c",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 13,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Table Talk",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      8,
+      108,
+      506,
+      463
+     ],
+     "title": "His Last Mistake",
+     "n": 1
+    },
+    {
+     "rect": [
+      515,
+      108,
+      502,
+      463
+     ],
+     "title": "Explain Soup",
+     "n": 2
+    },
+    {
+     "rect": [
+      8,
+      571,
+      506,
+      451
+     ],
+     "title": "Compromised Toast",
+     "n": 3
+    },
+    {
+     "rect": [
+      515,
+      571,
+      502,
+      451
+     ],
+     "title": "His Usual",
+     "n": 4
+    },
+    {
+     "rect": [
+      8,
+      1021,
+      506,
+      504
+     ],
+     "title": "Only Your Soup",
+     "n": 5
+    },
+    {
+     "rect": [
+      515,
+      1021,
+      502,
+      504
+     ],
+     "title": "Brought Separately",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "15",
+   "src": "comics/primate-suspects/pages/15.jpg?v=3fb9d1141f",
+   "thumb": "comics/primate-suspects/thumbs/15.jpg?v=8d24390d72",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 14,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Room for Improvement",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      7,
+      82,
+      506,
+      443
+     ],
+     "title": "Pool Table Sale",
+     "n": 1
+    },
+    {
+     "rect": [
+      514,
+      82,
+      505,
+      443
+     ],
+     "title": "Stopped Turning",
+     "n": 2
+    },
+    {
+     "rect": [
+      7,
+      525,
+      506,
+      426
+     ],
+     "title": "Anything Valuable",
+     "n": 3
+    },
+    {
+     "rect": [
+      514,
+      525,
+      504,
+      426
+     ],
+     "title": "Whirr-Klack!",
+     "n": 4
+    },
+    {
+     "rect": [
+      7,
+      950,
+      557,
+      580
+     ],
+     "title": "Fix The Fan",
+     "n": 5
+    },
+    {
+     "rect": [
+      564,
+      950,
+      454,
+      580
+     ],
+     "title": "Three Keyboards",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "16",
+   "src": "comics/primate-suspects/pages/16.jpg?v=4ef7c5199f",
+   "thumb": "comics/primate-suspects/thumbs/16.jpg?v=03e7a9bac9",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 15,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Love Life Advice",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      6,
+      106,
+      506,
+      454
+     ],
+     "title": "Been Calling",
+     "n": 1
+    },
+    {
+     "rect": [
+      512,
+      106,
+      507,
+      454
+     ],
+     "title": "A Pair",
+     "n": 2
+    },
+    {
+     "rect": [
+      6,
+      558,
+      506,
+      448
+     ],
+     "title": "Love Advice",
+     "n": 3
+    },
+    {
+     "rect": [
+      512,
+      558,
+      507,
+      448
+     ],
+     "title": "Split It",
+     "n": 4
+    },
+    {
+     "rect": [
+      6,
+      1005,
+      414,
+      519
+     ],
+     "title": "Count On Two",
+     "n": 5
+    },
+    {
+     "rect": [
+      423,
+      1005,
+      596,
+      519
+     ],
+     "title": "The Queue",
+     "n": 6
     }
    ]
   }

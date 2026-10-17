@@ -123,7 +123,10 @@ def page_rects(rgb, overrides=None):
     """
     h, w, _ = rgb.shape
     cream = cream_mask(rgb)
-    rows = runs(cream[:, int(w * .05):int(w * .95)].mean(axis=1) > .8)
+    row_frac = cream[:, int(w * .05):int(w * .95)].mean(axis=1)
+    # A row gutter is cream all the way across at its clearest line. A line of white speech
+    # balloons across the top of a row can pass the 80% test, but it never gets near 97%.
+    rows = [r for r in runs(row_frac > .8) if row_frac[r[0]:r[1] + 1].max() >= .97]
     edges = [(-1, -1), *rows, (h, h)]
     bands = [(a[1] + 1, b[0]) for a, b in zip(edges, edges[1:]) if b[0] - a[1] - 1 >= 40]
     banner = None
