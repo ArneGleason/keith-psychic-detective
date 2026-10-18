@@ -73,6 +73,14 @@
   {
    "num": 15,
    "title": "Love Life Advice"
+  },
+  {
+   "num": 16,
+   "title": "Natural Influences"
+  },
+  {
+   "num": 17,
+   "title": "Preparation Is Everything"
   }
  ],
  "pages": [
@@ -1243,6 +1251,170 @@
       519
      ],
      "title": "The Queue",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "17",
+   "src": "comics/primate-suspects/pages/17.jpg?v=6c443fe34a",
+   "thumb": "comics/primate-suspects/thumbs/17.jpg?v=ee01923798",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 16,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Natural Influences",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      7,
+      92,
+      534,
+      485
+     ],
+     "title": "Thank Fuck",
+     "n": 1
+    },
+    {
+     "rect": [
+      540,
+      92,
+      477,
+      485
+     ],
+     "title": "From That House",
+     "n": 2
+    },
+    {
+     "rect": [
+      7,
+      577,
+      506,
+      454
+     ],
+     "title": "Mostly Listening",
+     "n": 3
+    },
+    {
+     "rect": [
+      512,
+      577,
+      505,
+      454
+     ],
+     "title": "Keeps Foxes Away",
+     "n": 4
+    },
+    {
+     "rect": [
+      7,
+      1031,
+      506,
+      493
+     ],
+     "title": "What Else?",
+     "n": 5
+    },
+    {
+     "rect": [
+      513,
+      1031,
+      504,
+      493
+     ],
+     "title": "Don't Rush Me",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "18",
+   "src": "comics/primate-suspects/pages/18.jpg?v=ec8c8cffda",
+   "thumb": "comics/primate-suspects/thumbs/18.jpg?v=fd415c05d2",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 17,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Preparation Is Everything",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      8,
+      97,
+      562,
+      421
+     ],
+     "title": "Your Mum's Here",
+     "n": 1
+    },
+    {
+     "rect": [
+      570,
+      97,
+      447,
+      421
+     ],
+     "title": "Eight Years",
+     "n": 2
+    },
+    {
+     "rect": [
+      8,
+      516,
+      562,
+      493
+     ],
+     "title": "Suspender Tension",
+     "n": 3
+    },
+    {
+     "rect": [
+      570,
+      516,
+      446,
+      493
+     ],
+     "title": "Vinegar Feet",
+     "n": 4
+    },
+    {
+     "rect": [
+      7,
+      1006,
+      506,
+      519
+     ],
+     "title": "My Own Refinement",
+     "n": 5
+    },
+    {
+     "rect": [
+      512,
+      1006,
+      505,
+      519
+     ],
+     "title": "Three Pairs Short",
      "n": 6
     }
    ]

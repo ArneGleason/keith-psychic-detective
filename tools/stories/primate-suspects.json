@@ -21,7 +21,9 @@
     {"id": "e12", "num": 12, "title": "A Captive Audience"},
     {"id": "e13", "num": 13, "title": "Table Talk"},
     {"id": "e14", "num": 14, "title": "Room for Improvement"},
-    {"id": "e15", "num": 15, "title": "Love Life Advice"}
+    {"id": "e15", "num": 15, "title": "Love Life Advice"},
+    {"id": "e16", "num": 16, "title": "Natural Influences"},
+    {"id": "e17", "num": 17, "title": "Preparation Is Everything"}
   ],
   "pages": [
     {"file": "00-primate-suspects-cover.png", "kind": "cover", "scene": "cover", "frames": ["Cover"]},
@@ -40,6 +42,8 @@
     {"file": "12-a-captive-audience.png", "kind": "page", "scene": "e12", "frames": ["Don't You Sleep?", "People Pay", "A Loyal Audience", "Act One", "Appendix D", "Director's Commentary"]},
     {"file": "13-table-talk.png", "kind": "page", "scene": "e13", "frames": ["His Last Mistake", "Explain Soup", "Compromised Toast", "His Usual", "Only Your Soup", "Brought Separately"]},
     {"file": "14-room-for-improvement.png", "kind": "page", "scene": "e14", "frames": ["Pool Table Sale", "Stopped Turning", "Anything Valuable", "Whirr-Klack!", "Fix The Fan", "Three Keyboards"]},
-    {"file": "15-love-life-advice.png", "kind": "page", "scene": "e15", "frames": ["Been Calling", "A Pair", "Love Advice", "Split It", "Count On Two", "The Queue"]}
+    {"file": "15-love-life-advice.png", "kind": "page", "scene": "e15", "frames": ["Been Calling", "A Pair", "Love Advice", "Split It", "Count On Two", "The Queue"]},
+    {"file": "16-natural-influences.png", "kind": "page", "scene": "e16", "frames": ["Thank Fuck", "From That House", "Mostly Listening", "Keeps Foxes Away", "What Else?", "Don't Rush Me"]},
+    {"file": "17-preparation-is-everything.png", "kind": "page", "scene": "e17", "frames": ["Your Mum's Here", "Eight Years", "Suspender Tension", "Vinegar Feet", "My Own Refinement", "Three Pairs Short"]}
   ]
 }
