@@ -1,0 +1,19 @@
+{
+ "model": "lyria-3-pro-preview",
+ "prompt": "Whimsical, bouncy Italian-style comedy instrumental, about 55 seconds long, for a sitcom about bumbling heroes: a plucky mandolin melody, an oom-pah tuba bassline, pizzicato strings, cheeky bassoon and clarinet counter-lines, a light snare brush. Brisk two-step feel around 120 BPM, playful, mischievous and a little awkward, like a 1960s Italian film comedy cue. Instrumental only, no vocals. Light arrangement so on-screen gags read, and a clean comic button ending.",
+ "texts": [
+  "[[A0]]\n[[B1]]\n[[C2]]\n[[D3]]\n[[E4]]"
+ ],
+ "usage": {
+  "promptTokenCount": 117,
+  "candidatesTokenCount": 1212,
+  "totalTokenCount": 1329,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 117
+   }
+  ],
+  "serviceTier": "standard"
+ }
+}

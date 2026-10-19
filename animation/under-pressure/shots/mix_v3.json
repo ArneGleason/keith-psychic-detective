@@ -1,0 +1,11 @@
+{
+ "video": "../out/under_pressure_v2_silent.mp4",
+ "length": 48.8,
+ "_why": "Music (Lyria 3.5, original cue in a bouncy Italian-comedy style) runs under everything and stops dead as the push peaks, so the squeak (ElevenLabs SFX take 4) lands in silence. A slow mantel clock (ElevenLabs SFX) ticks through the awkward pause while 'What's that smell?' lands, then the cue's last bar and button chord come back under the end masthead (button hit at 47.3).",
+ "tracks": [
+  {"src": "../audio/music_lyria_a.mp3", "in": 0.0, "out": 39.1, "at": 0.0, "gain_db": -2, "fade_out": 0.15},
+  {"src": "../audio/squeak_4.wav", "at": 39.3, "gain_db": 2},
+  {"src": "../audio/clock_1.wav", "in": 0.0, "out": 3.1, "at": 41.2, "gain_db": 14, "fade_in": 0.25, "fade_out": 0.4},
+  {"src": "../audio/music_lyria_a.mp3", "in": 55.5, "out": 60.0, "at": 44.0, "gain_db": -2, "fade_in": 0.08}
+ ]
+}

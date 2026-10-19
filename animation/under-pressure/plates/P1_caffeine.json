@@ -1,0 +1,5 @@
+{
+ "src": "animation/under-pressure/src/p1_caffeine.png",
+ "model": "gemini-3-pro-image",
+ "prompt": "This is one panel from a painted graphic novel. Produce the SAME painting as a clean widescreen 16:9 frame for animation: remove every speech balloon, caption box, sound-effect word and all lettering, and paint in what was behind them so nothing looks erased. Extend the scene naturally to the left and right to fill the wider frame, continuing the same room, furniture, light and brushwork. Keep every character exactly as painted: same faces, masks, fur, costumes, poses, expressions, props and colours. Keep the painterly, slightly caricatured illustration style with visible brushwork and rich colour; do not make it photographic, do not add halftone dots, do not add a border, do not add any text. "
+}

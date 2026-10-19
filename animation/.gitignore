@@ -9,3 +9,14 @@
 **/clips/
 a-useful-man/out/
 _reel.txt
+# under-pressure experiment: keep the page, cards, prompt records and sheets small; drop generated media
+under-pressure/plates/*.png
+under-pressure/review/
+under-pressure/out/
+under-pressure/src/_panels_sheet.png
+under-pressure/_crops_cards_sheet.png
+under-pressure/shots/_overlay_frames/
+under-pressure/review/place/
+under-pressure/cards/
+under-pressure/src/*.png
+!under-pressure/src/19-under-pressure.png

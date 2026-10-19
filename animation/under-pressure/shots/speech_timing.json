@@ -1,0 +1,189 @@
+{
+ "model": "gemini-2.5-flash",
+ "clips": {
+  "S1": {
+   "utterances": [
+    {
+     "start": 0.0,
+     "end": 2.6,
+     "speaker": "red cape",
+     "text": "Ten time makes the caffeine. I've been awake all bloody night."
+    },
+    {
+     "start": 3.0,
+     "end": 5.0,
+     "speaker": "cream coat",
+     "text": "Yes, I spotted that after you went to bed."
+    }
+   ],
+   "sounds": []
+  },
+  "S2": {
+   "utterances": [
+    {
+     "start": 3.3,
+     "end": 5.1,
+     "speaker": "cream coat",
+     "text": "I need the toilet."
+    }
+   ],
+   "sounds": [
+    {
+     "start": 0.0,
+     "end": 0.1,
+     "label": "thud"
+    },
+    {
+     "start": 1.0,
+     "end": 1.5,
+     "label": "cough"
+    },
+    {
+     "start": 2.0,
+     "end": 2.5,
+     "label": "cough"
+    }
+   ]
+  },
+  "S3": {
+   "utterances": [
+    {
+     "start": 0.0,
+     "end": 0.9,
+     "speaker": "plumber",
+     "text": "Toilet's disconnected."
+    },
+    {
+     "start": 1.5,
+     "end": 2.0,
+     "speaker": "plumber",
+     "text": "Five minutes."
+    },
+    {
+     "start": 3.0,
+     "end": 4.5,
+     "speaker": "maroon jacket",
+     "text": "I can do five minutes."
+    }
+   ],
+   "sounds": [
+    {
+     "start": 0.0,
+     "end": 0.1,
+     "label": "creak"
+    },
+    {
+     "start": 2.5,
+     "end": 2.6,
+     "label": "creak"
+    }
+   ]
+  },
+  "S4": {
+   "utterances": [
+    {
+     "start": 0.0,
+     "end": 2.5,
+     "speaker": "red cape",
+     "text": "I've never been so tired in my life."
+    },
+    {
+     "start": 2.5,
+     "end": 5.0,
+     "speaker": "red cape",
+     "text": "I feel like I'm going to pass out."
+    }
+   ],
+   "sounds": []
+  },
+  "S6": {
+   "utterances": [
+    {
+     "start": 1.5,
+     "end": 3.4,
+     "speaker": "maroon jacket",
+     "text": "That's been a bloody long five minutes."
+    },
+    {
+     "start": 4.1,
+     "end": 5.0,
+     "speaker": "cream coat",
+     "text": "It hasn't started."
+    }
+   ],
+   "sounds": [
+    {
+     "start": 0.0,
+     "end": 5.0,
+     "label": "hum"
+    }
+   ]
+  },
+  "S7": {
+   "utterances": [
+    {
+     "start": 3.5,
+     "end": 5.0,
+     "speaker": "cream coat",
+     "text": "On a good push."
+    }
+   ],
+   "sounds": [
+    {
+     "start": 0.0,
+     "end": 3.5,
+     "label": "hum"
+    },
+    {
+     "start": 1.5,
+     "end": 1.8,
+     "label": "thud"
+    },
+    {
+     "start": 2.5,
+     "end": 2.7,
+     "label": "squeak"
+    },
+    {
+     "start": 2.8,
+     "end": 3.0,
+     "label": "thud"
+    }
+   ]
+  },
+  "S8": {
+   "utterances": [
+    {
+     "start": 0.0,
+     "end": 0.1,
+     "speaker": "none",
+     "text": "[squeak]"
+    },
+    {
+     "start": 2.0,
+     "end": 4.2,
+     "speaker": "cream coat",
+     "text": "My God, what's that smell?"
+    },
+    {
+     "start": 4.5,
+     "end": 4.8,
+     "speaker": "none",
+     "text": "[squeak]"
+    }
+   ],
+   "sounds": [
+    {
+     "start": 0.0,
+     "end": 0.1,
+     "label": "squeak"
+    },
+    {
+     "start": 4.5,
+     "end": 4.8,
+     "label": "squeak"
+    }
+   ]
+  }
+ }
+}

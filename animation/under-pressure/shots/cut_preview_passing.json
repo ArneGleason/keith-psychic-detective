@@ -1,0 +1,12 @@
+{"fps": 24, "size": [1920, 1080], "fade_cards": 0.3,
+ "items": [
+  {"card": "../cards/title.png", "sec": 2.5},
+  {"clip": "../clips/S1.mp4", "trim": [0, 5.0]},
+  {"clip": "../clips/S3.mp4", "trim": [0, 5.0]},
+  {"clip": "../clips/S5.mp4", "trim": [0, 10.0]},
+  {"card": "../cards/four_hours.png", "sec": 2.0},
+  {"clip": "../clips/S6.mp4", "trim": [0, 5.0]},
+  {"clip": "../clips/S7.mp4", "trim": [0, 5.0]},
+  {"black": 0.4},
+  {"card": "../cards/title.png", "sec": 2.5}
+ ]}

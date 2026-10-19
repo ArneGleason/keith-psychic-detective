@@ -1,0 +1,15 @@
+{
+ "fps": 24,
+ "size": [1920, 1080],
+ "_notes": "hold_first on S1 gives the masthead a still frame; S2/S3/S4/S6 holds let the last bubble breathe; S7 is cut at 3.4 s, right after the squeak reaction, because Kling put the Professor's mouth movement after the push; S8 hold carries the end card.",
+ "items": [
+  {"clip": "../clips/S1.mp4", "trim": [0, 5.0], "hold_first": 2.2},
+  {"clip": "../clips/S2.mp4", "trim": [0, 5.0], "hold_last": 0.8},
+  {"clip": "../clips/S3.mp4", "trim": [0, 5.0], "hold_last": 0.4},
+  {"clip": "../clips/S4.mp4", "trim": [0, 5.0], "hold_last": 0.5},
+  {"clip": "../clips/S5.mp4", "trim": [0, 7.5]},
+  {"clip": "../clips/S6.mp4", "trim": [0, 5.0], "hold_last": 0.7},
+  {"clip": "../clips/S7.mp4", "trim": [0, 3.4], "hold_last": 0.5},
+  {"clip": "../clips/S8.mp4", "trim": [0, 5.0], "hold_last": 2.8}
+ ]
+}
