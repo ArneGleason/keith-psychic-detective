@@ -1,0 +1,11 @@
+{
+ "id": "P3_aftermath",
+ "model": "gpt-image-2",
+ "size": "1536x1024",
+ "refs": [
+  "ep09_p4_honeymoon_clown.png",
+  "ep09_p3_delicate_things.png",
+  "cover_major.png"
+ ],
+ "prompt": "Medium shot. The clown figurine lies shattered on the coffee table, a spring and ceramic shards scattered, the accordion in two pieces. The Major stares at the pieces, appalled, mouth open, hands raised. Laura beside him with both hands over her mouth, eyes shining, barely hiding delight. THE PRIMATE SUSPECTS photo-comic look: a real 1970s practical ape mask and fur suit worn by an actor, tactile, slightly caricatured, readable expression, photographed like a 1960s American sitcom, warm tungsten light, tidy retro living room with floral wallpaper, polished side table, table lamp, framed wedding photo. MAJOR MALFUNCTION: short stocky brown ape, pale dented steel helmet with a small badge and chin strap, grey double-breasted military tunic with black collar and cuffs, brass buttons, yellow shoulder cords, yellow belt with round buckle, red neck scarf, grey trousers, black boots. LAURA PRITCHARD: adult human woman, dark flipped 1960s bob, fitted light-blue sweater, navy capri trousers, warm clever smile. THE CLOWN: a kitsch ceramic musical clown figurine with an accordion, red nose, polka-dot suit, on a round music-box base. Every hand has four fingers and a thumb. Widescreen 16:9 frame, eye level, 35mm lens look, nothing cropped at the top of heads. ABSOLUTELY NO speech bubbles, NO lettering, NO captions, NO text of any kind, NO comic panel borders, NO paper texture, NO sound-effect words."
+}

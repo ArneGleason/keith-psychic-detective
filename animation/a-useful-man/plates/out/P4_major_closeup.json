@@ -1,0 +1,11 @@
+{
+ "id": "P4_major_closeup",
+ "model": "gpt-image-2",
+ "size": "1536x1024",
+ "refs": [
+  "ep09_p5_bear_up_somehow.png",
+  "cover_major.png",
+  "ep09_p3_delicate_things.png"
+ ],
+ "prompt": "Tight close-up: the Major's head, helmet and shoulders fill the frame, seated on the floral sofa, a teacup held just below the chin. Mouth closed, calm, slightly abashed, looking a little left of camera at someone off-frame. Eyes and mouth clearly visible under the helmet brim. Shallow depth of field. The clown figurine is NOT in this shot (it has already been broken); nothing on the side table but the lamp. THE PRIMATE SUSPECTS photo-comic look: a real 1970s practical ape mask and fur suit worn by an actor, tactile, slightly caricatured, readable expression, photographed like a 1960s American sitcom, warm tungsten light, tidy retro living room with floral wallpaper, polished side table, table lamp, framed wedding photo. MAJOR MALFUNCTION: short stocky brown ape, pale dented steel helmet with a small badge and chin strap, grey double-breasted military tunic with black collar and cuffs, brass buttons, yellow shoulder cords, yellow belt with round buckle, red neck scarf, grey trousers, black boots. LAURA PRITCHARD: adult human woman, dark flipped 1960s bob, fitted light-blue sweater, navy capri trousers, warm clever smile. THE CLOWN: a kitsch ceramic musical clown figurine with an accordion, red nose, polka-dot suit, on a round music-box base. Every hand has four fingers and a thumb. Widescreen 16:9 frame, eye level, 35mm lens look, nothing cropped at the top of heads. ABSOLUTELY NO speech bubbles, NO lettering, NO captions, NO text of any kind, NO comic panel borders, NO paper texture, NO sound-effect words."
+}

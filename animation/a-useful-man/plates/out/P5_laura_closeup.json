@@ -1,0 +1,10 @@
+{
+ "id": "P5_laura_closeup",
+ "model": "gpt-image-2",
+ "size": "1536x1024",
+ "refs": [
+  "ep09_p5_bear_up_somehow.png",
+  "ep09_p2_honeymoon_present.png"
+ ],
+ "prompt": "Tight close-up: Laura's head and shoulders fill the frame, seated on the floral sofa, turned a little toward camera right, a sweet carefully innocent smile, mouth closed, looking at someone just off-frame. Shallow depth of field, lamp glow behind. The clown figurine is NOT in this shot (it has already been broken). THE PRIMATE SUSPECTS photo-comic look: a real 1970s practical ape mask and fur suit worn by an actor, tactile, slightly caricatured, readable expression, photographed like a 1960s American sitcom, warm tungsten light, tidy retro living room with floral wallpaper, polished side table, table lamp, framed wedding photo. MAJOR MALFUNCTION: short stocky brown ape, pale dented steel helmet with a small badge and chin strap, grey double-breasted military tunic with black collar and cuffs, brass buttons, yellow shoulder cords, yellow belt with round buckle, red neck scarf, grey trousers, black boots. LAURA PRITCHARD: adult human woman, dark flipped 1960s bob, fitted light-blue sweater, navy capri trousers, warm clever smile. THE CLOWN: a kitsch ceramic musical clown figurine with an accordion, red nose, polka-dot suit, on a round music-box base. Every hand has four fingers and a thumb. Widescreen 16:9 frame, eye level, 35mm lens look, nothing cropped at the top of heads. ABSOLUTELY NO speech bubbles, NO lettering, NO captions, NO text of any kind, NO comic panel borders, NO paper texture, NO sound-effect words."
+}

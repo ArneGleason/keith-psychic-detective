@@ -1,0 +1,90 @@
+[
+ {
+  "name": "major",
+  "voice": "ash",
+  "model": "gpt-4o-mini-tts",
+  "instructions": "Warm, eager, earnest, a slight military clip. British. Delighted to be asked for help. Never sarcastic.",
+  "line": "Oh. Certainly. I'm not very good with delicate things. Fortunately, I'm not a man.",
+  "file": "major.wav"
+ },
+ {
+  "name": "major_alt",
+  "voice": "verse",
+  "model": "gpt-4o-mini-tts",
+  "instructions": "Warm, eager, earnest, a slight military clip. British. Delighted to be asked for help. Never sarcastic.",
+  "line": "Oh. Certainly. I'm not very good with delicate things. Fortunately, I'm not a man.",
+  "file": "major_alt.wav"
+ },
+ {
+  "name": "professor",
+  "voice": "fable",
+  "model": "gpt-4o-mini-tts",
+  "instructions": "Pompous British academic. Self-satisfied pedantic precision, savouring the long words, utterly certain.",
+  "line": "I think you'll find a crouton is merely a structurally compromised toast. Right again. Eventually.",
+  "file": "professor.wav"
+ },
+ {
+  "name": "count",
+  "voice": "onyx",
+  "model": "gpt-4o-mini-tts",
+  "instructions": "Dry, tired, dignified, faintly theatrical. British. Low energy, perfectly timed.",
+  "line": "Every bloody time. Eight hours. You missed it.",
+  "file": "count.wav"
+ },
+ {
+  "name": "boggler",
+  "voice": "echo",
+  "model": "gpt-4o-mini-tts",
+  "instructions": "Tentative, courteous, confused by his own thoughts. British. Sincere, slightly alarmed.",
+  "line": "Banana. I'm thinking about a banana. Who said that? Professor! I can read another mind!",
+  "file": "boggler.wav"
+ },
+ {
+  "name": "laura",
+  "voice": "shimmer",
+  "model": "gpt-4o-mini-tts",
+  "instructions": "Sweet, bright, carefully innocent 1960s American sitcom wife. Warm and clever, hiding a plan.",
+  "line": "My husband gave me this on our honeymoon. It really deserves a more prominent position. Just over the fireplace, dear.",
+  "file": "laura.wav"
+ },
+ {
+  "name": "laura_alt",
+  "voice": "coral",
+  "model": "gpt-4o-mini-tts",
+  "instructions": "Sweet, bright, carefully innocent 1960s American sitcom wife. Warm and clever, hiding a plan.",
+  "line": "My husband gave me this on our honeymoon. It really deserves a more prominent position. Just over the fireplace, dear.",
+  "file": "laura_alt.wav"
+ },
+ {
+  "name": "rob",
+  "voice": "alloy",
+  "model": "gpt-4o-mini-tts",
+  "instructions": "Breezy, lanky, conspiratorial American husband, 1960s sitcom. Cheerful and a little too casual.",
+  "line": "Could you look at this fan? It's stopped turning. Oh, I'm sure it'll be fine.",
+  "file": "rob.wav"
+ },
+ {
+  "name": "agatha",
+  "voice": "sage",
+  "model": "gpt-4o-mini-tts",
+  "instructions": "Clipped, authoritative, elderly British academic. Restrained, unimpressed by her son.",
+  "line": "And when do you start talking to people?",
+  "file": "agatha.wav"
+ },
+ {
+  "name": "goat",
+  "voice": "ballad",
+  "model": "gpt-4o-mini-tts",
+  "instructions": "Gruff, flat, bored, unimpressed. A goat's inner voice. Deadpan, no energy.",
+  "line": "I like her singing. It keeps the foxes away. Don't fucking rush me.",
+  "file": "goat_head.wav"
+ },
+ {
+  "name": "clive",
+  "voice": "verse",
+  "model": "gpt-4o-mini-tts",
+  "instructions": "Blunt, gravelly, foul-mouthed ceramic garden gnome. Northern English, world-weary.",
+  "line": "Plenty of lonely bastards round here. Not a fucking clue between them.",
+  "file": "clive_head.wav"
+ }
+]

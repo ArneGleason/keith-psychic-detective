@@ -1,0 +1,11 @@
+# Generated media stays out of Git. Prompt records (plates/out/*.json) are kept.
+# Panel crops are rebuilt with tools/crop_panels.py; approved plates get copied up by hand.
+*.wav
+*.mp3
+*.mp4
+*.mov
+**/plates/src/
+**/plates/out/*.png
+**/clips/
+a-useful-man/out/
+_reel.txt
