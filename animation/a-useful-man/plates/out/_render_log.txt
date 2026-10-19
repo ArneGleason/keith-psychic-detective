@@ -1,0 +1,34 @@
+exists P1_doorway_twoshot
+exists P2_major_holds_clown
+exists P3_aftermath
+exists P4_major_closeup
+exists P5_laura_closeup
+wrote animation\a-useful-man\plates\out\P8_toaster_pfft_insert.png
+wrote animation\a-useful-man\plates\out\P7_major_toaster_mcu.png
+wrote animation\a-useful-man\plates\out\P6_hq_kitchen_wide.png
+wrote animation\a-useful-man\plates\out\P10_ext_house_day.png
+wrote animation\a-useful-man\plates\out\P11_laura_door_mcu.png
+wrote animation\a-useful-man\plates\out\P9_count_mcu.png
+wrote animation\a-useful-man\plates\out\P14_major_standing_cu.png
+wrote animation\a-useful-man\plates\out\P12_major_step_mcu.png
+wrote animation\a-useful-man\plates\out\P13_laura_table_cu.png
+wrote animation\a-useful-man\plates\out\P16_sofa_tea_twoshot.png
+wrote animation\a-useful-man\plates\out\P15_laura_cheeks_cu.png
+wrote animation\a-useful-man\plates\out\P17_laura_sofa_cu.png
+wrote animation\a-useful-man\plates\out\P19_laura_figurine_mcu.png
+wrote animation\a-useful-man\plates\out\P18_door_leaving_twoshot.png
+wrote animation\a-useful-man\plates\out\P20_major_porch_mcu.png
+wrote animation\a-useful-man\plates\out\P22_rob_flyer_mcu.png
+wrote animation\a-useful-man\plates\out\P23_laura_armsfolded_mcu.png
+wrote animation\a-useful-man\plates\out\P21_organ_room_wide.png
+wrote animation\a-useful-man\plates\out\P25_major_fan_mcu.png
+wrote animation\a-useful-man\plates\out\P24_rob_fan_mcu.png
+wrote animation\a-useful-man\plates\out\P26_bobblehead_insert.png
+FAILED P29_trophy_ball_insert RateLimitError("Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}")
+FAILED P30_ball_drops_insert RateLimitError("Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}")
+FAILED P31_organ_crushed_wide RateLimitError("Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}")
+FAILED P32_rob_wreck_mcu RateLimitError("Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}")
+FAILED P33_laura_arrives_wide RateLimitError("Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}")
+FAILED P34_laura_wreck_mcu RateLimitError("Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}")
+FAILED P35_trio_wreck RateLimitError("Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}")
+FAILED P36_ext_house_dusk RateLimitError("Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}")
