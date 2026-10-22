@@ -81,6 +81,30 @@
   {
    "num": 17,
    "title": "Preparation Is Everything"
+  },
+  {
+   "num": 18,
+   "title": "Special Containment"
+  },
+  {
+   "num": 19,
+   "title": "Under Pressure"
+  },
+  {
+   "num": 20,
+   "title": "Independent Thinking"
+  },
+  {
+   "num": 21,
+   "title": "A Work in Progress"
+  },
+  {
+   "num": 22,
+   "title": "Dressed for the Part"
+  },
+  {
+   "num": 23,
+   "title": "Built to Last"
   }
  ],
  "pages": [
@@ -1415,6 +1439,478 @@
       519
      ],
      "title": "Three Pairs Short",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "19",
+   "src": "comics/primate-suspects/pages/19.jpg?v=0c627b60cb",
+   "thumb": "comics/primate-suspects/thumbs/19.jpg?v=a227ed02b7",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 18,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Special Containment",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      4,
+      78,
+      512,
+      658
+     ],
+     "title": "Both Hands",
+     "n": 1
+    },
+    {
+     "rect": [
+      511,
+      78,
+      509,
+      658
+     ],
+     "title": "Fighting Back!",
+     "n": 2
+    },
+    {
+     "rect": [
+      4,
+      732,
+      485,
+      790
+     ],
+     "title": "Sit On It",
+     "n": 3
+    },
+    {
+     "rect": [
+      480,
+      732,
+      539,
+      790
+     ],
+     "title": "Sproing!",
+     "n": 4
+    }
+   ]
+  },
+  {
+   "id": "20",
+   "src": "comics/primate-suspects/pages/20.jpg?v=78fd5f60aa",
+   "thumb": "comics/primate-suspects/thumbs/20.jpg?v=c2b78000f5",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 19,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Under Pressure",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      6,
+      78,
+      523,
+      441
+     ],
+     "title": "Ten Times Caffeine",
+     "n": 1
+    },
+    {
+     "rect": [
+      527,
+      78,
+      491,
+      441
+     ],
+     "title": "Five Minutes",
+     "n": 2
+    },
+    {
+     "rect": [
+      6,
+      517,
+      504,
+      471
+     ],
+     "title": "The Time Bubble",
+     "n": 3
+    },
+    {
+     "rect": [
+      508,
+      517,
+      510,
+      471
+     ],
+     "title": "Four Hours Later",
+     "n": 4
+    },
+    {
+     "rect": [
+      6,
+      986,
+      507,
+      540
+     ],
+     "title": "One Good Push",
+     "n": 5
+    },
+    {
+     "rect": [
+      514,
+      986,
+      504,
+      540
+     ],
+     "title": "That Smell",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "21",
+   "src": "comics/primate-suspects/pages/21.jpg?v=057f1bf7fd",
+   "thumb": "comics/primate-suspects/thumbs/21.jpg?v=36d29daacf",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 20,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Independent Thinking",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      10,
+      109,
+      503,
+      455
+     ],
+     "title": "Chemtrails",
+     "n": 1
+    },
+    {
+     "rect": [
+      512,
+      109,
+      503,
+      455
+     ],
+     "title": "Magnetic Socks",
+     "n": 2
+    },
+    {
+     "rect": [
+      10,
+      562,
+      503,
+      430
+     ],
+     "title": "The Socks",
+     "n": 3
+    },
+    {
+     "rect": [
+      513,
+      562,
+      501,
+      430
+     ],
+     "title": "Fixing The Prices",
+     "n": 4
+    },
+    {
+     "rect": [
+      10,
+      990,
+      503,
+      535
+     ],
+     "title": "Some Flake",
+     "n": 5
+    },
+    {
+     "rect": [
+      512,
+      990,
+      502,
+      535
+     ],
+     "title": "Keep Quiet",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "22",
+   "src": "comics/primate-suspects/pages/22.jpg?v=ee5fe6c086",
+   "thumb": "comics/primate-suspects/thumbs/22.jpg?v=ffc01a8c7e",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 21,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "A Work in Progress",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      7,
+      96,
+      505,
+      480
+     ],
+     "title": "Building A Shed?",
+     "n": 1
+    },
+    {
+     "rect": [
+      511,
+      96,
+      509,
+      480
+     ],
+     "title": "Interview Studio",
+     "n": 2
+    },
+    {
+     "rect": [
+      7,
+      574,
+      504,
+      366
+     ],
+     "title": "Thousands Of Hours",
+     "n": 3
+    },
+    {
+     "rect": [
+      511,
+      574,
+      509,
+      366
+     ],
+     "title": "Requires Some Context",
+     "n": 4
+    },
+    {
+     "rect": [
+      8,
+      939,
+      503,
+      585
+     ],
+     "title": "Missing From Skyline",
+     "n": 5
+    },
+    {
+     "rect": [
+      511,
+      939,
+      509,
+      585
+     ],
+     "title": "The Future Museum",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "23",
+   "src": "comics/primate-suspects/pages/23.jpg?v=46bb9d57b3",
+   "thumb": "comics/primate-suspects/thumbs/23.jpg?v=9fe18fc343",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 22,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Dressed for the Part",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      8,
+      104,
+      562,
+      433
+     ],
+     "title": "Excellent Taste",
+     "n": 1
+    },
+    {
+     "rect": [
+      568,
+      104,
+      449,
+      433
+     ],
+     "title": "Count Chocula",
+     "n": 2
+    },
+    {
+     "rect": [
+      8,
+      533,
+      508,
+      348
+     ],
+     "title": "Excellent Tailoring",
+     "n": 3
+    },
+    {
+     "rect": [
+      514,
+      533,
+      503,
+      348
+     ],
+     "title": "From The Cereal",
+     "n": 4
+    },
+    {
+     "rect": [
+      8,
+      876,
+      500,
+      637
+     ],
+     "title": "Never Heard",
+     "n": 5
+    },
+    {
+     "rect": [
+      506,
+      876,
+      511,
+      637
+     ],
+     "title": "He Lives Here",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "24",
+   "src": "comics/primate-suspects/pages/24.jpg?v=1e9b1eccf9",
+   "thumb": "comics/primate-suspects/thumbs/24.jpg?v=70abc00e59",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 23,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Built to Last",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      5,
+      94,
+      508,
+      453
+     ],
+     "title": "Needs Emptying",
+     "n": 1
+    },
+    {
+     "rect": [
+      512,
+      94,
+      507,
+      453
+     ],
+     "title": "Breathable Fabric",
+     "n": 2
+    },
+    {
+     "rect": [
+      5,
+      543,
+      508,
+      457
+     ],
+     "title": "Replace When Worn",
+     "n": 3
+    },
+    {
+     "rect": [
+      512,
+      543,
+      507,
+      457
+     ],
+     "title": "Built To Last",
+     "n": 4
+    },
+    {
+     "rect": [
+      6,
+      996,
+      482,
+      529
+     ],
+     "title": "There You Are",
+     "n": 5
+    },
+    {
+     "rect": [
+      487,
+      996,
+      532,
+      529
+     ],
+     "title": "We're Out!",
      "n": 6
     }
    ]

@@ -23,7 +23,13 @@
     {"id": "e14", "num": 14, "title": "Room for Improvement"},
     {"id": "e15", "num": 15, "title": "Love Life Advice"},
     {"id": "e16", "num": 16, "title": "Natural Influences"},
-    {"id": "e17", "num": 17, "title": "Preparation Is Everything"}
+    {"id": "e17", "num": 17, "title": "Preparation Is Everything"},
+    {"id": "e18", "num": 18, "title": "Special Containment"},
+    {"id": "e19", "num": 19, "title": "Under Pressure"},
+    {"id": "e20", "num": 20, "title": "Independent Thinking"},
+    {"id": "e21", "num": 21, "title": "A Work in Progress"},
+    {"id": "e22", "num": 22, "title": "Dressed for the Part"},
+    {"id": "e23", "num": 23, "title": "Built to Last"}
   ],
   "pages": [
     {"file": "00-primate-suspects-cover.png", "kind": "cover", "scene": "cover", "frames": ["Cover"]},
@@ -44,6 +50,13 @@
     {"file": "14-room-for-improvement.png", "kind": "page", "scene": "e14", "frames": ["Pool Table Sale", "Stopped Turning", "Anything Valuable", "Whirr-Klack!", "Fix The Fan", "Three Keyboards"]},
     {"file": "15-love-life-advice.png", "kind": "page", "scene": "e15", "frames": ["Been Calling", "A Pair", "Love Advice", "Split It", "Count On Two", "The Queue"]},
     {"file": "16-natural-influences.png", "kind": "page", "scene": "e16", "frames": ["Thank Fuck", "From That House", "Mostly Listening", "Keeps Foxes Away", "What Else?", "Don't Rush Me"]},
-    {"file": "17-preparation-is-everything.png", "kind": "page", "scene": "e17", "frames": ["Your Mum's Here", "Eight Years", "Suspender Tension", "Vinegar Feet", "My Own Refinement", "Three Pairs Short"]}
+    {"file": "17-preparation-is-everything.png", "kind": "page", "scene": "e17", "frames": ["Your Mum's Here", "Eight Years", "Suspender Tension", "Vinegar Feet", "My Own Refinement", "Three Pairs Short"]},
+    {"file": "18-special-containment.png", "kind": "page", "scene": "e18", "frames": ["Both Hands", "Fighting Back!", "Sit On It", "Sproing!"],
+      "gutters": [null, [[484, 484]]]},
+    {"file": "19-under-pressure.png", "kind": "page", "scene": "e19", "frames": ["Ten Times Caffeine", "Five Minutes", "The Time Bubble", "Four Hours Later", "One Good Push", "That Smell"]},
+    {"file": "20-independent-thinking.png", "kind": "page", "scene": "e20", "frames": ["Chemtrails", "Magnetic Socks", "The Socks", "Fixing The Prices", "Some Flake", "Keep Quiet"]},
+    {"file": "21-a-work-in-progress.png", "kind": "page", "scene": "e21", "frames": ["Building A Shed?", "Interview Studio", "Thousands Of Hours", "Requires Some Context", "Missing From Skyline", "The Future Museum"]},
+    {"file": "22-dressed-for-the-part.png", "kind": "page", "scene": "e22", "frames": ["Excellent Taste", "Count Chocula", "Excellent Tailoring", "From The Cereal", "Never Heard", "He Lives Here"]},
+    {"file": "23-built-to-last.png", "kind": "page", "scene": "e23", "frames": ["Needs Emptying", "Breathable Fabric", "Replace When Worn", "Built To Last", "There You Are", "We're Out!"]}
   ]
 }
