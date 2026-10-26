@@ -105,6 +105,30 @@
   {
    "num": 23,
    "title": "Built to Last"
+  },
+  {
+   "num": 24,
+   "title": "First Contact"
+  },
+  {
+   "num": 25,
+   "title": "Comfort Food"
+  },
+  {
+   "num": 26,
+   "title": "Nonstandard Testing"
+  },
+  {
+   "num": 27,
+   "title": "Keeping Warm"
+  },
+  {
+   "num": 28,
+   "title": "Adverse Reactions"
+  },
+  {
+   "num": 29,
+   "title": "People of Worth"
   }
  ],
  "pages": [
@@ -1911,6 +1935,498 @@
       529
      ],
      "title": "We're Out!",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "25",
+   "src": "comics/primate-suspects/pages/25.jpg?v=fd15c80589",
+   "thumb": "comics/primate-suspects/thumbs/25.jpg?v=8d0e8a7b6a",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 24,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "First Contact",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      6,
+      118,
+      507,
+      403
+     ],
+     "title": "Fourth Night Running",
+     "n": 1
+    },
+    {
+     "rect": [
+      512,
+      118,
+      506,
+      403
+     ],
+     "title": "Regular Intervals",
+     "n": 2
+    },
+    {
+     "rect": [
+      6,
+      517,
+      506,
+      428
+     ],
+     "title": "Extraterrestrial Intelligence",
+     "n": 3
+    },
+    {
+     "rect": [
+      512,
+      517,
+      506,
+      428
+     ],
+     "title": "Can That Be Done?",
+     "n": 4
+    },
+    {
+     "rect": [
+      6,
+      940,
+      505,
+      564
+     ],
+     "title": "Twenty Bucks",
+     "n": 5
+    },
+    {
+     "rect": [
+      508,
+      940,
+      510,
+      564
+     ],
+     "title": "Properly Equipped",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "26",
+   "src": "comics/primate-suspects/pages/26.jpg?v=8576d74314",
+   "thumb": "comics/primate-suspects/thumbs/26.jpg?v=fd66b701f5",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 25,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Comfort Food",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      5,
+      99,
+      545,
+      410
+     ],
+     "title": "Something Comforting",
+     "n": 1
+    },
+    {
+     "rect": [
+      550,
+      99,
+      470,
+      410
+     ],
+     "title": "The Wind Section",
+     "n": 2
+    },
+    {
+     "rect": [
+      6,
+      508,
+      509,
+      438
+     ],
+     "title": "I Was The Tail",
+     "n": 3
+    },
+    {
+     "rect": [
+      514,
+      508,
+      506,
+      438
+     ],
+     "title": "So Quiet",
+     "n": 4
+    },
+    {
+     "rect": [
+      6,
+      943,
+      473,
+      581
+     ],
+     "title": "Which One?",
+     "n": 5
+    },
+    {
+     "rect": [
+      478,
+      943,
+      542,
+      581
+     ],
+     "title": "Just What I Needed",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "27",
+   "src": "comics/primate-suspects/pages/27.jpg?v=41eac2deb8",
+   "thumb": "comics/primate-suspects/thumbs/27.jpg?v=745e3e15b8",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 26,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Nonstandard Testing",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      4,
+      95,
+      523,
+      471
+     ],
+     "title": "Nonstandard Operator",
+     "n": 1
+    },
+    {
+     "rect": [
+      523,
+      95,
+      498,
+      471
+     ],
+     "title": "Closing Force: Maximum",
+     "n": 2
+    },
+    {
+     "rect": [
+      4,
+      562,
+      511,
+      430
+     ],
+     "title": "Shall I Bring It Back?",
+     "n": 3
+    },
+    {
+     "rect": [
+      511,
+      562,
+      509,
+      430
+     ],
+     "title": "The Safety Question",
+     "n": 4
+    },
+    {
+     "rect": [
+      4,
+      988,
+      514,
+      540
+     ],
+     "title": "Facility Shutdown",
+     "n": 5
+    },
+    {
+     "rect": [
+      515,
+      988,
+      506,
+      540
+     ],
+     "title": "So Did My Assistant",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "28",
+   "src": "comics/primate-suspects/pages/28.jpg?v=d69d8bc2d6",
+   "thumb": "comics/primate-suspects/thumbs/28.jpg?v=23a68f4b51",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 27,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Keeping Warm",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      7,
+      93,
+      505,
+      427
+     ],
+     "title": "Electric Blanket",
+     "n": 1
+    },
+    {
+     "rect": [
+      512,
+      93,
+      506,
+      427
+     ],
+     "title": "A Feel For These Things",
+     "n": 2
+    },
+    {
+     "rect": [
+      7,
+      517,
+      505,
+      476
+     ],
+     "title": "Something Warm",
+     "n": 3
+    },
+    {
+     "rect": [
+      512,
+      517,
+      506,
+      476
+     ],
+     "title": "Just What You Need",
+     "n": 4
+    },
+    {
+     "rect": [
+      7,
+      990,
+      505,
+      541
+     ],
+     "title": "Across The Road",
+     "n": 5
+    },
+    {
+     "rect": [
+      512,
+      990,
+      507,
+      541
+     ],
+     "title": "How Long?",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "29",
+   "src": "comics/primate-suspects/pages/29.jpg?v=bef6380dd2",
+   "thumb": "comics/primate-suspects/thumbs/29.jpg?v=6836fae23f",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 28,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Adverse Reactions",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      5,
+      97,
+      509,
+      469
+     ],
+     "title": "Got Me Banned",
+     "n": 1
+    },
+    {
+     "rect": [
+      512,
+      97,
+      506,
+      469
+     ],
+     "title": "Live On Air",
+     "n": 2
+    },
+    {
+     "rect": [
+      5,
+      562,
+      508,
+      428
+     ],
+     "title": "She Was Waiting",
+     "n": 3
+    },
+    {
+     "rect": [
+      512,
+      562,
+      506,
+      428
+     ],
+     "title": "Stool-For-Brains",
+     "n": 4
+    },
+    {
+     "rect": [
+      5,
+      988,
+      508,
+      542
+     ],
+     "title": "Eleven Dispensers",
+     "n": 5
+    },
+    {
+     "rect": [
+      511,
+      988,
+      507,
+      542
+     ],
+     "title": "Bring Presents",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "30",
+   "src": "comics/primate-suspects/pages/30.jpg?v=fb16b1815d",
+   "thumb": "comics/primate-suspects/thumbs/30.jpg?v=15efa4c4f4",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 29,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "People of Worth",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      5,
+      103,
+      511,
+      404
+     ],
+     "title": "Friends Of The Park",
+     "n": 1
+    },
+    {
+     "rect": [
+      514,
+      103,
+      504,
+      404
+     ],
+     "title": "A Contribution",
+     "n": 2
+    },
+    {
+     "rect": [
+      6,
+      503,
+      536,
+      460
+     ],
+     "title": "Le Cygne",
+     "n": 3
+    },
+    {
+     "rect": [
+      539,
+      503,
+      479,
+      460
+     ],
+     "title": "Something Urgent?",
+     "n": 4
+    },
+    {
+     "rect": [
+      6,
+      959,
+      509,
+      568
+     ],
+     "title": "A Flashlight",
+     "n": 5
+    },
+    {
+     "rect": [
+      512,
+      959,
+      506,
+      568
+     ],
+     "title": "How Wide Is The Bench?",
      "n": 6
     }
    ]

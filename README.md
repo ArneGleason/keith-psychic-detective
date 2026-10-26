@@ -49,7 +49,7 @@ tips from Fats. Vincent Price buys a wish-granting idol, Fats makes it float, an
 Carson has fired Tom and his hotel security man, Don Knotts. For the second time this month.
 
 ### The Primate Suspects
-**Four Heroes. One Shared Brain Cell.** · In progress · 23 episodes so far · [Start reading](https://arnegleason.github.io/keith-psychic-detective/#primate-suspects)
+**Four Heroes. One Shared Brain Cell.** · In progress · 29 episodes so far · [Start reading](https://arnegleason.github.io/keith-psychic-detective/#primate-suspects)
 
 Major Malfunction disables any machine by touching it. Professor Hindsight sees the future five
 minutes too late. The Mind Boggler has telepathy, but only with himself. Count Napula stops time
@@ -223,9 +223,9 @@ titled from its file name, so `04-the-big-heist.png` shows up as Episode 4, "The
 ### Keeping reference images
 
 A folder of reference images can live inside a comic's source folder, for example
-`source-images-primate-suspects/reference images/`. The build never reads subfolders, so they
-stay out of the reader. Any folder there whose name contains "reference" is also left out of git,
-so it stays on your computer and isn't published with the site.
+`source-images-primate-suspects/reference-images/`. The build never reads subfolders, so they
+stay out of the reader. They are committed with the rest of the repository, so anyone browsing
+it on GitHub can see them.
 
 ### When the build complains
 
