@@ -99,8 +99,16 @@
    "title": "Love Life Advice"
   },
   {
+   "num": null,
+   "title": "Clive"
+  },
+  {
    "num": 16,
    "title": "Natural Influences"
+  },
+  {
+   "num": null,
+   "title": "The Goat Lady"
   },
   {
    "num": 17,
@@ -1471,12 +1479,33 @@
   },
   {
    "id": "23",
-   "src": "comics/primate-suspects/pages/23.jpg?v=6c443fe34a",
-   "thumb": "comics/primate-suspects/thumbs/23.jpg?v=ee01923798",
+   "src": "comics/primate-suspects/pages/23.jpg?v=6766551058",
+   "thumb": "comics/primate-suspects/thumbs/23.jpg?v=d44ce0edb4",
+   "w": 1024,
+   "h": 1536,
+   "kind": "splash",
+   "scene": 22,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Clive",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "24",
+   "src": "comics/primate-suspects/pages/24.jpg?v=6c443fe34a",
+   "thumb": "comics/primate-suspects/thumbs/24.jpg?v=ee01923798",
    "w": 1024,
    "h": 1536,
    "kind": "page",
-   "scene": 22,
+   "scene": 23,
    "frames": [
     {
      "rect": [
@@ -1552,13 +1581,34 @@
    ]
   },
   {
-   "id": "24",
-   "src": "comics/primate-suspects/pages/24.jpg?v=ec8c8cffda",
-   "thumb": "comics/primate-suspects/thumbs/24.jpg?v=fd415c05d2",
+   "id": "25",
+   "src": "comics/primate-suspects/pages/25.jpg?v=1a669917ce",
+   "thumb": "comics/primate-suspects/thumbs/25.jpg?v=44e127d91f",
+   "w": 1024,
+   "h": 1536,
+   "kind": "splash",
+   "scene": 24,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "The Goat Lady",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "26",
+   "src": "comics/primate-suspects/pages/26.jpg?v=ec8c8cffda",
+   "thumb": "comics/primate-suspects/thumbs/26.jpg?v=fd415c05d2",
    "w": 1024,
    "h": 1536,
    "kind": "page",
-   "scene": 23,
+   "scene": 25,
    "frames": [
     {
      "rect": [
@@ -1634,13 +1684,13 @@
    ]
   },
   {
-   "id": "25",
-   "src": "comics/primate-suspects/pages/25.jpg?v=23b1429dc0",
-   "thumb": "comics/primate-suspects/thumbs/25.jpg?v=6d5f2cf361",
+   "id": "27",
+   "src": "comics/primate-suspects/pages/27.jpg?v=23b1429dc0",
+   "thumb": "comics/primate-suspects/thumbs/27.jpg?v=6d5f2cf361",
    "w": 1024,
    "h": 1536,
    "kind": "splash",
-   "scene": 24,
+   "scene": 26,
    "frames": [
     {
      "rect": [
@@ -1655,13 +1705,13 @@
    ]
   },
   {
-   "id": "26",
-   "src": "comics/primate-suspects/pages/26.jpg?v=0c627b60cb",
-   "thumb": "comics/primate-suspects/thumbs/26.jpg?v=a227ed02b7",
+   "id": "28",
+   "src": "comics/primate-suspects/pages/28.jpg?v=0c627b60cb",
+   "thumb": "comics/primate-suspects/thumbs/28.jpg?v=a227ed02b7",
    "w": 1024,
    "h": 1536,
    "kind": "page",
-   "scene": 25,
+   "scene": 27,
    "frames": [
     {
      "rect": [
@@ -1717,13 +1767,13 @@
    ]
   },
   {
-   "id": "27",
-   "src": "comics/primate-suspects/pages/27.jpg?v=78fd5f60aa",
-   "thumb": "comics/primate-suspects/thumbs/27.jpg?v=c2b78000f5",
+   "id": "29",
+   "src": "comics/primate-suspects/pages/29.jpg?v=78fd5f60aa",
+   "thumb": "comics/primate-suspects/thumbs/29.jpg?v=c2b78000f5",
    "w": 1024,
    "h": 1536,
    "kind": "page",
-   "scene": 26,
+   "scene": 28,
    "frames": [
     {
      "rect": [
@@ -1799,13 +1849,13 @@
    ]
   },
   {
-   "id": "28",
-   "src": "comics/primate-suspects/pages/28.jpg?v=057f1bf7fd",
-   "thumb": "comics/primate-suspects/thumbs/28.jpg?v=36d29daacf",
+   "id": "30",
+   "src": "comics/primate-suspects/pages/30.jpg?v=057f1bf7fd",
+   "thumb": "comics/primate-suspects/thumbs/30.jpg?v=36d29daacf",
    "w": 1024,
    "h": 1536,
    "kind": "page",
-   "scene": 27,
+   "scene": 29,
    "frames": [
     {
      "rect": [
@@ -1881,13 +1931,13 @@
    ]
   },
   {
-   "id": "29",
-   "src": "comics/primate-suspects/pages/29.jpg?v=ee5fe6c086",
-   "thumb": "comics/primate-suspects/thumbs/29.jpg?v=ffc01a8c7e",
+   "id": "31",
+   "src": "comics/primate-suspects/pages/31.jpg?v=ee5fe6c086",
+   "thumb": "comics/primate-suspects/thumbs/31.jpg?v=ffc01a8c7e",
    "w": 1024,
    "h": 1536,
    "kind": "page",
-   "scene": 28,
+   "scene": 30,
    "frames": [
     {
      "rect": [
@@ -1963,13 +2013,13 @@
    ]
   },
   {
-   "id": "30",
-   "src": "comics/primate-suspects/pages/30.jpg?v=46bb9d57b3",
-   "thumb": "comics/primate-suspects/thumbs/30.jpg?v=9fe18fc343",
+   "id": "32",
+   "src": "comics/primate-suspects/pages/32.jpg?v=46bb9d57b3",
+   "thumb": "comics/primate-suspects/thumbs/32.jpg?v=9fe18fc343",
    "w": 1024,
    "h": 1536,
    "kind": "page",
-   "scene": 29,
+   "scene": 31,
    "frames": [
     {
      "rect": [
@@ -2045,13 +2095,13 @@
    ]
   },
   {
-   "id": "31",
-   "src": "comics/primate-suspects/pages/31.jpg?v=1e9b1eccf9",
-   "thumb": "comics/primate-suspects/thumbs/31.jpg?v=70abc00e59",
+   "id": "33",
+   "src": "comics/primate-suspects/pages/33.jpg?v=1e9b1eccf9",
+   "thumb": "comics/primate-suspects/thumbs/33.jpg?v=70abc00e59",
    "w": 1024,
    "h": 1536,
    "kind": "page",
-   "scene": 30,
+   "scene": 32,
    "frames": [
     {
      "rect": [
@@ -2127,13 +2177,13 @@
    ]
   },
   {
-   "id": "32",
-   "src": "comics/primate-suspects/pages/32.jpg?v=fd15c80589",
-   "thumb": "comics/primate-suspects/thumbs/32.jpg?v=8d0e8a7b6a",
+   "id": "34",
+   "src": "comics/primate-suspects/pages/34.jpg?v=fd15c80589",
+   "thumb": "comics/primate-suspects/thumbs/34.jpg?v=8d0e8a7b6a",
    "w": 1024,
    "h": 1536,
    "kind": "page",
-   "scene": 31,
+   "scene": 33,
    "frames": [
     {
      "rect": [
@@ -2209,13 +2259,13 @@
    ]
   },
   {
-   "id": "33",
-   "src": "comics/primate-suspects/pages/33.jpg?v=8576d74314",
-   "thumb": "comics/primate-suspects/thumbs/33.jpg?v=fd66b701f5",
+   "id": "35",
+   "src": "comics/primate-suspects/pages/35.jpg?v=8576d74314",
+   "thumb": "comics/primate-suspects/thumbs/35.jpg?v=fd66b701f5",
    "w": 1024,
    "h": 1536,
    "kind": "page",
-   "scene": 32,
+   "scene": 34,
    "frames": [
     {
      "rect": [
@@ -2291,13 +2341,13 @@
    ]
   },
   {
-   "id": "34",
-   "src": "comics/primate-suspects/pages/34.jpg?v=41eac2deb8",
-   "thumb": "comics/primate-suspects/thumbs/34.jpg?v=745e3e15b8",
+   "id": "36",
+   "src": "comics/primate-suspects/pages/36.jpg?v=41eac2deb8",
+   "thumb": "comics/primate-suspects/thumbs/36.jpg?v=745e3e15b8",
    "w": 1024,
    "h": 1536,
    "kind": "page",
-   "scene": 33,
+   "scene": 35,
    "frames": [
     {
      "rect": [
@@ -2373,13 +2423,13 @@
    ]
   },
   {
-   "id": "35",
-   "src": "comics/primate-suspects/pages/35.jpg?v=d69d8bc2d6",
-   "thumb": "comics/primate-suspects/thumbs/35.jpg?v=23a68f4b51",
+   "id": "37",
+   "src": "comics/primate-suspects/pages/37.jpg?v=d69d8bc2d6",
+   "thumb": "comics/primate-suspects/thumbs/37.jpg?v=23a68f4b51",
    "w": 1024,
    "h": 1536,
    "kind": "page",
-   "scene": 34,
+   "scene": 36,
    "frames": [
     {
      "rect": [
@@ -2455,13 +2505,13 @@
    ]
   },
   {
-   "id": "36",
-   "src": "comics/primate-suspects/pages/36.jpg?v=2ecb9b371c",
-   "thumb": "comics/primate-suspects/thumbs/36.jpg?v=1c5298ea34",
+   "id": "38",
+   "src": "comics/primate-suspects/pages/38.jpg?v=2ecb9b371c",
+   "thumb": "comics/primate-suspects/thumbs/38.jpg?v=1c5298ea34",
    "w": 1024,
    "h": 1536,
    "kind": "splash",
-   "scene": 35,
+   "scene": 37,
    "frames": [
     {
      "rect": [
@@ -2476,13 +2526,13 @@
    ]
   },
   {
-   "id": "37",
-   "src": "comics/primate-suspects/pages/37.jpg?v=bef6380dd2",
-   "thumb": "comics/primate-suspects/thumbs/37.jpg?v=6836fae23f",
+   "id": "39",
+   "src": "comics/primate-suspects/pages/39.jpg?v=bef6380dd2",
+   "thumb": "comics/primate-suspects/thumbs/39.jpg?v=6836fae23f",
    "w": 1024,
    "h": 1536,
    "kind": "page",
-   "scene": 36,
+   "scene": 38,
    "frames": [
     {
      "rect": [
@@ -2558,13 +2608,13 @@
    ]
   },
   {
-   "id": "38",
-   "src": "comics/primate-suspects/pages/38.jpg?v=fb16b1815d",
-   "thumb": "comics/primate-suspects/thumbs/38.jpg?v=15efa4c4f4",
+   "id": "40",
+   "src": "comics/primate-suspects/pages/40.jpg?v=fb16b1815d",
+   "thumb": "comics/primate-suspects/thumbs/40.jpg?v=15efa4c4f4",
    "w": 1024,
    "h": 1536,
    "kind": "page",
-   "scene": 37,
+   "scene": 39,
    "frames": [
     {
      "rect": [
@@ -2640,13 +2690,13 @@
    ]
   },
   {
-   "id": "39",
-   "src": "comics/primate-suspects/pages/39.jpg?v=d4fd31263d",
-   "thumb": "comics/primate-suspects/thumbs/39.jpg?v=0d0b1b0146",
+   "id": "41",
+   "src": "comics/primate-suspects/pages/41.jpg?v=d4fd31263d",
+   "thumb": "comics/primate-suspects/thumbs/41.jpg?v=0d0b1b0146",
    "w": 1024,
    "h": 1536,
    "kind": "page",
-   "scene": 38,
+   "scene": 40,
    "frames": [
     {
      "rect": [
@@ -2722,13 +2772,13 @@
    ]
   },
   {
-   "id": "40",
-   "src": "comics/primate-suspects/pages/40.jpg?v=d449854f9b",
-   "thumb": "comics/primate-suspects/thumbs/40.jpg?v=870f679f29",
+   "id": "42",
+   "src": "comics/primate-suspects/pages/42.jpg?v=d449854f9b",
+   "thumb": "comics/primate-suspects/thumbs/42.jpg?v=870f679f29",
    "w": 1024,
    "h": 1536,
    "kind": "page",
-   "scene": 39,
+   "scene": 41,
    "frames": [
     {
      "rect": [
