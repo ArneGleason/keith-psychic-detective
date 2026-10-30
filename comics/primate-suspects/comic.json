@@ -163,6 +163,10 @@
    "title": "Doreen Crump"
   },
   {
+   "num": null,
+   "title": "Peg"
+  },
+  {
    "num": 28,
    "title": "Adverse Reactions"
   },
@@ -177,6 +181,14 @@
   {
    "num": 31,
    "title": "Distinguishing Features"
+  },
+  {
+   "num": 32,
+   "title": "Our Song"
+  },
+  {
+   "num": 33,
+   "title": "Water Memory"
   }
  ],
  "pages": [
@@ -2532,7 +2544,7 @@
    "w": 1024,
    "h": 1536,
    "kind": "page",
-   "scene": 38,
+   "scene": 39,
    "frames": [
     {
      "rect": [
@@ -2614,7 +2626,7 @@
    "w": 1024,
    "h": 1536,
    "kind": "page",
-   "scene": 39,
+   "scene": 40,
    "frames": [
     {
      "rect": [
@@ -2696,7 +2708,7 @@
    "w": 1024,
    "h": 1536,
    "kind": "page",
-   "scene": 40,
+   "scene": 41,
    "frames": [
     {
      "rect": [
@@ -2773,12 +2785,33 @@
   },
   {
    "id": "42",
-   "src": "comics/primate-suspects/pages/42.jpg?v=d449854f9b",
-   "thumb": "comics/primate-suspects/thumbs/42.jpg?v=870f679f29",
+   "src": "comics/primate-suspects/pages/42.jpg?v=84796a9b7f",
+   "thumb": "comics/primate-suspects/thumbs/42.jpg?v=933b8762ce",
+   "w": 1024,
+   "h": 1536,
+   "kind": "splash",
+   "scene": 38,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Peg",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "43",
+   "src": "comics/primate-suspects/pages/43.jpg?v=d449854f9b",
+   "thumb": "comics/primate-suspects/thumbs/43.jpg?v=870f679f29",
    "w": 1024,
    "h": 1536,
    "kind": "page",
-   "scene": 41,
+   "scene": 42,
    "frames": [
     {
      "rect": [
@@ -2849,6 +2882,170 @@
       538
      ],
      "title": "They Sound Ideal",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "44",
+   "src": "comics/primate-suspects/pages/44.jpg?v=568fa55c87",
+   "thumb": "comics/primate-suspects/thumbs/44.jpg?v=1ee14dfcb4",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 43,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Our Song",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      4,
+      107,
+      1016,
+      363
+     ],
+     "title": "Is That Safe?",
+     "n": 1
+    },
+    {
+     "rect": [
+      4,
+      466,
+      528,
+      345
+     ],
+     "title": "Something Special",
+     "n": 2
+    },
+    {
+     "rect": [
+      531,
+      466,
+      489,
+      345
+     ],
+     "title": "I Fall To Pieces",
+     "n": 3
+    },
+    {
+     "rect": [
+      5,
+      808,
+      527,
+      320
+     ],
+     "title": "That's My Song!",
+     "n": 4
+    },
+    {
+     "rect": [
+      532,
+      808,
+      488,
+      320
+     ],
+     "title": "Done It Again",
+     "n": 5
+    },
+    {
+     "rect": [
+      5,
+      1125,
+      1015,
+      404
+     ],
+     "title": "Thank You, Major",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "45",
+   "src": "comics/primate-suspects/pages/45.jpg?v=3e7ca08096",
+   "thumb": "comics/primate-suspects/thumbs/45.jpg?v=a8733aa413",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 44,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Water Memory",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      4,
+      103,
+      508,
+      462
+     ],
+     "title": "Putting The Runoff To Use",
+     "n": 1
+    },
+    {
+     "rect": [
+      513,
+      103,
+      509,
+      462
+     ],
+     "title": "Keeping It Covered",
+     "n": 2
+    },
+    {
+     "rect": [
+      4,
+      562,
+      508,
+      416
+     ],
+     "title": "Someone Who Understands",
+     "n": 3
+    },
+    {
+     "rect": [
+      513,
+      562,
+      508,
+      416
+     ],
+     "title": "Water Remembers",
+     "n": 4
+    },
+    {
+     "rect": [
+      4,
+      973,
+      507,
+      558
+     ],
+     "title": "Something Reassuring",
+     "n": 5
+    },
+    {
+     "rect": [
+      513,
+      973,
+      508,
+      558
+     ],
+     "title": "You're Safe Now",
      "n": 6
     }
    ]

@@ -44,10 +44,13 @@
     {"id": "e26", "num": 26, "title": "Nonstandard Testing"},
     {"id": "e27", "num": 27, "title": "Keeping Warm"},
     {"id": "c-doreen", "title": "Doreen Crump"},
+    {"id": "c-peg", "title": "Peg"},
     {"id": "e28", "num": 28, "title": "Adverse Reactions"},
     {"id": "e29", "num": 29, "title": "People of Worth"},
     {"id": "e30", "num": 30, "title": "The Night Shift"},
-    {"id": "e31", "num": 31, "title": "Distinguishing Features"}
+    {"id": "e31", "num": 31, "title": "Distinguishing Features"},
+    {"id": "e32", "num": 32, "title": "Our Song"},
+    {"id": "e33", "num": 33, "title": "Water Memory"}
   ],
   "pages": [
     {"file": "00-primate-suspects-cover.png", "kind": "cover", "scene": "cover", "frames": ["Cover"]},
@@ -93,6 +96,9 @@
     {"file": "28-adverse-reactions.png", "kind": "page", "scene": "e28", "frames": ["Got Me Banned", "Live On Air", "She Was Waiting", "Stool-For-Brains", "Eleven Dispensers", "Bring Presents"]},
     {"file": "29-people-of-worth.png", "kind": "page", "scene": "e29", "frames": ["Friends Of The Park", "A Contribution", "Le Cygne", "Something Urgent?", "A Flashlight", "How Wide Is The Bench?"]},
     {"file": "30-the-night-shift.png", "kind": "page", "scene": "e30", "frames": ["The Usual?", "Outspoken Beans", "Insomniac Theater", "Which Nap?", "Three Since", "Toast Tonight"]},
-    {"file": "31-distinguishing-features.png", "kind": "page", "scene": "e31", "frames": ["Personally Requested", "On The Seat?", "So Ask Him", "Letterman's Socks", "Distinguishing Features?", "They Sound Ideal"]}
+    {"file": "30z-character-peg.png", "kind": "splash", "scene": "c-peg", "frames": ["Peg"]},
+    {"file": "31-distinguishing-features.png", "kind": "page", "scene": "e31", "frames": ["Personally Requested", "On The Seat?", "So Ask Him", "Letterman's Socks", "Distinguishing Features?", "They Sound Ideal"]},
+    {"file": "32-our-song.png", "kind": "page", "scene": "e32", "frames": ["Is That Safe?", "Something Special", "I Fall To Pieces", "That's My Song!", "Done It Again", "Thank You, Major"]},
+    {"file": "33-water-memory.png", "kind": "page", "scene": "e33", "frames": ["Putting The Runoff To Use", "Keeping It Covered", "Someone Who Understands", "Water Remembers", "Something Reassuring", "You're Safe Now"]}
   ]
 }
