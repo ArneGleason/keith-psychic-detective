@@ -189,6 +189,46 @@
   {
    "num": 33,
    "title": "Water Memory"
+  },
+  {
+   "num": 34,
+   "title": "First Impressions"
+  },
+  {
+   "num": 35,
+   "title": "Morning Rounds"
+  },
+  {
+   "num": 36,
+   "title": "After The Tone"
+  },
+  {
+   "num": 37,
+   "title": "Encore"
+  },
+  {
+   "num": 38,
+   "title": "Fair Play"
+  },
+  {
+   "num": 39,
+   "title": "A Sound Investment"
+  },
+  {
+   "num": 40,
+   "title": "Under Suspension"
+  },
+  {
+   "num": 41,
+   "title": "Special Delivery"
+  },
+  {
+   "num": null,
+   "title": "The Postman"
+  },
+  {
+   "num": 42,
+   "title": "Natural Boundaries"
   }
  ],
  "pages": [
@@ -3046,6 +3086,685 @@
       558
      ],
      "title": "You're Safe Now",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "46",
+   "src": "comics/primate-suspects/pages/46.jpg?v=12049e3537",
+   "thumb": "comics/primate-suspects/thumbs/46.jpg?v=f1c8f6020a",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 45,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "First Impressions",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      0,
+      91,
+      1024,
+      412
+     ],
+     "title": "Movie Night",
+     "n": 1
+    },
+    {
+     "rect": [
+      0,
+      497,
+      1024,
+      336
+     ],
+     "title": "His Left Cuff",
+     "n": 2
+    },
+    {
+     "rect": [
+      0,
+      826,
+      1024,
+      327
+     ],
+     "title": "Studying Human Behavior",
+     "n": 3
+    },
+    {
+     "rect": [
+      0,
+      1147,
+      1024,
+      388
+     ],
+     "title": "Without The Commentary",
+     "n": 4
+    }
+   ]
+  },
+  {
+   "id": "47",
+   "src": "comics/primate-suspects/pages/47.jpg?v=5cbb9c0ea2",
+   "thumb": "comics/primate-suspects/thumbs/47.jpg?v=f25f88bc6b",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 46,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Morning Rounds",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      6,
+      112,
+      506,
+      461
+     ],
+     "title": "Grandad's Leaking Again",
+     "n": 1
+    },
+    {
+     "rect": [
+      510,
+      112,
+      509,
+      461
+     ],
+     "title": "Hägar The Horrible",
+     "n": 2
+    },
+    {
+     "rect": [
+      6,
+      570,
+      506,
+      400
+     ],
+     "title": "Morning, Old Fellow",
+     "n": 3
+    },
+    {
+     "rect": [
+      510,
+      570,
+      509,
+      400
+     ],
+     "title": "You Need Space",
+     "n": 4
+    },
+    {
+     "rect": [
+      6,
+      967,
+      505,
+      559
+     ],
+     "title": "Let It Go",
+     "n": 5
+    },
+    {
+     "rect": [
+      509,
+      967,
+      510,
+      559
+     ],
+     "title": "Personal Growth",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "48",
+   "src": "comics/primate-suspects/pages/48.jpg?v=0e4ddb74d8",
+   "thumb": "comics/primate-suspects/thumbs/48.jpg?v=bf6f618b1d",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 47,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "After The Tone",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      7,
+      104,
+      508,
+      625
+     ],
+     "title": "You Have Reached",
+     "n": 1
+    },
+    {
+     "rect": [
+      512,
+      104,
+      506,
+      625
+     ],
+     "title": "Thirty Seconds?",
+     "n": 2
+    },
+    {
+     "rect": [
+      8,
+      725,
+      507,
+      802
+     ],
+     "title": "Reasonably Expect",
+     "n": 3
+    },
+    {
+     "rect": [
+      511,
+      725,
+      507,
+      802
+     ],
+     "title": "Call Screening",
+     "n": 4
+    }
+   ]
+  },
+  {
+   "id": "49",
+   "src": "comics/primate-suspects/pages/49.jpg?v=17ea6f6dec",
+   "thumb": "comics/primate-suspects/thumbs/49.jpg?v=90ca9f2582",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 48,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Encore",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      4,
+      108,
+      507,
+      663
+     ],
+     "title": "Center Stage",
+     "n": 1
+    },
+    {
+     "rect": [
+      506,
+      108,
+      514,
+      663
+     ],
+     "title": "You're Too Kind",
+     "n": 2
+    },
+    {
+     "rect": [
+      4,
+      766,
+      487,
+      770
+     ],
+     "title": "Woo!",
+     "n": 3
+    },
+    {
+     "rect": [
+      487,
+      766,
+      532,
+      770
+     ],
+     "title": "Do It Again!",
+     "n": 4
+    }
+   ]
+  },
+  {
+   "id": "50",
+   "src": "comics/primate-suspects/pages/50.jpg?v=485bf60a52",
+   "thumb": "comics/primate-suspects/thumbs/50.jpg?v=99df8a6b1e",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 49,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Fair Play",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      9,
+      110,
+      561,
+      434
+     ],
+     "title": "Story Time",
+     "n": 1
+    },
+    {
+     "rect": [
+      572,
+      110,
+      445,
+      434
+     ],
+     "title": "A Close Pass",
+     "n": 2
+    },
+    {
+     "rect": [
+      9,
+      542,
+      516,
+      417
+     ],
+     "title": "Man Down",
+     "n": 3
+    },
+    {
+     "rect": [
+      527,
+      542,
+      490,
+      417
+     ],
+     "title": "He Did It",
+     "n": 4
+    },
+    {
+     "rect": [
+      9,
+      958,
+      543,
+      567
+     ],
+     "title": "Leaving Early",
+     "n": 5
+    },
+    {
+     "rect": [
+      555,
+      958,
+      462,
+      567
+     ],
+     "title": "All Mine",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "51",
+   "src": "comics/primate-suspects/pages/51.jpg?v=04cd27aef7",
+   "thumb": "comics/primate-suspects/thumbs/51.jpg?v=2be0004ace",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 50,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "A Sound Investment",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      3,
+      95,
+      578,
+      450
+     ],
+     "title": "Eighty Bucks",
+     "n": 1
+    },
+    {
+     "rect": [
+      582,
+      95,
+      439,
+      450
+     ],
+     "title": "Cultivated Tastes",
+     "n": 2
+    },
+    {
+     "rect": [
+      3,
+      543,
+      510,
+      439
+     ],
+     "title": "Warming Up",
+     "n": 3
+    },
+    {
+     "rect": [
+      511,
+      543,
+      509,
+      439
+     ],
+     "title": "For You, Twenty",
+     "n": 4
+    },
+    {
+     "rect": [
+      3,
+      979,
+      510,
+      552
+     ],
+     "title": "That Dead Heap",
+     "n": 5
+    },
+    {
+     "rect": [
+      511,
+      979,
+      509,
+      552
+     ],
+     "title": "Original Moon Gas!",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "52",
+   "src": "comics/primate-suspects/pages/52.jpg?v=fcd901642e",
+   "thumb": "comics/primate-suspects/thumbs/52.jpg?v=f1f5497491",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 51,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Under Suspension",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      7,
+      103,
+      507,
+      635
+     ],
+     "title": "Everything Coming Out?",
+     "n": 1
+    },
+    {
+     "rect": [
+      513,
+      103,
+      504,
+      635
+     ],
+     "title": "Larry King's Tension",
+     "n": 2
+    },
+    {
+     "rect": [
+      7,
+      734,
+      506,
+      794
+     ],
+     "title": "Loosen Them?",
+     "n": 3
+    },
+    {
+     "rect": [
+      511,
+      734,
+      506,
+      794
+     ],
+     "title": "Good Evening",
+     "n": 4
+    }
+   ]
+  },
+  {
+   "id": "53",
+   "src": "comics/primate-suspects/pages/53.jpg?v=4463965aeb",
+   "thumb": "comics/primate-suspects/thumbs/53.jpg?v=f16cbc5f10",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 52,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Special Delivery",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      6,
+      92,
+      509,
+      450
+     ],
+     "title": "Getting Lighter",
+     "n": 1
+    },
+    {
+     "rect": [
+      512,
+      92,
+      508,
+      450
+     ],
+     "title": "Popular Subscription",
+     "n": 2
+    },
+    {
+     "rect": [
+      6,
+      540,
+      508,
+      451
+     ],
+     "title": "Napula's Bran Bar",
+     "n": 3
+    },
+    {
+     "rect": [
+      512,
+      540,
+      507,
+      451
+     ],
+     "title": "Licks The Wrappers",
+     "n": 4
+    },
+    {
+     "rect": [
+      6,
+      988,
+      507,
+      542
+     ],
+     "title": "Absolutely Not",
+     "n": 5
+    },
+    {
+     "rect": [
+      511,
+      988,
+      508,
+      542
+     ],
+     "title": "In The Van",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "54",
+   "src": "comics/primate-suspects/pages/54.jpg?v=e7e756b95d",
+   "thumb": "comics/primate-suspects/thumbs/54.jpg?v=492ec6bdd4",
+   "w": 1024,
+   "h": 1536,
+   "kind": "splash",
+   "scene": 53,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "The Postman",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "55",
+   "src": "comics/primate-suspects/pages/55.jpg?v=72ec280cf7",
+   "thumb": "comics/primate-suspects/thumbs/55.jpg?v=9c1e64e229",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 54,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Natural Boundaries",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      6,
+      101,
+      536,
+      483
+     ],
+     "title": "Common Imaginary Enemy",
+     "n": 1
+    },
+    {
+     "rect": [
+      540,
+      101,
+      480,
+      483
+     ],
+     "title": "The Goats' Smell",
+     "n": 2
+    },
+    {
+     "rect": [
+      7,
+      581,
+      536,
+      435
+     ],
+     "title": "Clear Boundaries",
+     "n": 3
+    },
+    {
+     "rect": [
+      541,
+      581,
+      478,
+      435
+     ],
+     "title": "What I Said",
+     "n": 4
+    },
+    {
+     "rect": [
+      7,
+      1012,
+      528,
+      514
+     ],
+     "title": "Organic Energy",
+     "n": 5
+    },
+    {
+     "rect": [
+      536,
+      1012,
+      482,
+      514
+     ],
+     "title": "Say So. Now.",
      "n": 6
     }
    ]

@@ -17,8 +17,10 @@ strip can override detection with "gutters": [[x0, x1], ...] in its story file
 split at gutters that run its full width, and each row at its own column
 gutters. A short band across the top is taken as the title banner, not a
 panel. A page can override one row's gutters with "gutters": [null, [[x0, x1]]],
-one entry per panel row, where null keeps what was detected. In frame mode a page opens on the whole page, then visits
-each panel in reading order.
+one entry per panel row, where null keeps what was detected. A page whose row
+gutters are too faint to find can list them all with "rows": [[y0, y1], ...],
+including the one under the banner. In frame mode a page opens on the whole
+page, then visits each panel in reading order.
 
 A comic whose story file says "format": "pages" is a series of standalone
 episodes, one page each. Its scenes are episodes, and unnamed pages added to
@@ -106,7 +108,7 @@ def panel_rects(rgb, override=None):
     return rects
 
 
-def page_rects(rgb, overrides=None):
+def page_rects(rgb, overrides=None, row_gutters=None):
     """Panels on a full page laid out in rows.
 
     Returns (banner, panels): the title banner's rect or None, and the panel
@@ -120,6 +122,9 @@ def page_rects(rgb, overrides=None):
     and not counting the banner. An entry of null keeps the detected gutters.
     A list of [x0, x1] pairs replaces that row's inner gutters, for a row whose
     gutter is hidden by artwork. A gutter can be a single line, [x, x].
+
+    row_gutters, a list of [y0, y1] pairs, replaces every detected row gutter,
+    for a page whose gutters are thin or tinted and not cream enough to find.
     """
     h, w, _ = rgb.shape
     cream = cream_mask(rgb)
@@ -127,6 +132,8 @@ def page_rects(rgb, overrides=None):
     # A row gutter is cream all the way across at its clearest line. A line of white speech
     # balloons across the top of a row can pass the 80% test, but it never gets near 97%.
     rows = [r for r in runs(row_frac > .8) if row_frac[r[0]:r[1] + 1].max() >= .97]
+    if row_gutters is not None:
+        rows = [tuple(g) for g in row_gutters]
     edges = [(-1, -1), *rows, (h, h)]
     bands = [(a[1] + 1, b[0]) for a, b in zip(edges, edges[1:]) if b[0] - a[1] - 1 >= 40]
     banner = None
@@ -231,13 +238,13 @@ def build_comic(cid):
         if kind == "auto" and episodic and h > w:
             kind, names = "page", None
         if kind == "page":
-            _, found = page_rects(np.asarray(im), p.get("gutters"))
+            _, found = page_rects(np.asarray(im), p.get("gutters"), p.get("rows"))
             if names is None:
                 names = [None] * len(found)
             elif len(found) != len(names):
                 sys.exit(f"{cid}: {p['file']}: found {len(found)} panels but {story_path.name} names "
                          f"{len(names)}. Fix the names, or add a \"gutters\" override for the row whose "
-                         f"gutter is hidden by artwork.")
+                         f"gutter is hidden by artwork, or a \"rows\" override if rows were missed.")
             # In frame mode a page opens on the whole page, titled with its episode, before its panels.
             rects, names, intro = [[0, 0, w, h], *found], [None, *names], True
         elif kind in ("strip", "auto"):

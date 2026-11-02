@@ -50,7 +50,17 @@
     {"id": "e30", "num": 30, "title": "The Night Shift"},
     {"id": "e31", "num": 31, "title": "Distinguishing Features"},
     {"id": "e32", "num": 32, "title": "Our Song"},
-    {"id": "e33", "num": 33, "title": "Water Memory"}
+    {"id": "e33", "num": 33, "title": "Water Memory"},
+    {"id": "e34", "num": 34, "title": "First Impressions"},
+    {"id": "e35", "num": 35, "title": "Morning Rounds"},
+    {"id": "e36", "num": 36, "title": "After The Tone"},
+    {"id": "e37", "num": 37, "title": "Encore"},
+    {"id": "e38", "num": 38, "title": "Fair Play"},
+    {"id": "e39", "num": 39, "title": "A Sound Investment"},
+    {"id": "e40", "num": 40, "title": "Under Suspension"},
+    {"id": "e41", "num": 41, "title": "Special Delivery"},
+    {"id": "c-postman", "title": "The Postman"},
+    {"id": "e42", "num": 42, "title": "Natural Boundaries"}
   ],
   "pages": [
     {"file": "00-primate-suspects-cover.png", "kind": "cover", "scene": "cover", "frames": ["Cover"]},
@@ -99,6 +109,16 @@
     {"file": "30z-character-peg.png", "kind": "splash", "scene": "c-peg", "frames": ["Peg"]},
     {"file": "31-distinguishing-features.png", "kind": "page", "scene": "e31", "frames": ["Personally Requested", "On The Seat?", "So Ask Him", "Letterman's Socks", "Distinguishing Features?", "They Sound Ideal"]},
     {"file": "32-our-song.png", "kind": "page", "scene": "e32", "frames": ["Is That Safe?", "Something Special", "I Fall To Pieces", "That's My Song!", "Done It Again", "Thank You, Major"]},
-    {"file": "33-water-memory.png", "kind": "page", "scene": "e33", "frames": ["Putting The Runoff To Use", "Keeping It Covered", "Someone Who Understands", "Water Remembers", "Something Reassuring", "You're Safe Now"]}
+    {"file": "33-water-memory.png", "kind": "page", "scene": "e33", "frames": ["Putting The Runoff To Use", "Keeping It Covered", "Someone Who Understands", "Water Remembers", "Something Reassuring", "You're Safe Now"]},
+    {"file": "34-first-impressions.png", "kind": "page", "scene": "e34", "frames": ["Movie Night", "His Left Cuff", "Studying Human Behavior", "Without The Commentary"]},
+    {"file": "35-morning-rounds.png", "kind": "page", "scene": "e35", "frames": ["Grandad's Leaking Again", "Hägar The Horrible", "Morning, Old Fellow", "You Need Space", "Let It Go", "Personal Growth"]},
+    {"file": "36-after-the-tone.png", "kind": "page", "scene": "e36", "frames": ["You Have Reached", "Thirty Seconds?", "Reasonably Expect", "Call Screening"]},
+    {"file": "37-encore.png", "kind": "page", "scene": "e37", "frames": ["Center Stage", "You're Too Kind", "Woo!", "Do It Again!"], "rows": [[108, 112], [766, 770]]},
+    {"file": "38-fair-play.png", "kind": "page", "scene": "e38", "frames": ["Story Time", "A Close Pass", "Man Down", "He Did It", "Leaving Early", "All Mine"]},
+    {"file": "39-a-sound-investment.png", "kind": "page", "scene": "e39", "frames": ["Eighty Bucks", "Cultivated Tastes", "Warming Up", "For You, Twenty", "That Dead Heap", "Original Moon Gas!"]},
+    {"file": "40-under-suspension.png", "kind": "page", "scene": "e40", "frames": ["Everything Coming Out?", "Larry King's Tension", "Loosen Them?", "Good Evening"]},
+    {"file": "41-special-delivery.png", "kind": "page", "scene": "e41", "frames": ["Getting Lighter", "Popular Subscription", "Napula's Bran Bar", "Licks The Wrappers", "Absolutely Not", "In The Van"]},
+    {"file": "41z-character-the-postman.png", "kind": "splash", "scene": "c-postman", "frames": ["The Postman"]},
+    {"file": "42-natural-boundaries.png", "kind": "page", "scene": "e42", "frames": ["Common Imaginary Enemy", "The Goats' Smell", "Clear Boundaries", "What I Said", "Organic Energy", "Say So. Now."]}
   ]
 }

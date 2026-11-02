@@ -49,7 +49,7 @@ tips from Fats. Vincent Price buys a wish-granting idol, Fats makes it float, an
 Carson has fired Tom and his hotel security man, Don Knotts. For the second time this month.
 
 ### The Primate Suspects
-**Four Heroes. One Shared Brain Cell.** · In progress · 33 episodes so far · [Start reading](https://arnegleason.github.io/keith-psychic-detective/#primate-suspects)
+**Four Heroes. One Shared Brain Cell.** · In progress · 42 episodes so far · [Start reading](https://arnegleason.github.io/keith-psychic-detective/#primate-suspects)
 
 Major Malfunction disables any machine by touching it. Professor Hindsight sees the future five
 minutes too late. The Mind Boggler has telepathy, but only with himself. Count Napula stops time
@@ -107,7 +107,7 @@ The comics are prepared ahead of time by `tools/build.py`:
    page is split into rows first, then each row into panels, and a title banner across the top
    is left out.
 2. **It makes web images.** It writes optimized JPEGs, thumbnails and covers. The original PNGs
-   come to about 440 MB and the web versions to about 68 MB. The reader then loads only the
+   come to about 470 MB and the web versions to about 75 MB. The reader then loads only the
    pages near where you are.
 3. **It writes the data.** It combines the panels with the scene and frame names from each
    comic's story file into the `comic.json` the reader uses.
@@ -239,6 +239,10 @@ it on GitHub can see them.
   `"gutters": [null, [[448, 448]]]`, one entry per row of panels from the top. `null` keeps the
   row as detected, and a pair gives the left and right edge of a hidden gutter. Use the same
   number twice to split the row at a single line.
+- **A full page finds only one panel.** Its row gutters are too thin or tinted to pass as
+  cream, as on Primate Suspects episode 37. List them all on that page's line, top to bottom
+  and including the one under the title banner, as `"rows": [[108, 112], [766, 770]]`. Each
+  pair is the top and bottom pixel edge of one gutter. Column gutters are still found.
 - **Listed but not found.** A file named in the story file is missing from the source folder.
   Check the spelling, including spaces.
 - To leave an image in the folder out of the comic, add its file name to a `"skip"` list
