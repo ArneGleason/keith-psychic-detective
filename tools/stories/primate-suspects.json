@@ -60,7 +60,15 @@
     {"id": "e40", "num": 40, "title": "Under Suspension"},
     {"id": "e41", "num": 41, "title": "Special Delivery"},
     {"id": "c-postman", "title": "The Postman"},
-    {"id": "e42", "num": 42, "title": "Natural Boundaries"}
+    {"id": "e42", "num": 42, "title": "Natural Boundaries"},
+    {"id": "e43", "num": 43, "title": "A Receptive Pupil"},
+    {"id": "e44", "num": 44, "title": "Signal Protection"},
+    {"id": "e45", "num": 45, "title": "The Worth Method"},
+    {"id": "e46", "num": 46, "title": "Sour Grapes"},
+    {"id": "e47", "num": 47, "title": "Fully Accredited"},
+    {"id": "e48", "num": 48, "title": "Great Expectations"},
+    {"id": "e49", "num": 49, "title": "Building Bridges"},
+    {"id": "e50", "num": 50, "title": "An Early Encore"}
   ],
   "pages": [
     {"file": "00-primate-suspects-cover.png", "kind": "cover", "scene": "cover", "frames": ["Cover"]},
@@ -119,6 +127,14 @@
     {"file": "40-under-suspension.png", "kind": "page", "scene": "e40", "frames": ["Everything Coming Out?", "Larry King's Tension", "Loosen Them?", "Good Evening"]},
     {"file": "41-special-delivery.png", "kind": "page", "scene": "e41", "frames": ["Getting Lighter", "Popular Subscription", "Napula's Bran Bar", "Licks The Wrappers", "Absolutely Not", "In The Van"]},
     {"file": "41z-character-the-postman.png", "kind": "splash", "scene": "c-postman", "frames": ["The Postman"]},
-    {"file": "42-natural-boundaries.png", "kind": "page", "scene": "e42", "frames": ["Common Imaginary Enemy", "The Goats' Smell", "Clear Boundaries", "What I Said", "Organic Energy", "Say So. Now."]}
+    {"file": "42-natural-boundaries.png", "kind": "page", "scene": "e42", "frames": ["Common Imaginary Enemy", "The Goats' Smell", "Clear Boundaries", "What I Said", "Organic Energy", "Say So. Now."]},
+    {"file": "43-a-receptive-pupil.png", "kind": "page", "scene": "e43", "frames": ["Standard Time", "A Common Mistake", "A Senior Astronomer", "Unusually Thorough", "Something Else", "Firm But Patient"]},
+    {"file": "44-signal-protection.png", "kind": "page", "scene": "e44", "frames": ["Grazing", "Three Pairs!", "Shielding Socks", "A Little Glamour", "Not A Soul!", "Full Of Shit"]},
+    {"file": "45-the-worth-method.png", "kind": "page", "scene": "e45", "frames": ["Got A Stamp?", "The Worth Foundation", "Glowing Testimonial", "Recruit Five Friends", "Interview Him Myself", "Dear Mr. Worth"]},
+    {"file": "46-sour-grapes.png", "kind": "page", "scene": "e46", "frames": ["Château Poseurs", "A Bowl Each", "Identical Bowls", "Agree On Something", "Grapes, Anyone?"]},
+    {"file": "47-fully-accredited.png", "kind": "page", "scene": "e47", "frames": ["Surface Attachment Engineer", "Adhesive Wall Hooks", "Other Qualifications", "Peel And Stick", "Not Certified!", "Without The Course"]},
+    {"file": "48-great-expectations.png", "kind": "page", "scene": "e48", "frames": ["Can't Be Rushed", "Making A Picture", "Your Pedigree", "Distinguished Artists", "A Better Sharpener", "Cable Evaluations"]},
+    {"file": "49-building-bridges.png", "kind": "page", "scene": "e49", "frames": ["Built Together", "Bridge Challenge", "A Different Partner", "Use These", "Pretty Good Team", "Too Close."]},
+    {"file": "50-an-early-encore.png", "kind": "page", "scene": "e50", "frames": ["Full Night's Sleep", "Mr. Pemberton Reconsidered", "Further Reflections", "Every Word", "Choice Of Title", "Three A.M."]}
   ]
 }

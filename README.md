@@ -49,7 +49,7 @@ tips from Fats. Vincent Price buys a wish-granting idol, Fats makes it float, an
 Carson has fired Tom and his hotel security man, Don Knotts. For the second time this month.
 
 ### The Primate Suspects
-**Four Heroes. One Shared Brain Cell.** · In progress · 42 episodes so far · [Start reading](https://arnegleason.github.io/keith-psychic-detective/#primate-suspects)
+**Four Heroes. One Shared Brain Cell.** · In progress · 50 episodes so far · [Start reading](https://arnegleason.github.io/keith-psychic-detective/#primate-suspects)
 
 Major Malfunction disables any machine by touching it. Professor Hindsight sees the future five
 minutes too late. The Mind Boggler has telepathy, but only with himself. Count Napula stops time
@@ -107,7 +107,7 @@ The comics are prepared ahead of time by `tools/build.py`:
    page is split into rows first, then each row into panels, and a title banner across the top
    is left out.
 2. **It makes web images.** It writes optimized JPEGs, thumbnails and covers. The original PNGs
-   come to about 470 MB and the web versions to about 75 MB. The reader then loads only the
+   come to about 490 MB and the web versions to about 80 MB. The reader then loads only the
    pages near where you are.
 3. **It writes the data.** It combines the panels with the scene and frame names from each
    comic's story file into the `comic.json` the reader uses.
@@ -224,7 +224,7 @@ titled from its file name, so `04-the-big-heist.png` shows up as Episode 4, "The
 ### Keeping reference images
 
 A folder of reference images can live inside a comic's source folder, for example
-`source-images-primate-suspects/reference-images/`. The build never reads subfolders, so they
+`source-images-primate-suspects/reference-images/` or `references/`. The build never reads subfolders, so they
 stay out of the reader. They are committed with the rest of the repository, so anyone browsing
 it on GitHub can see them.
 

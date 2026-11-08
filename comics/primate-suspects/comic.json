@@ -229,6 +229,38 @@
   {
    "num": 42,
    "title": "Natural Boundaries"
+  },
+  {
+   "num": 43,
+   "title": "A Receptive Pupil"
+  },
+  {
+   "num": 44,
+   "title": "Signal Protection"
+  },
+  {
+   "num": 45,
+   "title": "The Worth Method"
+  },
+  {
+   "num": 46,
+   "title": "Sour Grapes"
+  },
+  {
+   "num": 47,
+   "title": "Fully Accredited"
+  },
+  {
+   "num": 48,
+   "title": "Great Expectations"
+  },
+  {
+   "num": 49,
+   "title": "Building Bridges"
+  },
+  {
+   "num": 50,
+   "title": "An Early Encore"
   }
  ],
  "pages": [
@@ -3765,6 +3797,652 @@
       514
      ],
      "title": "Say So. Now.",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "56",
+   "src": "comics/primate-suspects/pages/56.jpg?v=0c4f5b12c8",
+   "thumb": "comics/primate-suspects/thumbs/56.jpg?v=adac65e205",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 55,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "A Receptive Pupil",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      3,
+      88,
+      508,
+      489
+     ],
+     "title": "Standard Time",
+     "n": 1
+    },
+    {
+     "rect": [
+      510,
+      88,
+      510,
+      489
+     ],
+     "title": "A Common Mistake",
+     "n": 2
+    },
+    {
+     "rect": [
+      3,
+      575,
+      511,
+      443
+     ],
+     "title": "A Senior Astronomer",
+     "n": 3
+    },
+    {
+     "rect": [
+      512,
+      575,
+      508,
+      443
+     ],
+     "title": "Unusually Thorough",
+     "n": 4
+    },
+    {
+     "rect": [
+      3,
+      1015,
+      512,
+      515
+     ],
+     "title": "Something Else",
+     "n": 5
+    },
+    {
+     "rect": [
+      513,
+      1015,
+      507,
+      515
+     ],
+     "title": "Firm But Patient",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "57",
+   "src": "comics/primate-suspects/pages/57.jpg?v=38ce7c1c8a",
+   "thumb": "comics/primate-suspects/thumbs/57.jpg?v=6b2d663188",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 56,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Signal Protection",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      3,
+      97,
+      510,
+      505
+     ],
+     "title": "Grazing",
+     "n": 1
+    },
+    {
+     "rect": [
+      511,
+      97,
+      510,
+      505
+     ],
+     "title": "Three Pairs!",
+     "n": 2
+    },
+    {
+     "rect": [
+      3,
+      597,
+      510,
+      476
+     ],
+     "title": "Shielding Socks",
+     "n": 3
+    },
+    {
+     "rect": [
+      512,
+      597,
+      509,
+      476
+     ],
+     "title": "A Little Glamour",
+     "n": 4
+    },
+    {
+     "rect": [
+      3,
+      1069,
+      510,
+      464
+     ],
+     "title": "Not A Soul!",
+     "n": 5
+    },
+    {
+     "rect": [
+      512,
+      1069,
+      509,
+      464
+     ],
+     "title": "Full Of Shit",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "58",
+   "src": "comics/primate-suspects/pages/58.jpg?v=db4338f501",
+   "thumb": "comics/primate-suspects/thumbs/58.jpg?v=f140f21413",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 57,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "The Worth Method",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      5,
+      92,
+      509,
+      471
+     ],
+     "title": "Got A Stamp?",
+     "n": 1
+    },
+    {
+     "rect": [
+      514,
+      92,
+      505,
+      471
+     ],
+     "title": "The Worth Foundation",
+     "n": 2
+    },
+    {
+     "rect": [
+      6,
+      561,
+      506,
+      495
+     ],
+     "title": "Glowing Testimonial",
+     "n": 3
+    },
+    {
+     "rect": [
+      512,
+      561,
+      507,
+      495
+     ],
+     "title": "Recruit Five Friends",
+     "n": 4
+    },
+    {
+     "rect": [
+      5,
+      1055,
+      508,
+      476
+     ],
+     "title": "Interview Him Myself",
+     "n": 5
+    },
+    {
+     "rect": [
+      513,
+      1055,
+      506,
+      476
+     ],
+     "title": "Dear Mr. Worth",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "59",
+   "src": "comics/primate-suspects/pages/59.jpg?v=454c95b20c",
+   "thumb": "comics/primate-suspects/thumbs/59.jpg?v=98149cb974",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 58,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Sour Grapes",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      0,
+      95,
+      516,
+      458
+     ],
+     "title": "Château Poseurs",
+     "n": 1
+    },
+    {
+     "rect": [
+      511,
+      95,
+      513,
+      458
+     ],
+     "title": "A Bowl Each",
+     "n": 2
+    },
+    {
+     "rect": [
+      0,
+      547,
+      516,
+      483
+     ],
+     "title": "Identical Bowls",
+     "n": 3
+    },
+    {
+     "rect": [
+      511,
+      547,
+      513,
+      483
+     ],
+     "title": "Agree On Something",
+     "n": 4
+    },
+    {
+     "rect": [
+      0,
+      1024,
+      1024,
+      512
+     ],
+     "title": "Grapes, Anyone?",
+     "n": 5
+    }
+   ]
+  },
+  {
+   "id": "60",
+   "src": "comics/primate-suspects/pages/60.jpg?v=6b3add5fd2",
+   "thumb": "comics/primate-suspects/thumbs/60.jpg?v=11875266ca",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 59,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Fully Accredited",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      0,
+      85,
+      515,
+      516
+     ],
+     "title": "Surface Attachment Engineer",
+     "n": 1
+    },
+    {
+     "rect": [
+      510,
+      85,
+      514,
+      516
+     ],
+     "title": "Adhesive Wall Hooks",
+     "n": 2
+    },
+    {
+     "rect": [
+      0,
+      596,
+      515,
+      457
+     ],
+     "title": "Other Qualifications",
+     "n": 3
+    },
+    {
+     "rect": [
+      511,
+      596,
+      513,
+      457
+     ],
+     "title": "Peel And Stick",
+     "n": 4
+    },
+    {
+     "rect": [
+      0,
+      1048,
+      515,
+      488
+     ],
+     "title": "Not Certified!",
+     "n": 5
+    },
+    {
+     "rect": [
+      511,
+      1048,
+      513,
+      488
+     ],
+     "title": "Without The Course",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "61",
+   "src": "comics/primate-suspects/pages/61.jpg?v=fb895ccade",
+   "thumb": "comics/primate-suspects/thumbs/61.jpg?v=857f48538a",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 60,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Great Expectations",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      0,
+      80,
+      515,
+      500
+     ],
+     "title": "Can't Be Rushed",
+     "n": 1
+    },
+    {
+     "rect": [
+      511,
+      80,
+      513,
+      500
+     ],
+     "title": "Making A Picture",
+     "n": 2
+    },
+    {
+     "rect": [
+      0,
+      576,
+      515,
+      455
+     ],
+     "title": "Your Pedigree",
+     "n": 3
+    },
+    {
+     "rect": [
+      512,
+      576,
+      512,
+      455
+     ],
+     "title": "Distinguished Artists",
+     "n": 4
+    },
+    {
+     "rect": [
+      0,
+      1026,
+      501,
+      510
+     ],
+     "title": "A Better Sharpener",
+     "n": 5
+    },
+    {
+     "rect": [
+      499,
+      1026,
+      525,
+      510
+     ],
+     "title": "Cable Evaluations",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "62",
+   "src": "comics/primate-suspects/pages/62.jpg?v=b4cbde71ec",
+   "thumb": "comics/primate-suspects/thumbs/62.jpg?v=408dd63cf0",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 61,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "Building Bridges",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      1,
+      79,
+      513,
+      548
+     ],
+     "title": "Built Together",
+     "n": 1
+    },
+    {
+     "rect": [
+      510,
+      79,
+      513,
+      548
+     ],
+     "title": "Bridge Challenge",
+     "n": 2
+    },
+    {
+     "rect": [
+      1,
+      623,
+      513,
+      454
+     ],
+     "title": "A Different Partner",
+     "n": 3
+    },
+    {
+     "rect": [
+      511,
+      623,
+      512,
+      454
+     ],
+     "title": "Use These",
+     "n": 4
+    },
+    {
+     "rect": [
+      1,
+      1073,
+      513,
+      463
+     ],
+     "title": "Pretty Good Team",
+     "n": 5
+    },
+    {
+     "rect": [
+      511,
+      1073,
+      512,
+      463
+     ],
+     "title": "Too Close.",
+     "n": 6
+    }
+   ]
+  },
+  {
+   "id": "63",
+   "src": "comics/primate-suspects/pages/63.jpg?v=c80266900b",
+   "thumb": "comics/primate-suspects/thumbs/63.jpg?v=7702ae5c3a",
+   "w": 1024,
+   "h": 1536,
+   "kind": "page",
+   "scene": 62,
+   "frames": [
+    {
+     "rect": [
+      0,
+      0,
+      1024,
+      1536
+     ],
+     "title": "An Early Encore",
+     "n": 0,
+     "intro": true
+    },
+    {
+     "rect": [
+      0,
+      80,
+      515,
+      488
+     ],
+     "title": "Full Night's Sleep",
+     "n": 1
+    },
+    {
+     "rect": [
+      511,
+      80,
+      513,
+      488
+     ],
+     "title": "Mr. Pemberton Reconsidered",
+     "n": 2
+    },
+    {
+     "rect": [
+      0,
+      564,
+      515,
+      481
+     ],
+     "title": "Further Reflections",
+     "n": 3
+    },
+    {
+     "rect": [
+      512,
+      564,
+      512,
+      481
+     ],
+     "title": "Every Word",
+     "n": 4
+    },
+    {
+     "rect": [
+      0,
+      1040,
+      515,
+      496
+     ],
+     "title": "Choice Of Title",
+     "n": 5
+    },
+    {
+     "rect": [
+      512,
+      1040,
+      512,
+      496
+     ],
+     "title": "Three A.M.",
      "n": 6
     }
    ]
